@@ -1,2 +1,44 @@
 //Base
 
+//Global
+body,
+html,
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+	background-color: #FFF;
+	min-height: 33%;
+	&.dark-section {
+		background-color: #EEE;
+	}
+}
+
+footer {
+	background-color: $primary;
+	height: 10%;
+	.container {
+		display: flex;
+   	align-items: center;
+		justify-content: center;
+		p {
+			margin: 0;
+		}
+	}
+}
+
+//Typography
+* {
+  font-family: $font-text;
+  font-size: 0.9rem;
+  @include media-breakpoint-up(lg) {
+	  font-size: 1rem;
+  }
+}
+
+// Elements
+button:focus {
+	outline: 0;
+}

@@ -1,0 +1,95 @@
+//Navbar
+#navbar {
+    box-shadow: $box-shadow;
+    background-color: $white;
+    padding: .25rem 10vw;
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: $tertiary;
+    }
+
+    .navbar-toggler {
+        border-color: transparent;
+        padding-top: 0;
+    }
+
+    .nav-link {
+        font-family: $font-head;
+        font-size: 0.9rem;
+        color: $black;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.navbar-brand {
+    font-family: $font-accent;
+    font-size: 2rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.75rem;
+    }
+}
+
+h1 {
+    font-family: $font-head;
+}
+
+@include media-breakpoint-up(lg) {
+    #navbar {
+        box-shadow: none;
+        background-color: transparent;
+        padding: 1.25rem 0;
+
+        .navbar-brand {
+            color: $white;
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            color: $white;
+            padding: 0 .75rem;
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        &:last-child {
+            .nav-link {
+                padding-right: 0;
+            }
+        }
+
+        &.navbar-scrolled {
+            box-shadow: $box-shadow;
+            background-color: white;
+            transition: background-color 0.25s ease;
+
+            .navbar-brand {
+                color: $tertiary;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+
+            .nav-link {
+                font-size: 1rem;
+                color: $black;
+                padding: 0 .75rem;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

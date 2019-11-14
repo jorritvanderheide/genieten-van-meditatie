@@ -1,0 +1,35 @@
+//Header
+.header {
+    min-height: 50%;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header-text {
+    padding: calc(40.8px + 25%) calc(15vw - 15px) 25%;
+    color: $white;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .header-text {
+        padding: 20% 50% 20% 0;
+
+        h1 {
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
+}
+
+.overlay {
+    width: 100%;
+    min-height: 50%;
+    background-color: $overlay
+}
