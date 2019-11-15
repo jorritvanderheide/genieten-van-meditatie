@@ -30,11 +30,11 @@
 
 @include media-breakpoint-up(xl) {
     .subheader {
-        min-height: 20vh;
+        height: 25vh;
     }
 
     .suboverlay {
-        min-height: 20vh;
+        height: 25vh;
     }
 }
 

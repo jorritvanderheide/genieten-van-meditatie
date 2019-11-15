@@ -1,9 +1,6 @@
 (function ($) {
   "use strict";
 
-  //Scroll to top
-  
-
   //Close mobile menu on click
   $('.nav-link').click(function () {
     $('.navbar-collapse').collapse('hide');
@@ -11,10 +8,10 @@
 
   //Collapse navbar on scroll
   var navbarCollapse = function () {
-    if ($("#navbar").offset().top > 100) {
-      $("#navbar").addClass("navbar-scrolled");
+    if ($(".mainNav").offset().top > ($(".header").outerHeight() ) - ($(".mainNav").outerHeight() )) {
+      $(".mainNav").addClass("navbar-scrolled");
     } else {
-      $("#navbar").removeClass("navbar-scrolled");
+      $(".mainNav").removeClass("navbar-scrolled");
     }
   };
 
@@ -26,7 +23,12 @@
 
   //Fade header text on scroll
   $(window).scroll(function () {
-    $(".header-text").css("opacity", 1 - $(window).scrollTop() / 85);
+    $(".header-text").css("opacity", 1 - $(window).scrollTop() / 200);
+    $(".header-text").css("padding-bottom", (20 - $(window).scrollTop() / 10) + "%");
   });
+  
+  //Scroll to top?
+
+  //Swipe navigation?
 
 })(jQuery);

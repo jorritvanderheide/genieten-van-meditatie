@@ -8127,11 +8127,12 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-shadow: 0 -5px 10px #222;
   box-shadow: 0 -5px 10px #222;
   background-color: #FFF;
-  padding: .75rem 10vw;
-  min-height: 40.8px; }
+  min-height: 10vh;
+  padding: 1rem 10vw; }
   #navbar .navbar-toggler {
-    border-color: transparent;
-    padding-top: .65rem; }
+    border-color: transparent; }
+    #navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(34, 34, 34)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   #navbar .nav-link {
     font-family: "Raleway", sans-serif;
     font-size: 0.9rem;
@@ -8150,53 +8151,63 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-brand:hover {
     background-image: url("../img/brand_black.png"); }
 
-h1 {
-  font-family: "Raleway", sans-serif; }
-
 @media (min-width: 1200px) {
   #navbar {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background-color: transparent;
+    -webkit-box-shadow: 0 -5px 10px #222;
+    box-shadow: 0 -5px 10px #222;
+    background-color: #FFF;
     padding: 1.25rem 0; }
     #navbar .navbar-brand {
       background-image: url("../img/brand_primary.png");
       width: 25%; }
       #navbar .navbar-brand:hover {
-        background-image: url("../img/brand_white.png"); }
+        background-image: url("../img/brand_black.png"); }
     #navbar .nav-link {
       font-size: 1rem;
-      color: #FFF;
+      color: #222;
       padding: 0rem .75rem; }
       #navbar .nav-link:hover {
         color: #F2C063; }
       #navbar .nav-link.active {
         color: #F2C063; }
         #navbar .nav-link.active:hover {
-          color: #FFF; }
+          color: #222; }
     #navbar:last-child .nav-link {
       padding-right: 0; }
-    #navbar.navbar-scrolled {
-      -webkit-box-shadow: 0 -5px 10px #222;
-      box-shadow: 0 -5px 10px #222;
-      background-color: white;
-      -webkit-transition: background-color 0.25s ease;
-      -o-transition: background-color 0.25s ease;
-      transition: background-color 0.25s ease; }
-      #navbar.navbar-scrolled .navbar-brand {
-        background-image: url("../img/brand_primary.png"); }
-        #navbar.navbar-scrolled .navbar-brand:hover {
-          background-image: url("../img/brand_black.png"); }
-      #navbar.navbar-scrolled .nav-link {
-        font-size: 1rem;
-        color: #222;
-        padding: 0 .75rem; }
-        #navbar.navbar-scrolled .nav-link:hover {
-          color: #F2C063; }
-        #navbar.navbar-scrolled .nav-link.active {
-          color: #F2C063; }
-          #navbar.navbar-scrolled .nav-link.active:hover {
-            color: #222; } }
+  .mainNav {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 1.25rem 0; }
+    .mainNav .navbar-brand:hover {
+      background-image: url("../img/brand_white.png") !important; }
+    .mainNav .nav-link {
+      color: #FFF !important; }
+      .mainNav .nav-link:hover {
+        color: #F2C063 !important; }
+      .mainNav .nav-link.active {
+        color: #F2C063 !important; }
+        .mainNav .nav-link.active:hover {
+          color: #FFF !important; }
+  .navbar-scrolled {
+    background-color: white !important;
+    -webkit-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+    -webkit-box-shadow: 0 -5px 10px #222 !important;
+    box-shadow: 0 -5px 10px #222 !important; }
+    .navbar-scrolled .navbar-brand {
+      background-image: url("../img/brand_primary.png"); }
+      .navbar-scrolled .navbar-brand:hover {
+        background-image: url("../img/brand_black.png") !important; }
+    .navbar-scrolled .nav-link {
+      color: #222 !important; }
+      .navbar-scrolled .nav-link:hover {
+        color: #F2C063 !important; }
+      .navbar-scrolled .nav-link.active {
+        color: #F2C063 !important; }
+        .navbar-scrolled .nav-link.active:hover {
+          color: #222 !important; } }
 
 .header {
   min-height: 50%;
@@ -8225,9 +8236,9 @@ h1 {
 
 @media (min-width: 1200px) {
   .subheader {
-    min-height: 20vh; }
+    height: 25vh; }
   .suboverlay {
-    min-height: 20vh; } }
+    height: 25vh; } }
 
 .header-text {
   padding: calc(68.27px + 30%) calc(15vw - 15px) 25%;
@@ -8295,6 +8306,9 @@ section {
   @media (min-width: 992px) {
     * {
       font-size: 1rem; } }
+
+h1 {
+  font-family: "Raleway", sans-serif; }
 
 h2 {
   font-family: "Cookie", cursive;
