@@ -3,7 +3,7 @@
     box-shadow: $box-shadow;
     background-color: $white;
     min-height: 10vh;
-    padding: 1rem 10vw;
+    padding: 0.5rem 10vw;
 
     .navbar-toggler {
         border-color: transparent;
@@ -38,7 +38,7 @@
         margin: 1rem 0 0;
         font-family: $font-accent;
         font-size: 1.75rem;
-        font-weight: 600;
+        font-weight: 500;
         color: $primary;
     }
 
