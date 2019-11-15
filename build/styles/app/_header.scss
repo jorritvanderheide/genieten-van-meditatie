@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .subheader {
@@ -46,6 +47,7 @@
         font-size: 2rem;
     }
 
+
     &:before {
         content: '\201C';
         position: absolute;
@@ -55,17 +57,35 @@
 
         @include media-breakpoint-up(xl) {
             transform: translate(-65%, -37.5%);
+            font-size: 12.5rem;
         }
     }
 }
 
 @include media-breakpoint-up(xl) {
     .header-text {
-        padding: 25% 50% 20% 0;
+        padding: 25% 50% 20% 5%;
 
         h1 {
             text-align: left;
             font-size: 3rem;
         }
+    }
+}
+
+#head {
+    display: none;
+    visibility: hidden;
+}
+
+@include media-breakpoint-up(xl) {
+    #head {
+        display: block;
+        visibility: visible;
+        height: 90%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: $opacity-modita;
     }
 }
