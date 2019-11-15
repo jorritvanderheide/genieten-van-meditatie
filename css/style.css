@@ -8141,15 +8141,22 @@ a.text-dark:hover, a.text-dark:focus {
       color: #F2C063; }
 
 .navbar-brand {
-  background-image: url("../img/brand_primary.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 75%;
-  height: 2.5vh;
-  margin: 1rem 0; }
-  .navbar-brand:hover {
-    background-image: url("../img/brand_black.png"); }
+  margin: 0 0 0 0; }
+  .navbar-brand img {
+    content: url("../img/brand_primary.png");
+    height: 3rem;
+    padding: 0 .5rem 1rem 0; }
+  .navbar-brand span {
+    display: inline-block;
+    margin: 1rem 0 0;
+    font-family: "Cookie", cursive;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #F2C063; }
+  .navbar-brand:hover img {
+    content: url("../img/brand_black.png"); }
+  .navbar-brand:hover span {
+    color: #222; }
 
 @media (min-width: 1200px) {
   #navbar {
@@ -8157,11 +8164,6 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: 0 -5px 10px #222;
     background-color: #FFF;
     padding: 1.25rem 0; }
-    #navbar .navbar-brand {
-      background-image: url("../img/brand_primary.png");
-      width: 25%; }
-      #navbar .navbar-brand:hover {
-        background-image: url("../img/brand_black.png"); }
     #navbar .nav-link {
       font-size: 1rem;
       color: #222;
@@ -8179,8 +8181,10 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: none !important;
     background-color: transparent !important;
     padding: 1.25rem 0; }
-    .mainNav .navbar-brand:hover {
-      background-image: url("../img/brand_white.png") !important; }
+    .mainNav .navbar-brand:hover img {
+      content: url("../img/brand_white.png"); }
+    .mainNav .navbar-brand:hover span {
+      color: #FFF; }
     .mainNav .nav-link {
       color: #FFF !important; }
       .mainNav .nav-link:hover {
@@ -8191,15 +8195,15 @@ a.text-dark:hover, a.text-dark:focus {
           color: #FFF !important; }
   .navbar-scrolled {
     background-color: white !important;
-    -webkit-transition: background-color 0.25s ease;
-    -o-transition: background-color 0.25s ease;
-    transition: background-color 0.25s ease;
+    -webkit-transition: background-color 0.25s ease !important;
+    -o-transition: background-color 0.25s ease !important;
+    transition: background-color 0.25s ease !important;
     -webkit-box-shadow: 0 -5px 10px #222 !important;
     box-shadow: 0 -5px 10px #222 !important; }
-    .navbar-scrolled .navbar-brand {
-      background-image: url("../img/brand_primary.png"); }
-      .navbar-scrolled .navbar-brand:hover {
-        background-image: url("../img/brand_black.png") !important; }
+    .navbar-scrolled .navbar-brand:hover img {
+      content: url("../img/brand_black.png"); }
+    .navbar-scrolled .navbar-brand:hover span {
+      color: #222; }
     .navbar-scrolled .nav-link {
       color: #222 !important; }
       .navbar-scrolled .nav-link:hover {
@@ -8297,7 +8301,7 @@ html,
     background-color: #FFF; }
 
 section {
-  min-height: 75vh;
+  min-height: 25vh;
   padding: 10vh 10%; }
 
 * {
@@ -8334,3 +8338,8 @@ footer {
     @media (min-width: 992px) {
       footer .container h2 {
         font-size: 1.5rem; } }
+  footer .container p {
+    font-size: .75rem; }
+    @media (min-width: 992px) {
+      footer .container p {
+        font-size: 0.85rem; } }
