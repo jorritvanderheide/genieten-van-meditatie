@@ -61,6 +61,12 @@ h1 {
             &:hover {
                 color: $primary;
             }
+            &.active {
+                color: $primary;
+                &:hover {
+                    color: $white;
+                }
+            }
         }
 
         &:last-child {
@@ -87,6 +93,12 @@ h1 {
                 padding: 0 .75rem;
                 &:hover {
                     color: $primary;
+                }
+                &.active {
+                    color: $primary;
+                    &:hover {
+                        color: $black;
+                    }
                 }
             }
         }

@@ -7,29 +7,65 @@
     background-repeat: no-repeat;
 }
 
-.header-text {
-    padding: calc(68.27px + 25%) calc(15vw - 15px) 25%;
-    color: $white;
-
-    h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    .header-text {
-        padding: 20% 50% 20% 0;
-
-        h1 {
-            text-align: left;
-            font-size: 3rem;
-        }
-    }
+.subheader {
+    height: 30vh;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .overlay {
     width: 100%;
     min-height: 50%;
     background-color: $overlay
+}
+
+.suboverlay {
+    width: 100%;
+    height: 30vh;
+    background-color: $overlay
+}
+
+@include media-breakpoint-up(xl) {
+    .subheader {
+        min-height: 20vh;
+    }
+
+    .suboverlay {
+        min-height: 20vh;
+    }
+}
+
+.header-text {
+    padding: calc(68.27px + 30%) calc(15vw - 15px) 25%;
+    color: $white;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &:before {
+        content: '\201C';
+        position: absolute;
+        color: $transparent;
+        font-size: 10rem;
+        transform: translate(-25%, -37.5%);
+
+        @include media-breakpoint-up(xl) {
+            transform: translate(-65%, -37.5%);
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .header-text {
+        padding: 25% 50% 20% 0;
+
+        h1 {
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
 }
