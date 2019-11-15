@@ -6464,8 +6464,8 @@ button.bg-dark:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(34, 34, 34, 0.075) !important; }
 
 .shadow {
-  -webkit-box-shadow: 0 1px 10px #777 !important;
-  box-shadow: 0 1px 10px #777 !important; }
+  -webkit-box-shadow: 0 -5px 10px #222 !important;
+  box-shadow: 0 -5px 10px #222 !important; }
 
 .shadow-lg {
   -webkit-box-shadow: 0 1rem 3rem rgba(34, 34, 34, 0.175) !important;
@@ -8124,16 +8124,14 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 #navbar {
-  -webkit-box-shadow: 0 1px 10px #777;
-  box-shadow: 0 1px 10px #777;
+  -webkit-box-shadow: 0 -5px 10px #222;
+  box-shadow: 0 -5px 10px #222;
   background-color: #FFF;
-  padding: .25rem 10vw; }
-  #navbar .navbar-brand {
-    font-size: 1.5rem;
-    color: #F29C6B; }
+  padding: .75rem 10vw;
+  min-height: 40.8px; }
   #navbar .navbar-toggler {
     border-color: transparent;
-    padding-top: 0; }
+    padding-top: .65rem; }
   #navbar .nav-link {
     font-family: "Raleway", sans-serif;
     font-size: 0.9rem;
@@ -8142,44 +8140,49 @@ a.text-dark:hover, a.text-dark:focus {
       color: #F2C063; }
 
 .navbar-brand {
-  font-family: "Cookie", cursive;
-  font-size: 2rem; }
-  @media (min-width: 992px) {
-    .navbar-brand {
-      font-size: 1.75rem; } }
+  background-image: url("../img/brand_primary.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 75%;
+  height: 2.5vh;
+  margin: 1rem 0; }
+  .navbar-brand:hover {
+    background-image: url("../img/brand_black.png"); }
 
 h1 {
   font-family: "Raleway", sans-serif; }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #navbar {
     -webkit-box-shadow: none;
     box-shadow: none;
     background-color: transparent;
     padding: 1.25rem 0; }
     #navbar .navbar-brand {
-      color: #FFF; }
+      background-image: url("../img/brand_primary.png");
+      width: 25%; }
       #navbar .navbar-brand:hover {
-        color: #222; }
+        background-image: url("../img/brand_white.png"); }
     #navbar .nav-link {
       font-size: 1rem;
       color: #FFF;
-      padding: 0 .75rem; }
+      padding: 0rem .75rem; }
       #navbar .nav-link:hover {
-        color: #222; }
+        color: #F2C063; }
     #navbar:last-child .nav-link {
       padding-right: 0; }
     #navbar.navbar-scrolled {
-      -webkit-box-shadow: 0 1px 10px #777;
-      box-shadow: 0 1px 10px #777;
+      -webkit-box-shadow: 0 -5px 10px #222;
+      box-shadow: 0 -5px 10px #222;
       background-color: white;
       -webkit-transition: background-color 0.25s ease;
       -o-transition: background-color 0.25s ease;
       transition: background-color 0.25s ease; }
       #navbar.navbar-scrolled .navbar-brand {
-        color: #F29C6B; }
+        background-image: url("../img/brand_primary.png"); }
         #navbar.navbar-scrolled .navbar-brand:hover {
-          color: #222; }
+          background-image: url("../img/brand_black.png"); }
       #navbar.navbar-scrolled .nav-link {
         font-size: 1rem;
         color: #222;
@@ -8195,13 +8198,13 @@ h1 {
   background-repeat: no-repeat; }
 
 .header-text {
-  padding: calc(40.8px + 25%) calc(15vw - 15px) 25%;
+  padding: calc(68.27px + 25%) calc(15vw - 15px) 25%;
   color: #FFF; }
   .header-text h1 {
     text-align: center;
     font-size: 2rem; }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .header-text {
     padding: 20% 50% 20% 0; }
     .header-text h1 {
@@ -8221,7 +8224,8 @@ html,
 
 section {
   background-color: #FFF;
-  min-height: 33%; }
+  min-height: 33%;
+  padding: 10vh 10%; }
   section.dark-section {
     background-color: #EEE; }
 
@@ -8247,6 +8251,11 @@ footer {
   @media (min-width: 992px) {
     * {
       font-size: 1rem; } }
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: #F2C063;
+  font-size: 1.5rem; }
 
 button:focus {
   outline: 0; }

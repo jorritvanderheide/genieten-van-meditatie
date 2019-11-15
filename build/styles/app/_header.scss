@@ -8,7 +8,7 @@
 }
 
 .header-text {
-    padding: calc(40.8px + 25%) calc(15vw - 15px) 25%;
+    padding: calc(68.27px + 25%) calc(15vw - 15px) 25%;
     color: $white;
 
     h1 {
@@ -17,7 +17,7 @@
     }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
     .header-text {
         padding: 20% 50% 20% 0;
 
