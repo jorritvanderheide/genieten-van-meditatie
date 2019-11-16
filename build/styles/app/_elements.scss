@@ -1,0 +1,15 @@
+//Elements
+
+.contentbox {
+    background-color: $primary !important;
+    margin: -10vh -15vw;
+    padding: 3rem 2.25rem;
+
+    @include media-breakpoint-up(xl) {
+        margin: 0;
+    }
+}
+
+button:focus {
+    outline: 0;
+}

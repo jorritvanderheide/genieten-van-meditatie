@@ -1,0 +1,62 @@
+//Typography
+
+* {
+	font-family: $font-text;
+	font-size: 0.9rem;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 1rem;
+	}
+}
+
+h1 {
+	font-family: $font-head;
+}
+
+h2 {
+	font-family: $font-accent;
+	color: $white;
+}
+
+h3 {
+	font-family: $font-head;
+	color: $primary;
+	margin-bottom: 1.5rem;
+}
+
+.main-text {
+	font-family: $font-text;
+	text-align: justify;
+	margin: 0;
+
+	@include media-breakpoint-up(sm) {
+		font-size: 1.25rem;
+	}
+
+	@include media-breakpoint-up(md) {
+		font-size: 1.25rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		column-count: 2;
+		column-gap: 2.5rem;
+		font-size: 1.05rem;
+		line-height: 1.6rem;
+	}
+}
+
+//Mark 1 or 2
+mark {
+	background-color: $primary !important;
+}
+
+// mark {
+// 	color: $primary !important;
+// 	font-style: italic;
+// }
+
+.contentbox {
+	h3{
+		color: $white;
+	}
+}
