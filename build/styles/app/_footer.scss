@@ -1,14 +1,15 @@
 //Footer
 
 footer {
-    background-color: $primary;
+		background-color: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0 1rem;
+    padding: 3rem 0 1rem;
 	.container {
 		h2 {
 			font-size: 1.25rem;
+			color: $white;
 			@include media-breakpoint-up(lg) {
 				font-size: 1.5rem;
 			}

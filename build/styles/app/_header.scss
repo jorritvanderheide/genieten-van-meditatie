@@ -1,7 +1,7 @@
 //Header
 
 .header {
-    min-height: 50%;
+    // min-height: 50%;
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: center center;
@@ -10,7 +10,7 @@
 }
 
 .subheader {
-    height: 30vh;
+    height: 32.5vh;
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: center center;
@@ -20,57 +20,24 @@
 .overlay {
     width: 100%;
     min-height: 50%;
-    background-color: $overlay
+    background-color: $overlay;
 }
 
 .suboverlay {
     width: 100%;
-    height: 30vh;
-    background-color: $overlay
+    height: 32.5vh;
+    background-color: $overlay;
+
+    position: relative;
 }
 
 @include media-breakpoint-up(xl) {
     .subheader {
-        height: 25vh;
+        height: 30vh;
     }
 
     .suboverlay {
-        height: 25vh;
-    }
-}
-
-.header-text {
-    padding: calc(68.27px + 30%) calc(15vw - 15px) 25%;
-    color: $white;
-
-    h1 {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-
-    &:before {
-        content: '\201C';
-        position: absolute;
-        color: $transparent;
-        font-size: 10rem;
-        transform: translate(-25%, -37.5%);
-
-        @include media-breakpoint-up(xl) {
-            transform: translate(-65%, -37.5%);
-            font-size: 12.5rem;
-        }
-    }
-}
-
-@include media-breakpoint-up(xl) {
-    .header-text {
-        padding: 25% 50% 20% 5%;
-
-        h1 {
-            text-align: left;
-            font-size: 3rem;
-        }
+        height: 30vh;
     }
 }
 
@@ -89,4 +56,96 @@
         right: 0;
         opacity: $opacity-modita;
     }
+}
+
+.subheader-text {
+    width: 100%;
+    position: absolute;
+    bottom: 7vh;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+        bottom: 10vh;
+    }
+
+    @include media-breakpoint-up(xl) {
+        bottom: 7.5vh;
+    }
+}
+
+#headerquote {
+    padding: 25vh 2.5rem 7.5vh;
+    color: $white;
+
+    &:before {
+        content: '\201C';
+        position: absolute;
+        color: $transparent;
+        font-size: 7.5rem;
+        transform: translate(5%, -35%);
+
+        @include media-breakpoint-up(xl) {
+            transform: translate(-50%, -37.5%);
+            font-size: 10rem;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 25vh 2.5rem 20vh;
+
+        h1 {
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
+}
+
+#headerbuttons {
+    padding: 0 25vw 10vh;
+    margin: 0;
+
+    .btn {
+        margin: 1rem 0;
+        padding: 1rem 1.5rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+        p {
+            display: inline-block;
+            vertical-align: middle;
+            font-family: $font-head;
+            font-weight: 800;
+            font-size: 1.25rem;
+            line-height: 1.35rem;
+            margin: 0;
+        }
+
+        .fas {
+            font-size: 2rem;
+            padding-right: 1rem;
+            vertical-align: middle;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 26vh 12.5vw 24vh;
+
+        .btn {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.agendabutton {
+    background-color: $primary;
+}
+
+.newbutton {
+    background-color: $tertiary;
 }

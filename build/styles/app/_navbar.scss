@@ -5,6 +5,11 @@
     background-color: $white;
     min-height: 10vh;
     padding: 0.5rem 10vw;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 
     .navbar-toggler {
         border-color: transparent;
@@ -21,6 +26,14 @@
 
         &:hover {
             color: $primary;
+        }
+
+        &.active {
+            color: $primary;
+
+            &:hover {
+                color: $black;
+            }
         }
     }
 }
@@ -69,13 +82,6 @@
                 color: $primary;
             }
 
-            &.active {
-                color: $primary;
-
-                &:hover {
-                    color: $black;
-                }
-            }
         }
 
         &:last-child {

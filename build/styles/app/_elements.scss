@@ -5,8 +5,27 @@
     margin: -10vh -15vw;
     padding: 3rem 2.25rem;
 
+    p {
+        color: $white;
+    }
+
     @include media-breakpoint-up(xl) {
         margin: 0;
+    }
+}
+
+.popout {
+    background-color: $primary !important;
+    margin: 0 -11vw;
+    padding: 2rem;
+    width: 100vw;
+
+    h3 {
+        color: $white;
+    }
+
+    p {
+        columns: 2;
     }
 }
 

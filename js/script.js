@@ -8,7 +8,7 @@
 
   //Collapse navbar on scroll
   var navbarCollapse = function () {
-    if ($(".mainNav").offset().top > ($(".header").outerHeight() ) - ($(".mainNav").outerHeight() )) {
+    if ($(".mainNav").offset().top > ( ($(".header").outerHeight()) - ($(".mainNav").outerHeight()) - ( ($(window).width() / 40) + ($(window).scrollTop() / 3.5 ) ) ) ){
       $(".mainNav").addClass("navbar-scrolled");
     } else {
       $(".mainNav").removeClass("navbar-scrolled");
@@ -23,10 +23,18 @@
 
   //Fade header text on scroll
   $(window).scroll(function () {
-    $(".header-text").css("opacity", 1 - $(window).scrollTop() / 200);
-    $(".header-text").css("padding-bottom", (20 - $(window).scrollTop() / 10) + "%");
+    var x = window.matchMedia("(max-width: 1200px)")
+    // $(".header-text").css("padding-bottom", (20 - $(window).scrollTop() / 10) + "%");
+
+    if (x.matches) {
+      $(".sectionbox").css("margin-top", (-5.5 - $(window).scrollTop() / 50) + "%");
+      $(".headerrow").css("opacity", 1 - $(window).scrollTop() / 400);
+    } else {
+      $(".sectionbox").css("margin-top", (-2.5 - $(window).scrollTop() / 50) + "%");
+      $(".headerrow").css("opacity", 1 - $(window).scrollTop() / 150);
+    }
   });
-  
+
   //Scroll to top?
 
   //Swipe navigation?
