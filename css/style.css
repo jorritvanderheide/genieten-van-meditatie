@@ -8220,21 +8220,25 @@ a.text-dark:hover, a.text-dark:focus {
 .header {
   background-image: url("../img/header.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  margin-top: 5vh; }
 
 .subheader {
   height: 32.5vh;
   background-image: url("../img/header.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat; }
 
 .overlay {
   width: 100%;
   min-height: 50%;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); }
 
 .suboverlay {
   width: 100%;
@@ -8243,6 +8247,9 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative; }
 
 @media (min-width: 1200px) {
+  .header {
+    margin-top: 0;
+    background-position: center 20%; }
   .subheader {
     height: 30vh; }
   .suboverlay {
@@ -8259,7 +8266,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: 90%;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 15vw;
     opacity: 0.75; } }
 
 .subheader-text {
@@ -8275,7 +8282,7 @@ a.text-dark:hover, a.text-dark:focus {
       bottom: 7.5vh; } }
 
 #headerquote {
-  padding: 25vh 2.5rem 7.5vh;
+  padding: 30vh 2.5rem 10vh;
   color: #FFF; }
   #headerquote:before {
     content: '\201C';
@@ -8294,49 +8301,53 @@ a.text-dark:hover, a.text-dark:focus {
   #headerquote h1 {
     text-align: center;
     font-size: 1.9rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     #headerquote {
-      padding: 25vh 2.5rem 20vh; }
+      padding: 25vh 2.5rem; }
       #headerquote h1 {
         text-align: left;
         font-size: 3rem; } }
 
 #headerbuttons {
-  padding: 0 25vw 10vh;
-  margin: 0; }
+  padding: 0 27.5vw 12.5vh;
+  margin: 0;
+  position: relative; }
   #headerbuttons .btn {
-    margin: 1rem 0;
-    padding: 1rem 1.5rem;
-    text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    border-radius: 2.5rem;
+    padding: 0.75rem; }
     #headerbuttons .btn p {
-      display: inline-block;
-      vertical-align: middle;
       font-family: "Raleway", sans-serif;
       font-weight: 800;
       font-size: 1.25rem;
-      line-height: 1.35rem;
       margin: 0; }
-    #headerbuttons .btn .fas {
-      font-size: 2rem;
-      padding-right: 1rem;
-      vertical-align: middle; }
+    #headerbuttons .btn:last-child {
+      margin-top: 1.5rem; }
+  @media (min-width: 576px) {
+    #headerbuttons {
+      padding: 0 20vw 12.5vh; } }
+  @media (min-width: 768px) {
+    #headerbuttons {
+      padding: 0 25vw 12.5vh; } }
   @media (min-width: 992px) {
     #headerbuttons {
-      padding: 26vh 12.5vw 24vh; }
-      #headerbuttons .btn {
-        font-size: 1.5rem; } }
+      padding: 0 30vw 12.5vh; } }
+  @media (min-width: 1200px) {
+    #headerbuttons {
+      padding: 30vh 20vh; } }
 
 .agendabutton {
-  background-color: #F2C063; }
+  background-color: #F2C063;
+  color: #222; }
+  .agendabutton:hover {
+    background-color: #F29C6B;
+    color: #FFF; }
 
 .newbutton {
-  background-color: #F29C6B; }
+  background-color: #F29C6B;
+  color: #222; }
+  .newbutton:hover {
+    background-color: #F2C063;
+    color: #FFF; }
 
 body,
 html,
@@ -8346,47 +8357,29 @@ html,
   background-color: transparent !important; }
 
 html {
-  background-color: #EEE !important; }
+  background-color: #EEE !important;
+  min-height: 100%; }
 
 .sectionbox {
   padding: 0;
   margin: -5.5vw 2.5vw 0;
   background-color: white;
   border-radius: 0.75rem;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 0 1px 5px #888;
+  box-shadow: 0 1px 5px #888; }
   @media (min-width: 992px) {
     .sectionbox {
       margin: -2.5vw 2.5vw 0;
       border-radius: 1rem; } }
 
 section {
-  min-height: 50vh;
+  min-height: 10vh;
   padding: 10vh 10%; }
   section .container :nth-child(even) {
     background-color: transparent; }
   section .container :nth-child(odd) {
     background-color: transparent; }
-
-.contentbox {
-  background-color: #F2C063 !important;
-  margin: -10vh -15vw;
-  padding: 3rem 2.25rem; }
-  .contentbox p {
-    color: #FFF; }
-  @media (min-width: 1200px) {
-    .contentbox {
-      margin: 0; } }
-
-.popout {
-  background-color: #F2C063 !important;
-  margin: 0 -11vw;
-  padding: 2rem;
-  width: 100vw; }
-  .popout h3 {
-    color: #FFF; }
-  .popout p {
-    -webkit-columns: 2;
-    columns: 2; }
 
 button:focus {
   outline: 0; }

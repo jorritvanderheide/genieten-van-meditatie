@@ -23,7 +23,7 @@
 
   //Fade header text on scroll
   $(window).scroll(function () {
-    var x = window.matchMedia("(max-width: 1200px)")
+    var x = window.matchMedia("(max-width: 992px)")
     // $(".header-text").css("padding-bottom", (20 - $(window).scrollTop() / 10) + "%");
 
     if (x.matches) {

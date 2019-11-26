@@ -4,34 +4,39 @@
     // min-height: 50%;
     background-image: url("../img/header.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     position: relative;
+    margin-top: 5vh;
 }
 
 .subheader {
     height: 32.5vh;
     background-image: url("../img/header.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
 }
 
 .overlay {
     width: 100%;
     min-height: 50%;
-    background-color: $overlay;
+    // background-color: $overlay;
+    background-image: $image-overlay;
 }
 
 .suboverlay {
     width: 100%;
     height: 32.5vh;
     background-color: $overlay;
-
     position: relative;
 }
 
 @include media-breakpoint-up(xl) {
+    .header {
+        margin-top: 0;
+        background-position: center 20%;
+    }
     .subheader {
         height: 30vh;
     }
@@ -53,7 +58,7 @@
         height: 90%;
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 15vw;
         opacity: $opacity-modita;
     }
 }
@@ -74,7 +79,7 @@
 }
 
 #headerquote {
-    padding: 25vh 2.5rem 7.5vh;
+    padding: 30vh 2.5rem 10vh; //7.5vh;
     color: $white;
 
     &:before {
@@ -93,10 +98,12 @@
     h1 {
         text-align: center;
         font-size: 1.9rem;
+        // background-color: $overlay;
+        // padding: 2rem;/
     }
 
-    @include media-breakpoint-up(lg) {
-        padding: 25vh 2.5rem 20vh;
+    @include media-breakpoint-up(xl) {
+        padding: 25vh 2.5rem;
 
         h1 {
             text-align: left;
@@ -106,46 +113,61 @@
 }
 
 #headerbuttons {
-    padding: 0 25vw 10vh;
+    padding: 0 27.5vw 12.5vh;
     margin: 0;
+    position: relative;
 
     .btn {
-        margin: 1rem 0;
-        padding: 1rem 1.5rem;
-        text-align: left;
-        display: flex;
-        align-items: center;
+        border-radius: 2.5rem;
+        padding: 0.75rem;
 
         p {
-            display: inline-block;
-            vertical-align: middle;
             font-family: $font-head;
             font-weight: 800;
             font-size: 1.25rem;
-            line-height: 1.35rem;
             margin: 0;
         }
 
-        .fas {
-            font-size: 2rem;
-            padding-right: 1rem;
-            vertical-align: middle;
+        &:last-child {
+            margin-top: 1.5rem;
         }
+
+    }
+
+    @include media-breakpoint-up(sm) {
+        padding: 0 20vw 12.5vh;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 0 25vw 12.5vh;
     }
 
     @include media-breakpoint-up(lg) {
-        padding: 26vh 12.5vw 24vh;
+        padding: 0 30vw 12.5vh;
+    }
 
-        .btn {
-            font-size: 1.5rem;
-        }
+    @include media-breakpoint-up(xl) {
+        // padding: 27.5vh 20vh;
+        padding: 30vh 20vh;
     }
 }
 
 .agendabutton {
     background-color: $primary;
+    color: $black;
+
+    &:hover {
+        background-color: $tertiary;
+        color: $white;
+    }
 }
 
 .newbutton {
     background-color: $tertiary;
+    color: $black;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
 }

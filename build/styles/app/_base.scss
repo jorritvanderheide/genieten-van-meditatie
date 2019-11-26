@@ -10,6 +10,7 @@ html,
 
 html {
 	background-color: $gray !important;
+	min-height: 100%;
 }
 
 .sectionbox {
@@ -18,7 +19,7 @@ html {
 	background-color: white;
 	border-radius: 0.75rem;
 	position: relative;
-	// box-shadow: 0 1px 10px #666;
+	box-shadow: 0 1px 5px #888;
 
 	@include media-breakpoint-up(lg) {
 		margin: -2.5vw 2.5vw 0;
@@ -27,7 +28,7 @@ html {
 }
 
 section {
-	min-height: 50vh;
+	min-height: 10vh;
 	padding: 10vh 10%;
 
 	.container {
