@@ -8358,7 +8358,8 @@ html,
 
 html {
   background-color: #EEE !important;
-  min-height: 100%; }
+  min-height: 100%;
+  scroll-behavior: smooth; }
 
 .sectionbox {
   padding: 0;
@@ -8372,6 +8373,8 @@ html {
     .sectionbox {
       margin: -2.5vw 2.5vw 0;
       border-radius: 1rem; } }
+  .sectionbox section {
+    padding: 10vh calc(10% - 2.5vw); }
 
 section {
   min-height: 10vh;

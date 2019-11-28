@@ -35,8 +35,6 @@
     }
   });
 
-  //Scroll to top?
-
   //Swipe navigation?
 
 })(jQuery);
