@@ -8227,7 +8227,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .subheader {
   height: 32.5vh;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat; }
@@ -8376,16 +8376,38 @@ html {
   .sectionbox section {
     padding: 10vh calc(10% - 2.5vw); }
 
+.row,
+.col-xl-6 {
+  padding: 0;
+  margin: 0; }
+
 section {
   min-height: 10vh;
   padding: 10vh 10%; }
-  section .container :nth-child(even) {
-    background-color: transparent; }
-  section .container :nth-child(odd) {
-    background-color: transparent; }
+
+.section-color {
+  background-color: #f2c063; }
+
+hr {
+  margin: 5vh 0; }
 
 button:focus {
   outline: 0; }
+
+.video-container {
+  margin: 0 0 10vh; }
+  @media (min-width: 992px) {
+    .video-container {
+      padding: 0 2rem 0 0;
+      margin: 0; }
+      .video-container iframe {
+        height: 30vh; } }
+
+.text-container {
+  padding: 0; }
+  @media (min-width: 992px) {
+    .text-container {
+      padding: 0 0 0 2rem; } }
 
 * {
   font-family: "Average", serif;
@@ -8411,7 +8433,7 @@ h2 {
 
 h3 {
   font-family: "Raleway", sans-serif;
-  color: #f2c063;
+  color: #222;
   margin-bottom: 1.5rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -8444,8 +8466,11 @@ h3 {
       font-size: 1.1rem;
       line-height: 1.85rem; } }
 
-.contentbox h3 {
-  color: #fff; }
+.sectionbox h3 {
+  color: #f2c063; }
+
+.section-color h3 {
+  color: #222; }
 
 footer {
   background-color: #f2c063;

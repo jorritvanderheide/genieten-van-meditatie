@@ -32,17 +32,21 @@ html {
   }
 }
 
+.row,
+.col-xl-6 {
+  padding: 0;
+  margin: 0;
+}
+
 section {
   min-height: 10vh;
   padding: 10vh 10%;
+}
 
-  .container {
-    :nth-child(even) {
-      background-color: transparent;
-    }
+.section-color {
+  background-color: $primary;
+}
 
-    :nth-child(odd) {
-      background-color: transparent;
-    }
-  }
+hr {
+  margin: 5vh 0;
 }

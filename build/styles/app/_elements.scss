@@ -3,3 +3,24 @@
 button:focus {
   outline: 0;
 }
+
+.video-container {
+  margin: 0 0 10vh;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 2rem 0 0;
+    margin: 0;
+
+    iframe {
+      height: 30vh;
+    }
+  }
+}
+
+.text-container {
+  padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 0 0 2rem;
+  }
+}

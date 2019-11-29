@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-family: $font-head;
-  color: $primary;
+  color: $black;
   margin-bottom: 1.5rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -66,8 +66,14 @@ h3 {
   }
 }
 
-.contentbox {
+.sectionbox {
   h3 {
-    color: $white;
+    color: $primary;
+  }
+}
+
+.section-color {
+  h3 {
+    color: $black;
   }
 }
