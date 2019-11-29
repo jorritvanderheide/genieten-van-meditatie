@@ -1,155 +1,154 @@
 //Navbar
 
 #navbar {
-    box-shadow: $box-shadow;
-    background-color: $white;
-    min-height: 10vh;
-    padding: 0.5rem 10vw;
-    
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+  box-shadow: $box-shadow;
+  background-color: $white;
+  min-height: 10vh;
+  padding: 0.5rem 10vw;
 
-    .navbar-toggler {
-        border-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(34, 34, 34)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
+  .navbar-toggler {
+    border-color: transparent;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(34, 34, 34)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  .nav-link {
+    font-family: $font-head;
+    font-size: 0.9rem;
+    color: $black;
+
+    &:hover {
+      color: $primary;
     }
 
-    .nav-link {
-        font-family: $font-head;
-        font-size: 0.9rem;
+    &.active {
+      color: $primary;
+
+      &:hover {
         color: $black;
-
-        &:hover {
-            color: $primary;
-        }
-
-        &.active {
-            color: $primary;
-
-            &:hover {
-                color: $black;
-            }
-        }
+      }
     }
+  }
 }
 
 .navbar-brand {
-    margin: 0 0 0 0;
+  margin: 0 0 0 0;
 
+  img {
+    content: url("../img/brand_primary.png");
+    height: 3rem;
+    padding: 0 0.5rem 1rem 0;
+  }
+
+  span {
+    display: inline-block;
+    margin: 1rem 0 0;
+    font-family: $font-accent;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: $primary;
+  }
+
+  &:hover {
     img {
-        content: url('../img/brand_primary.png');
-        height: 3rem;
-        padding: 0 .5rem 1rem 0;
+      content: url("../img/brand_black.png");
     }
 
     span {
-        display: inline-block;
-        margin: 1rem 0 0;
-        font-family: $font-accent;
-        font-size: 1.75rem;
-        font-weight: 500;
-        color: $primary;
+      color: $black;
     }
-
-    &:hover {
-        img {
-            content: url('../img/brand_black.png');
-        }
-
-        span {
-            color: $black;
-        }
-    }
+  }
 }
 
 @include media-breakpoint-up(xl) {
-    #navbar {
-        box-shadow: $box-shadow;
-        background-color: $white;
-        padding: 1.25rem 0;
+  #navbar {
+    box-shadow: $box-shadow;
+    background-color: $white;
+    padding: 1.25rem 0;
 
-        .nav-link {
-            font-size: 1rem;
-            color: $black;
-            padding: 0rem .75rem;
+    .nav-link {
+      font-size: 1rem;
+      color: $black;
+      padding: 0rem 0.75rem;
 
-            &:hover {
-                color: $primary;
-            }
-
-        }
-
-        &:last-child {
-            .nav-link {
-                padding-right: 0;
-            }
-        }
+      &:hover {
+        color: $primary;
+      }
     }
 
-    .mainNav {
-        box-shadow: none !important;
-        background-color: transparent !important;
-        padding: 1.25rem 0;
+    &:last-child {
+      .nav-link {
+        padding-right: 0;
+      }
+    }
+  }
 
-        .navbar-brand:hover {
-            img {
-                content: url('../img/brand_white.png')
-            }
-            span {
-                color: $white;
-            }
-        }
+  .mainNav {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 1.25rem 0;
 
-        .nav-link {
-            color: $white !important;
-
-            &:hover {
-                color: $primary !important;
-            }
-
-            &.active {
-                color: $primary !important;
-
-                &:hover {
-                    color: $white !important;
-                }
-            }
-        }
+    .navbar-brand:hover {
+      img {
+        content: url("../img/brand_white.png");
+      }
+      span {
+        color: $white;
+      }
     }
 
-    &.navbar-scrolled {
-        background-color: white !important;
-        transition: background-color $fade-time ease !important;
-        box-shadow: $box-shadow !important;
+    .nav-link {
+      color: $white !important;
 
-        .navbar-brand:hover {
-            img {
-                content: url('../img/brand_black.png')
-            }
-            span {
-                color: $black;
-            }
+      &:hover {
+        color: $primary !important;
+      }
+
+      &.active {
+        color: $primary !important;
+
+        &:hover {
+          color: $white !important;
         }
-
-        .nav-link {
-            color: $black !important;
-
-            &:hover {
-                color: $primary !important;
-            }
-
-            &.active {
-                color: $primary !important;
-
-                &:hover {
-                    color: $black !important;
-                }
-            }
-        }
+      }
     }
+  }
+
+  &.navbar-scrolled {
+    background-color: white !important;
+    transition: background-color $fade-time ease !important;
+    box-shadow: $box-shadow !important;
+
+    .navbar-brand:hover {
+      img {
+        content: url("../img/brand_black.png");
+      }
+      span {
+        color: $black;
+      }
+    }
+
+    .nav-link {
+      color: $black !important;
+
+      &:hover {
+        color: $primary !important;
+      }
+
+      &.active {
+        color: $primary !important;
+
+        &:hover {
+          color: $black !important;
+        }
+      }
+    }
+  }
 }

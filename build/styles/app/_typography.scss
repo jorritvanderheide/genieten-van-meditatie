@@ -1,76 +1,73 @@
 //Typography
 
 * {
-	font-family: $font;
-	font-size: 0.9rem;
+  font-family: $font;
+  font-size: 0.9rem;
 
-	@include media-breakpoint-up(lg) {
-		font-size: 1rem;
-	}
+  @include media-breakpoint-up(lg) {
+    font-size: 1rem;
+  }
 }
 
 h1 {
-	font-family: $font-head;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-
+  font-family: $font-head;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h2 {
-	font-family: $font-accent;
-	color: $white;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-
+  font-family: $font-accent;
+  color: $white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h3 {
-	font-family: $font-head;
-	color: $primary;
-	margin-bottom: 1.5rem;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-
+  font-family: $font-head;
+  color: $primary;
+  margin-bottom: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-text {
-	font-family: $font-text;
-	text-align: justify;
-	margin: 0;
-	color: $text;
+  font-family: $font-text;
+  text-align: justify;
+  margin: 0;
+  color: $text;
 
-	&::selection {
-		background: $primary;
-	}
+  &::selection {
+    background: $primary;
+  }
 
-	&::-moz-selection {
-		background: $primary;
-	}
+  &::-moz-selection {
+    background: $primary;
+  }
 
-	@include media-breakpoint-up(sm) {
-		font-size: 1.25rem;
-	}
+  @include media-breakpoint-up(sm) {
+    font-size: 1.25rem;
+  }
 
-	@include media-breakpoint-up(md) {
-		font-size: 1.25rem;
-	}
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+  }
 
-	@include media-breakpoint-up(lg) {
-		column-count: 2;
-		column-gap: 2.5rem;
-		font-size: 1.1rem;
-		line-height: 1.85rem;
-	}
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
+    column-gap: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.85rem;
+  }
 }
 
 .contentbox {
-	h3 {
-		color: $white;
-	}
+  h3 {
+    color: $white;
+  }
 }

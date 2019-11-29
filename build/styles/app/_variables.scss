@@ -2,24 +2,29 @@
 
 //Colors
 $black: #222;
-$white: #FFF;
-$gray: #EEE;
+$white: #fff;
+$gray: #eee;
 
-$primary: #F2C063;
-$secondary: #F2B263;
-$tertiary: #F29C6B;
+$primary: #f2c063;
+$secondary: #f2b263;
+$tertiary: #f29c6b;
 
 $text: #666;
 
 $overlay: rgba(0, 0, 0, 0.25);
-$image-overlay: linear-gradient(rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+$image-overlay: linear-gradient(
+  rgba(0, 0, 0, 0.5) 5%,
+  rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0)
+);
 $transparent: rgba(255, 255, 255, 0.25);
 
 //Fonts
-$font: 'Average', serif;
-$font-text: 'Lato', sans-serif;
-$font-head: 'Raleway', sans-serif;
-$font-accent: 'Cookie', cursive;
+$font: "Average", serif;
+$font-text: "Lato", sans-serif;
+$font-head: "Raleway", sans-serif;
+$font-accent: "Cookie", cursive;
 
 //Other
 $box-shadow: 0 -5px 10px #222;
