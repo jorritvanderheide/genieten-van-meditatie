@@ -8396,16 +8396,18 @@ button:focus {
 
 .video-container {
   margin: 0 0 10vh; }
-  @media (min-width: 992px) {
+  .video-container iframe {
+    min-height: 40vw; }
+  @media (min-width: 1200px) {
     .video-container {
       padding: 0 2rem 0 0;
       margin: 0; }
       .video-container iframe {
-        height: 30vh; } }
+        min-height: 30vh; } }
 
 .text-container {
   padding: 0; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .text-container {
       padding: 0 0 0 2rem; } }
 
