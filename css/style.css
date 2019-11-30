@@ -8319,7 +8319,8 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 7.5rem;
     -webkit-transform: translate(5%, -35%);
     -ms-transform: translate(5%, -35%);
-    transform: translate(5%, -35%); }
+    transform: translate(5%, -35%);
+    font-family: "Average", serif; }
     @media (min-width: 1200px) {
       #headerquote:before {
         -webkit-transform: translate(-50%, -37.5%);

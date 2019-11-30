@@ -115,6 +115,7 @@
     color: $transparent;
     font-size: 7.5rem;
     transform: translate(5%, -35%);
+    font-family: $font;
 
     @include media-breakpoint-up(xl) {
       transform: translate(-50%, -37.5%);
