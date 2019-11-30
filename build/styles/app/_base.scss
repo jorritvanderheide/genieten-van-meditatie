@@ -33,7 +33,14 @@ html {
 }
 
 .row,
-.col-xl-6 {
+.col-xl-6,
+.col-xl-3,
+.col-xl-9,
+.col-md-3,
+.col-md-9,
+.col-md-6,
+.col-lg-8,
+.col-lg-4 {
   padding: 0;
   margin: 0;
 }
@@ -45,8 +52,13 @@ section {
 
 .section-color {
   background-color: $primary;
+  margin: 0 -0.25rem;
+
+  @include media-breakpoint-up(sm) {
+    margin: 0 -0.75rem;
+  }
 }
 
 hr {
-  margin: 5vh 0;
+  margin: 5rem 0;
 }

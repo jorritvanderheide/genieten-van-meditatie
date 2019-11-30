@@ -4,6 +4,21 @@ button:focus {
   outline: 0;
 }
 
+.btn-warning {
+  background-color: $primary;
+  border: 0;
+  width: 100%;
+  margin: 1rem 0 0;
+
+  &:hover {
+    background-color: $secondary;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+  }
+}
+
 .video-container {
   margin: 0 0 10vh;
 
@@ -21,10 +36,21 @@ button:focus {
   }
 }
 
-.text-container {
-  padding: 0;
+.review-image img {
+  border-radius: 50%;
+  margin: 0 0 5rem;
 
-  @include media-breakpoint-up(xl) {
-    padding: 0 0 0 2rem;
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
+}
+
+.reader-image img {
+  padding: 5rem 0 0;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+    width: auto;
   }
 }

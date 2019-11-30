@@ -5,18 +5,27 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem 0 1rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 2.5rem 0 1.25rem;
+  }
+
   .container {
     h2 {
       font-size: 1.25rem;
       color: $white;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         font-size: 1.5rem;
       }
     }
     p {
       font-size: 0.75rem;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         font-size: 0.85rem;
       }
     }
