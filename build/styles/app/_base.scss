@@ -52,10 +52,12 @@ section {
 
 .section-color {
   background-color: $primary;
-  margin: 0 -0.25rem;
+  // margin: 0 -0.25rem;
+  // box-shadow: 0 1px 5px #888;
+  // border-radius: 1rem;
 
   @include media-breakpoint-up(sm) {
-    margin: 0 -0.75rem;
+    // margin: 0 -0.75rem;
   }
 }
 

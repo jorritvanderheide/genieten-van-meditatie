@@ -54,6 +54,10 @@
     font-size: 1.75rem;
     font-weight: 500;
     color: $primary;
+
+    @include media-breakpoint-up(lg) {
+    margin: .25rem 0 0;
+    }
   }
 
   &:hover {

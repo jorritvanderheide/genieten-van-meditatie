@@ -8161,6 +8161,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.75rem;
     font-weight: 500;
     color: #f2c063; }
+    @media (min-width: 992px) {
+      .navbar-brand span {
+        margin: .25rem 0 0; } }
   .navbar-brand:hover img {
     content: url("../img/brand_black.png"); }
   .navbar-brand:hover span {
@@ -8315,7 +8318,7 @@ a.text-dark:hover, a.text-dark:focus {
   #headerquote:before {
     content: "\201C";
     position: absolute;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.35);
     font-size: 7.5rem;
     -webkit-transform: translate(5%, -35%);
     -ms-transform: translate(5%, -35%);
@@ -8337,7 +8340,7 @@ a.text-dark:hover, a.text-dark:focus {
       #headerquote h1 {
         text-align: left;
         font-size: 3rem;
-        text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.75); } }
+        text-shadow: none; } }
 
 #headerbuttons {
   padding: 0 27.5vw 12.5vh;
@@ -8424,11 +8427,7 @@ section {
   padding: 10vh 10%; }
 
 .section-color {
-  background-color: #f2c063;
-  margin: 0 -0.25rem; }
-  @media (min-width: 576px) {
-    .section-color {
-      margin: 0 -0.75rem; } }
+  background-color: #f2c063; }
 
 hr {
   margin: 5rem 0; }
@@ -8547,7 +8546,7 @@ h3 {
   font-style: italic; }
   @media (min-width: 768px) {
     .review-text {
-      padding: 5rem 0 0 5rem; } }
+      padding: 2.5rem 0 0 5rem; } }
 
 .reader-text {
   padding: 0; }
