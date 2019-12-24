@@ -35,6 +35,14 @@
         color: $black;
       }
     }
+
+    &.accent {
+      color: $primary !important;
+      
+      &:hover {
+        color: $black !important;
+      }
+    }
   }
 }
 
@@ -56,7 +64,7 @@
     color: $primary;
 
     @include media-breakpoint-up(lg) {
-    margin: .25rem 0 0;
+      margin: 0.25rem 0 0;
     }
   }
 
@@ -149,6 +157,14 @@
       &.active {
         color: $primary !important;
 
+        &:hover {
+          color: $black !important;
+        }
+      }
+
+      &.accent {
+        color: $primary !important;
+        
         &:hover {
           color: $black !important;
         }

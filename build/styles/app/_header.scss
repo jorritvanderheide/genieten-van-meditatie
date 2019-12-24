@@ -60,12 +60,12 @@
     background-position: center 20%;
   }
   .subheader {
-    height: 30vh;
+    height: 40vh;
     margin: 0;
   }
 
   .suboverlay {
-    height: 30vh;
+    height: 40vh;
   }
 }
 
@@ -94,6 +94,12 @@
   display: 0;
   visibility: hidden;
 
+  h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Courgette';
+  }
+
   @include media-breakpoint-up(sm) {
     bottom: 10vh;
     display: block;
@@ -101,7 +107,7 @@
   }
 
   @include media-breakpoint-up(xl) {
-    bottom: 7.5vh;
+    bottom: 14vh;
   }
 }
 

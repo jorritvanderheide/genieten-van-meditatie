@@ -55,6 +55,10 @@ h3 {
     background: $primary;
   }
 
+  .ul li {
+    margin-bottom: 2rem;
+  }
+
   @include media-breakpoint-up(sm) {
     font-size: 1.25rem;
     text-align: justify;
