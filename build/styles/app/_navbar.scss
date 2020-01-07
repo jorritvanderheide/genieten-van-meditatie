@@ -49,9 +49,9 @@
 .navbar-brand {
   margin: 0 0 0 0;
 
-  img {
-    content: url("../img/brand_primary.png");
-    height: 3rem;
+  #logo {
+    font-size: 2rem;
+    color: #f2c063;
     padding: 0 0.5rem 1rem 0;
   }
 
@@ -59,7 +59,7 @@
     display: inline-block;
     margin: 1rem 0 0;
     font-family: $font-accent;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: $primary;
 
@@ -69,8 +69,8 @@
   }
 
   &:hover {
-    img {
-      content: url("../img/brand_black.png");
+    #logo {
+      color: $black;
     }
 
     span {
@@ -108,8 +108,8 @@
     padding: 1.25rem 0;
 
     .navbar-brand:hover {
-      img {
-        content: url("../img/brand_white.png");
+      #logo {
+        color: $white;
       }
       span {
         color: $white;
@@ -139,8 +139,8 @@
     box-shadow: $box-shadow !important;
 
     .navbar-brand:hover {
-      img {
-        content: url("../img/brand_black.png");
+      #logo {
+        color: $black;
       }
       span {
         color: $black;

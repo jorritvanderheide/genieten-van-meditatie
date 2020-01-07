@@ -35,10 +35,15 @@ h3 {
   font-family: $font-head;
   color: $black;
   margin-bottom: 1.5rem;
+  font-size: 1.25rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+  }
 }
 
 .main-text {
@@ -140,29 +145,5 @@ h3 {
     font-size: 3rem;
     background-blend-mode: inherit;
     padding: 0 15px;
-  }
-}
-
-// DropInBlog
-#dib-template-2 a.dib-post {
-  margin: 5rem 0 0;
-  // border: 0 !important;
-}
-
-.dib-meta-text {
-  padding: 0 0 0 5px !important;
-}
-
-.dib-post-text {
-  padding: 0;
-
-  h2 {
-    font-family: $font-head;
-    font-size: 1.25rem;
-    color: $primary !important;
-
-    @include media-breakpoint-up(md) {
-      text-align: left;
-    }
   }
 }

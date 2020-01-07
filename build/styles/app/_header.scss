@@ -4,7 +4,7 @@
   // min-height: 50%;
   background-image: url("../img/header.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: 85% top;
   background-repeat: no-repeat;
   position: relative;
   margin-top: 5vh;
@@ -111,39 +111,48 @@
   }
 }
 
+.quotebox {
+  padding: 2rem 1rem;
+  margin: -2rem;
+  background-color: $veryheavyoverlay;
+
+  @include media-breakpoint-up(xl) {
+    padding: 2rem 0rem 2rem 2rem;
+    background-color: $heavyoverlay;
+  }
+}
+
 #headerquote {
-  padding: 30vh 2.5rem 10vh; //7.5vh;
+  padding: 40vh 2.5rem 10vh; //7.5vh;
   color: $white;
 
-  &:before {
-    content: "\201C";
-    position: absolute;
-    color: $transparent;
-    font-size: 7.5rem;
-    transform: translate(5%, -35%);
-    font-family: $font;
+  // &:before {
+  //   content: "\201C";
+  //   position: absolute;
+  //   color: $transparent;
+  //   font-size: 7.5rem;
+  //   transform: translate(5%, -35%);
+  //   font-family: $font;
 
-    @include media-breakpoint-up(xl) {
-      transform: translate(-50%, -37.5%);
-      font-size: 10rem;
-    }
-  }
+  //   @include media-breakpoint-up(xl) {
+  //     transform: translate(-50%, -37.5%);
+  //     font-size: 10rem;
+  //   }
+  // }
 
   h1 {
+    padding-left: 0;
     text-align: center;
     font-size: 1.9rem;
-    text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.75);
-    // background-color: $overlay;
-    // padding: 2rem;/
   }
 
   @include media-breakpoint-up(xl) {
-    padding: 25vh 2.5rem;
+    padding: 25vh 5rem 25vh 0;
 
-    h1 {
+    h1 { 
+      padding-left: 1rem;
       text-align: left;
       font-size: 3rem;
-      text-shadow: none;
     }
   }
 }
