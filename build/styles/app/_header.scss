@@ -112,18 +112,21 @@
 }
 
 .quotebox {
+  border-style: solid;
+  border-width: 0.15rem;
   padding: 2rem 1rem;
   margin: -2rem;
-  background-color: $veryheavyoverlay;
+  background-color: $heavyoverlay;
 
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(xl) {  
+    border-width: 0.35rem;
     padding: 2rem 0rem 2rem 2rem;
     background-color: $heavyoverlay;
   }
 }
 
 #headerquote {
-  padding: 40vh 2.5rem 10vh; //7.5vh;
+  padding: 45vh 2.5rem 10vh; //7.5vh;
   color: $white;
 
   // &:before {
@@ -143,7 +146,7 @@
   h1 {
     padding-left: 0;
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 
   @include media-breakpoint-up(xl) {
