@@ -1,31 +1,34 @@
-//Footer
+// //Footer
 
 footer {
   background-color: $primary;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0 0;
+  padding: 1.5rem 0 0;
 
-  @include media-breakpoint-up(md) {
-    padding: 2rem 0 1rem;
+  max-width: 100vw;
+
+  @include medium {
+    padding: 2.5rem 0 1rem;
   }
 
-  @include media-breakpoint-up(lg) {
-    padding: 2.5rem 0 1.25rem;
+  @include large {
+    padding: 2.75rem 0 1.25rem;
   }
 
   .container {
     h2 {
       font-size: 1rem;
+      font-family: $font-accent;
       color: $black;
-      @include media-breakpoint-up(md) {
+      @include medium {
         font-size: 1.25rem;
       }
     }
     p {
       font-size: 0.75rem;
-      @include media-breakpoint-up(md) {
+      @include medium {
         font-size: 0.85rem;
       }
     }

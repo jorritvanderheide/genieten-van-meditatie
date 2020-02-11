@@ -1,205 +1,36 @@
-//Elements
+// Elements
 
-button {
-  padding: 0.75rem 2rem;
-  margin: 2.5rem 0 0;
-
-}
-
-button:focus {
-  outline: 0;
-}
-
-.btn {
+.video-wrapper {
   background-color: $primary;
-  border: 0;
-  width: 100%;
-  border-radius: 1.5rem;
 
-  &:hover {
-    background-color: $secondary;
+  .flex-row {
+    display: block;
   }
 
-  @include media-breakpoint-up(md) {
-    width: auto;
+  .half-col {
+    padding: 2em 0 1em;
   }
-}
-
-.video-container {
-  margin: 0 0 10vh;
 
   iframe {
-    min-height: 40vw;
+    max-width: 100%;
+    width: 100%;
   }
 
-  @include media-breakpoint-up(xl) {
-    padding: 0 2rem 0 0;
-    margin: 0;
+  @include xl {
+    .flex-row {
+      display: flex;
+    }
+
+    .half-col {
+      padding: 0 2em;
+    }
 
     iframe {
-      min-height: 30vh;
+      width: 150ch;
+    }
+
+    section {
+      margin-bottom: calc(2.5em - 20px);
     }
   }
-}
-
-.review-image img {
-  border-radius: 50%;
-  margin: 0 0 5rem;
-
-  @include media-breakpoint-up(md) {
-    margin: 0;
-  }
-}
-
-.reader-image img {
-  padding: 5rem 0 0;
-  width: 100%;
-
-  @include media-breakpoint-up(md) {
-    padding: 0;
-    width: auto;
-  }
-}
-
-.review-name {
-  text-align: right;
-}
-
-/* packery */
-.grid {
-  width: 100%;
-  height: auto;
-  margin: 5vw 0vw;
-}
-
-.gutter-sizer {
-  width: 5%;    
-}
-
-.grid-item {
-  width: 30%;
-  height: 10vw;
-  // padding: 2vw 2vw;
-  background-color: #ccc;
-  cursor: pointer;
-  /* border-radius: 2em; */
-}
-
-.grid-item-l {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-
-.grid-item a button {
-  width: auto;
-  margin: 1.5em auto 0.5em;
-  padding: 10px 20px;
-  cursor: pointer;
-  color: #FFFFFF;
-  background-color: #3AAA35;
-  border: 0;
-  border-radius: 20px;
-  background-size: cover;
-}
-
-.active {
-  visibility: visible;
-  display: block;
-  height: auto;
-}
-
-.inactive {
-  visibility: hidden;
-  display: none;
-  height: 0;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1200px) {
-  .grid {
-      width: 100%;
-      margin: 5vw 0vw;
-  }
-  .grid-item {
-      width: 30%;
-      height: 15vw;
-      padding: 3vw 4vw;
-      background-color: #FFFFFF;
-      cursor: pointer;
-  }
-}
-
-@media (max-width: 992px) {
-  .grid-item {
-      width: 48%;
-      height: 24vw;
-      padding: 4vw 5vw;
-  }
-  .grid-item-l {
-      width: 100%;
-  }
-  .gutter-sizer {
-      width: 4%;    
-  }
-}
-
-@media (max-width: 768px) {
-  .grid {
-      width: 100%;
-      margin: 5vw 5vw;
-  }
-  .grid-item {
-      padding: 5vw 7vw;
-  }
-}
-
-@media (max-width: 576px) {
-  .grid {
-      margin: 5vw 5vw 15vw;
-  }
-  .grid-item {
-      width: 100%;
-      height:  50vw;
-      padding: 9vw 11vw;
-  }
-  .gutter-sizer {
-      width: 5%;    
-  }
-}
-
-.grid-item-l {
-  height: auto;
-}
-
-/* logos */
-#balans {
-  background-image: url(../img/header.jpg);
-}
-
-#verheldering {
-  background-image: url(../img/header.jpg);
-}
-
-#liefde {
-  background-image: url(../img/header.jpg);
-}
-
-#meditatie {
-  background-image: url(../img/header.jpg);
-}
-
-#openheid {
-  background-image: url(../img/header.jpg);
-}
-
-#oefening {
-  background-image: url(../img/header.jpg);
 }

@@ -11,7 +11,7 @@
     if (
       $(".mainNav").offset().top >
       $(".header").outerHeight() -
-        $(".mainNav").outerHeight() -
+        // $(".mainNav").outerHeight() -
         ($(window).width() / 40 + $(window).scrollTop() / 3.5)
     ) {
       $(".mainNav").addClass("navbar-scrolled");
@@ -28,23 +28,20 @@
 
   //Fade header text on scroll
   $(window).scroll(function() {
-    var x = window.matchMedia("(max-width: 992px)");
-    // $(".header-text").css("padding-bottom", (20 - $(window).scrollTop() / 10) + "%");
+    var x = window.matchMedia("(max-width: 1200 px)");
 
     if (x.matches) {
-      $(".sectionbox").css(
+      $(".header").css(
         "margin-top",
         -5.5 - $(window).scrollTop() / 50 + "%"
       );
       $(".headerrow").css("opacity", 1 - $(window).scrollTop() / 400);
     } else {
-      $(".sectionbox").css(
+      $(".header").css(
         "margin-top",
         -2.5 - $(window).scrollTop() / 50 + "%"
       );
       $(".headerrow").css("opacity", 1 - $(window).scrollTop() / 150);
     }
   });
-
-  //Swipe navigation?
 })(jQuery);
