@@ -11,14 +11,8 @@ $tertiary: #f29c6b;
 
 $heavyoverlay: rgba(0, 0, 0, 0.25);
 
-$image-overlay: linear-gradient(
-  rgba(0, 0, 0, 0.5) 10%,
-  rgba(0, 0, 0, 0) 25%
-);
-$image-overlay2: linear-gradient(
-  rgba(0, 0, 0, 0.5) 35%,
-  rgba(0, 0, 0, 0) 65%
-);
+$image-overlay: linear-gradient(rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0) 25%);
+$image-overlay2: linear-gradient(rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0) 65%);
 
 //Fonts
 $font: "Average", serif;

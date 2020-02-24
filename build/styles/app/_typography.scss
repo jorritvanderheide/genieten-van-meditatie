@@ -29,6 +29,27 @@ p {
   }
 }
 
+.fa-ul {
+  li {
+    font-size: 1.15em;
+    line-height: 140%;
+    list-style: none;
+    padding-bottom: 1em;
+
+    @include small {
+      font-size: 1.2em;
+    }
+
+    @include medium {
+      font-size: 1.25em;
+    }
+
+    @include large {
+      font-size: 1.5em;
+    }
+  }
+}
+
 h3 {
   font-family: $font-text;
   font-weight: bold;
@@ -99,12 +120,113 @@ q {
   }
 }
 
-// Fixes
+em {
+  display: block;
+  font-size: 1.15em;
+  margin: 0 0 0.25em;
 
+  @include small {
+    font-size: 1.2em;
+  }
+
+  @include medium {
+    font-size: 1.25em;
+  }
+
+  @include large {
+    font-size: 1.5em;
+  }
+}
+
+.em-author {
+  text-align: right;
+}
+
+strong {
+  font-size: 1em;
+  // font-style: italic;
+  font-weight: bold;
+}
+
+// Fixes
 .no-padding-top {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .no-padding-bot {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.no-margin-bot {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-bot-lg {
+  @include not-xl {
+    margin-bottom: 0 !important;
+  }
+}
+
+hr {
+  margin: 5em 0;
+}
+
+.final-box {
+  section {
+    margin-top: 3em;
+
+    @include medium {
+      margin-top: 6.5em;
+    }
+
+    em {
+      color: #666;
+    }
+  }
+}
+
+.form-group {
+  label {
+    font-family: $font;
+    font-size: 1.15em;
+    line-height: 140%;
+
+    @include small {
+      font-size: 1.2em;
+    }
+
+    @include medium {
+      font-size: 1.25em;
+    }
+
+    @include large {
+      font-size: 1.5em;
+    }
+  }
+
+  input, textarea {
+    font-family: $font;
+    font-size: 1em;
+    line-height: 140%;
+
+    @include small {
+      font-size: 1.05em;
+    }
+
+    @include medium {
+      font-size: 1.10em;
+    }
+
+    @include large {
+      font-size: 1.35em;
+    }
+  }
 }

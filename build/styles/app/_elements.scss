@@ -1,14 +1,23 @@
 // Elements
 
-.video-wrapper {
+// Color
+.color {
   background-color: $primary;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+// Video Container
+.video-container {
   .flex-row {
     display: block;
   }
 
   .half-col {
-    padding: 2em 0 1em;
+    margin: 2em 0;
+    width: 100%;
   }
 
   iframe {
@@ -25,12 +34,116 @@
       padding: 0 2em;
     }
 
-    iframe {
-      width: 150ch;
-    }
-
     section {
       margin-bottom: calc(2.5em - 20px);
     }
   }
+}
+
+// Video wrapper
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@include xl {
+  .video-wrapper {
+    height: 20em;
+  }
+
+  .video-wrapper iframe,
+  .video-wrapper object,
+  .video-wrapper embed {
+    top: 2.5%;
+    width: 95%;
+    height: 95%;
+  }
+}
+
+// Buttons
+.button {
+  margin: 1em 0 2.5em;
+  padding: 0.5em 1em;
+
+  font-size: 1em;
+
+  background-color: $primary;
+
+  border-radius: 1.5em;
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  @include small {
+    font-size: 1.05em;
+  }
+
+  @include medium {
+    font-size: 1.1em;
+  }
+
+  @include large {
+    font-size: 1.35em;
+  }
+
+  &.button-alt {
+    background-color: $tertiary;
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+}
+
+// Lists
+.fa-li i {
+  color: $primary;
+}
+
+.geschenk .fa-li i {
+  color: $tertiary;
+}
+
+// Images
+img {
+  margin: 2.25em 0 2.5em;
+
+  width: 100%;
+  height: auto;
+}
+
+// Images
+#verbinding {
+  background-image: url("../img/header.jpg");
+}
+#begeleiding {
+  background-image: url("../img/begeleiding.jpg");
+}
+#meditatie {
+  background-image: url("../img/meditatie.jpg");
+}
+#ontspanning {
+  background-image: url("../img/ontspanning.jpg");
+}
+#geschenk {
+  background-image: url("../img/geschenk.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#benjijdit {
+  background-image: url("../img/ben_jij_dit.png");
 }
