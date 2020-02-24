@@ -29,6 +29,29 @@ p {
   }
 }
 
+.link {
+  margin: 0 0 1em;
+
+  font-family: $font;
+  font-size: 1em;
+  line-height: 140%;
+
+  color: $black;
+  text-decoration: none;
+  background-color: $tertiary;
+
+  &:active {
+    text-decoration: none;
+    color: $black;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+
 .fa-ul {
   li {
     font-size: 1.15em;

@@ -79,7 +79,7 @@ html {
 
   font-size: 1em;
 
-  background-color: $primary;
+  background-color: $tertiary;
 
   border-radius: 1.5em;
 
@@ -99,13 +99,13 @@ html {
     font-size: 1.35em;
   }
 
-  &.button-alt {
-    background-color: $tertiary;
+  // &.button-alt {
+  //   background-color: $tertiary;
 
-    &:hover {
-      background-color: $gray;
-    }
-  }
+  //   &:hover {
+  //     background-color: $gray;
+  //   }
+  // }
 }
 
 // Lists
@@ -143,7 +143,33 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 #benjijdit {
   background-image: url("../img/ben_jij_dit.png");
+}
+#consult {
+  background-image: url("../img/consult.jfif");
+}
+#opstellingen {
+  background-image: url("../img/opstellingen.jfif");
+}
+#eetprobleem {
+  background-image: url("../img/eetprobleem.jfif");
+}
+#depressie {
+  background-image: url("../img/depressie.jfif");
+}
+#zelfhypnose {
+  background-image: url("../img/zelfhypnose.jfif");
+}
+#dynamisch {
+  background-image: url("../img/dynamisch.jpg");
+}
+#cursus {
+  background-image: url("../img/cursus.jpg");
+}
+#rose {
+  background-image: url("../img/rose.jfif");
+}
+#gezichtsmassage {
+  background-image: url("../img/gezichtsmassage.jfif");
 }
