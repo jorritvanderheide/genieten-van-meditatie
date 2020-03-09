@@ -38,7 +38,8 @@ p {
 
   color: $black;
   text-decoration: none;
-  background-color: $tertiary;
+  font-weight: bold;
+  // background-color: $tertiary;
 
   &:active {
     text-decoration: none;
