@@ -79,7 +79,7 @@ html {
 
   font-size: 1em;
 
-  background-color: $tertiary;
+  background-color: $primary;
 
   border-radius: 1.5em;
 
@@ -99,22 +99,22 @@ html {
     font-size: 1.35em;
   }
 
-  // &.button-alt {
-  //   background-color: $tertiary;
+  &.button-alt {
+    background-color: $tertiary;
 
-  //   &:hover {
-  //     background-color: $gray;
-  //   }
-  // }
+    &:hover {
+      background-color: $gray;
+    }
+  }
 }
 
 // Lists
 .fa-li i {
-  color: $primary;
+  color: #98431D;
 }
 
 .geschenk .fa-li i {
-  color: $tertiary;
+  color: #98431D;
 }
 
 // Images
@@ -127,7 +127,7 @@ img {
 
 // Images
 #verbinding {
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/hoe_het_werkt.jpg");
 }
 #begeleiding {
   background-image: url("../img/begeleiding.jpg");

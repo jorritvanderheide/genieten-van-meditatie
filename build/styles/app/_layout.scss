@@ -2,7 +2,7 @@
 
 * {
   body {
-    background-color: #eee;
+    background-color: $tertiary;
   }
 }
 
@@ -20,7 +20,7 @@
 
     max-width: 50ch;
 
-    border-radius: 0.5em;
+    border-radius: 1em;
 
     background-color: #fff;
 
