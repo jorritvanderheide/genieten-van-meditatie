@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Dashboard"
-AuthUserFile /home/0002/sites/s124/genietenvanmeditatie.nl/private/.htpasswd
-Require valid-user
