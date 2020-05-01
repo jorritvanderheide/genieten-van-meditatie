@@ -52,7 +52,6 @@ p {
   }
 }
 
-
 .fa-ul {
   li {
     font-size: 1.15em;
@@ -99,7 +98,7 @@ h4 {
   font-weight: bold;
   font-size: 1.15em;
   padding: 0.55em 0;
-  color: #98431D;
+  color: $darktext;
 
   @include small {
     font-size: 1.2m;
@@ -170,8 +169,16 @@ em {
 
 strong {
   font-size: 1em;
+  font-family: "Courgette";
   // font-style: italic;
-  font-weight: bold;
+  font-weight: normal !important;
+  color: $quad;
+}
+
+.review {
+  em {
+    color: $secondary;
+  }
 }
 
 // Fixes
@@ -214,7 +221,7 @@ hr {
     }
 
     em {
-      color: #2D5B7C;
+      color: #2d5b7c;
     }
   }
 }
@@ -238,7 +245,8 @@ hr {
     }
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-family: $font;
     font-size: 1em;
     line-height: 140%;
@@ -248,7 +256,7 @@ hr {
     }
 
     @include medium {
-      font-size: 1.10em;
+      font-size: 1.1em;
     }
 
     @include large {

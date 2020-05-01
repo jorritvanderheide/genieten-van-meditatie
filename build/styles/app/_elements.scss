@@ -110,11 +110,11 @@ html {
 
 // Lists
 .fa-li i {
-  color: #98431D;
+  color: #98431d;
 }
 
 .geschenk .fa-li i {
-  color: #98431D;
+  color: #98431d;
 }
 
 // Images
@@ -185,17 +185,97 @@ img {
   background-image: url("../img/ashirda.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
+  @include xl {
+    background-position: left center;
+  }
+}
+#ashirda2 {
+  @include xl {
+    margin-left: -450px;
+  }
 }
 #ria {
   background-image: url("../img/ria.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
+  min-height: 250px;
+  @include xl {
+    background-position: left center;
+  }
+}
+#ria2 {
+  @include xl {
+    margin-left: -350px;
+  }
+}
+#anon {
+  background-image: url("../img/anon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include xl {
+    background-position: left center;
+  }
+}
+#anon2 {
+  @include xl {
+    margin-left: -200px;
+  }
 }
 #modita {
-  background-image: url("../img/modita.png");
+  background-image: url("../img/modita_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include xl {
+    background-position: left center;
+    min-height: 250px;
+  }
+}
+#modita2 {
+  @include xl {
+  margin-left: -175px;
+  }
+}
+
+#mart {
+  background-image: url("../img/mart.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+#annet {
+  background-image: url("../img/annet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#willy {
+  background-image: url("../img/willy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+// Agenda
+.linktext {
+color: $primary;
+}
+
+.modal-header {
+padding: 2em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.no-border {
+  border: none;
 }

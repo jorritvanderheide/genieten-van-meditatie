@@ -34,11 +34,11 @@
     color: $black;
 
     &:hover {
-      color: $primary;
+      color: $extra;
     }
 
     &.active {
-      color: $primary;
+      color: $extra;
 
       &:hover {
         color: $black;
@@ -46,7 +46,7 @@
     }
 
     &.accent {
-      color: $primary;
+      color: $extra;
 
       &:hover {
         color: $black;
@@ -149,7 +149,7 @@
       padding: 0rem 0.75rem;
 
       &:hover {
-        color: $primary;
+        color: $extra;
       }
     }
 
@@ -179,11 +179,11 @@
       color: $white !important;
 
       &:hover {
-        color: $primary !important;
+        color: $extra !important;
       }
 
       &.active {
-        color: $primary !important;
+        color: $extra !important;
 
         &:hover {
           color: $white !important;
@@ -205,6 +205,15 @@
     transition: background-color $fade-time ease !important;
     box-shadow: $box-shadow !important;
 
+    .navbar-brand {
+      #logo {
+        color: $extra;
+      }
+      span {
+        color: $extra;
+      }
+    }
+
     .navbar-brand:hover {
       #logo {
         color: $black;
@@ -224,6 +233,7 @@
       }
 
       &.accent {
+        color: $extra !important;
         &:hover {
           color: $black !important;
         }
