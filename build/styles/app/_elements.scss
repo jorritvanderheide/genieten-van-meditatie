@@ -110,11 +110,11 @@ html {
 
 // Lists
 .fa-li i {
-  color: #98431d;
+  color: $primary;
 }
 
 .geschenk .fa-li i {
-  color: #98431d;
+  color: $secondary;
 }
 
 // Images
@@ -238,7 +238,41 @@ img {
 }
 #modita2 {
   @include xl {
-  margin-left: -175px;
+    margin-left: -175px;
+  }
+}
+
+#hettie {
+  background-image: url("../img/hettie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include xl {
+    background-position: left center;
+    height: 250px;
+  }
+}
+#hettie2 {
+  @include xl {
+    margin-left: -150px;
+  }
+}
+
+#belgie {
+  background-image: url("../img/belgie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-height: 350px;
+  @include xl {
+    background-position: left center;
+    min-height: 150px;
+  }
+}
+#belgie2 {
+  @include xl {
+    margin-left: -150px;
   }
 }
 
@@ -265,11 +299,11 @@ img {
 
 // Agenda
 .linktext {
-color: $primary;
+  color: $secondary;
 }
 
 .modal-header {
-padding: 2em;
+  padding: 2em;
 
   p {
     margin: 0;
