@@ -176,6 +176,9 @@ img {
 #consult2 {
   background-image: url("../img/consult2.png");
 }
+#consult3 {
+  background-image: url("../img/consult3.png");
+}
 #boek {
   background-image: url("../img/boek.png");
   background-size: contain;
@@ -259,6 +262,23 @@ img {
   }
 }
 
+#willy {
+  background-image: url("../img/willy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include xl {
+    background-position: left center;
+    height: 250px;
+  }
+}
+#willy2 {
+  @include xl {
+    margin-left: -150px;
+  }
+}
+
 #belgie {
   background-image: url("../img/belgie.png");
   background-size: contain;
@@ -297,6 +317,24 @@ img {
   background-position: left center;
 }
 
+//Blogs
+.blog-col {
+  margin: 0 !important;
+  padding: 0 2.5em 0 0 !important;
+
+  .img-b {
+    margin: 0;
+    height: 100%;
+  }
+}
+
+#blog1 {
+  background-image: url("../img/blog/blog1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 // Agenda
 .linktext {
   color: $secondary;
@@ -312,4 +350,13 @@ img {
 
 .no-border {
   border: none;
+}
+
+// Links
+.osholink {
+  a {
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #333;
+  }
 }
