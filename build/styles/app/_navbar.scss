@@ -72,7 +72,7 @@
 
     font-size: 5vw;
 
-    color: $primary;
+    color: $extra;
   }
 
   span {
@@ -84,7 +84,7 @@
     font-size: 5vw;
     font-weight: 500;
 
-    color: $primary;
+    color: $extra;
   }
 
   &:hover {
@@ -128,12 +128,16 @@
   }
 
   .navbar-brand {
+    color: $primary;
+
     #logo {
       font-size: 1em;
+      color: $primary;
     }
 
     span {
       font-size: 1em;
+      color:  $primary;
     }
   }
 
@@ -179,11 +183,11 @@
       color: $white !important;
 
       &:hover {
-        color: $extra !important;
+        color: $primary !important;
       }
 
       &.active {
-        color: $extra !important;
+        color: $primary !important;
 
         &:hover {
           color: $white !important;
@@ -226,7 +230,14 @@
     .nav-link {
       color: $black !important;
 
+      &:hover {
+        color: $extra !important;
+      
+      }
+
       &.active {
+        color: $extra !important;
+        
         &:hover {
           color: $black !important;
         }
@@ -234,6 +245,7 @@
 
       &.accent {
         color: $extra !important;
+
         &:hover {
           color: $black !important;
         }

@@ -73,6 +73,26 @@ p {
   }
 }
 
+ol {
+  li {
+    font-size: 1.05em;
+    line-height: 140%;
+    padding-bottom: 1em;
+
+    @include small {
+      font-size: 1.1em;
+    }
+
+    @include medium {
+      font-size: 1.15em;
+    }
+
+    @include large {
+      font-size: 1.4em;
+    }
+  }
+}
+
 h3 {
   font-family: $font-text;
   color: $secondary;
