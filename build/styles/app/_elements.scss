@@ -228,6 +228,23 @@ img {
     margin-left: -200px;
   }
 }
+
+#anon3 {
+  background-image: url("../img/anon2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include xl {
+    background-position: left center;
+  }
+}
+#anon4 {
+  @include xl {
+    margin-left: -200px;
+  }
+}
+
 #modita {
   background-image: url("../img/modita_2.png");
   background-size: contain;

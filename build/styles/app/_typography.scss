@@ -75,20 +75,20 @@ p {
 
 ol {
   li {
-    font-size: 1.05em;
+    font-size: 1.00em;
     line-height: 140%;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 
     @include small {
-      font-size: 1.1em;
+      font-size: 1em;
     }
 
     @include medium {
-      font-size: 1.15em;
+      font-size: 1.05em;
     }
 
     @include large {
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   }
 }
