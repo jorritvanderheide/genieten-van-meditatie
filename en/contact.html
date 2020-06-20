@@ -89,9 +89,9 @@
         <h3 style="margin-bottom: 0; padding-bottom: 0;">Contact</h3>
         <img src="../img/contact.png" />
         <p>
-          Above all, , when I listen to what you are struggling with I see you as complete in yourself, and I see your parents and ancestors standing behind you.
-          I am serving you and your complete family system.
-          Using my experience as a medical doctor, therapist, family constellator and meditation facilitator, I set out - together with you - a path for you which can help you to realize your potential.
+          Above all, , when I listen to what you are struggling with I see you as complete in yourself, and I see your parents and ancestors standing
+          behind you. I am serving you and your complete family system. Using my experience as a medical doctor, therapist, family constellator and
+          meditation facilitator, I set out - together with you - a path for you which can help you to realize your potential.
         </p>
         <p>For me, nothing is strange, because I have gone through many problems of my own (including depression and eating disorders).</p>
       </section>
@@ -119,25 +119,24 @@
 
     <div class="box color video-container">
       <section>
-        <h4>Ask your question</h4>
-        <form style="margin-bottom: 3.5em;">
+        <form style="margin-bottom: 3.5em;" action="php/contact.php" method="POST">
           <div class="form-group">
-            <input type="email" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="Email adres" />
+            <input name="email" type="email" class="form-control" placeholder="Email address" />
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" id="input2" placeholder="Telefoonnummer" />
+            <input name="phone" type="tel" class="form-control" placeholder="Phone number" />
           </div>
           <div class="form-group">
-            <textarea class="form-control" id="input3" placeholder="Stel hier je vraag"></textarea>
+            <textarea name="message" class="form-control" placeholder="Your question"></textarea>
           </div>
-          <button type="submit" class="btn button button-alt no-margin-bot">Send</button>
+          <button type="submit" class="btn button button-alt no-margin-bot" value="Send">Send</button>
         </form>
       </section>
     </div>
 
     <div class="sectionbox">
       <section>
-        <h3>Home adress</h3>
+        <h3>Home address</h3>
         <p>Kettingstraat 22 (1st floor), 5611RD Eindhoven</p>
         <img src="../img/map.png" />
       </section>
