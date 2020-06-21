@@ -3,9 +3,8 @@
     $userName	          = $_POST['name'];
     $userEmail	 	      = $_POST['email'];
 
-    $to                 = "jorritvanderheide@protonmail.com";
-    // $to                 = "masuwasani@yahoo.com";
-    $subject            = "Nieuwsbrief aanmelding";
+    $to                 = "masuwasani@yahoo.com";
+    $subject            = "Newsletter subscription";
     $body               = "The following email would like to subscribe to the newsletter:";
 
     $body .= "\r\n Naam: " . $userName;

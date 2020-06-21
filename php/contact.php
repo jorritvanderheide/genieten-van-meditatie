@@ -4,9 +4,8 @@
     $userPhone		    = $_POST['phone'];
     $userMessage 		= $_POST['message'];
 
-  $to                 = "jorritvanderheide@protonmail.com";
-  // $to                 = "masuwasani@yahoo.com";
-	$subject            = "Contact form";
+  $to                 = "masuwasani@yahoo.com";
+	$subject            = "Contact formulier";
     $body               = "Bericht via het contactformulier van Genieten van Meditatie:";
 
     $body .= "\r\n Email: " . $userEmail;
