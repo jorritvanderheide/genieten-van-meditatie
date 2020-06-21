@@ -1,11 +1,15 @@
 <?php
 
+    $userName	          = $_POST['name'];
     $userEmail	 	      = $_POST['email'];
-    $to                 = "masuwasani@yahoo.com";
+
+    $to                 = "jorritvanderheide@protonmail.com";
+    // $to                 = "masuwasani@yahoo.com";
     $subject            = "Nieuwsbrief aanmelding";
     $body               = "The following email would like to subscribe to the newsletter:";
 
-    $body .= "\r\n" . $userEmail;
+    $body .= "\r\n Naam: " . $userName;
+    $body .= "\r\n Email: " . $userEmail;
     
 	mail($to, $subject, $body);
 ?>
