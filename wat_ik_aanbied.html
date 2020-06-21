@@ -172,11 +172,11 @@
         <p>
           Schrijf je dan in voor de nieuwsbrief en ontvang de inspiratiebundel 'Wat draagt bij aan Geluk?'
         </p>
-        <form>
+        <form action="php/subscribe.php" method="POST">
           <div class="form-group no-margin-bot">
-            <input type="email" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="Email adres" />
+            <input name="email" type="email" class="form-control" placeholder="Email adres" />
           </div>
-          <button class="btn button">Schrijf je in</button>
+          <button type="submit" class="btn button button-alt">Schrijf je in</button>
         </form>
         <p>en volg mijn dagelijkse posts op de facebook pagina JoyinMeditation.</p>
         <a href="https://www.facebook.com/JoyinMeditation" target="_blank"
