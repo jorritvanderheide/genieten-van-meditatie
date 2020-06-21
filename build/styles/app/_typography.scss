@@ -232,16 +232,12 @@ hr {
   margin: 5em 0;
 }
 
-.final-box {
+.final-box, box {
   section {
     margin-top: 3em;
 
     @include medium {
       margin-top: 6.5em;
-    }
-
-    em {
-      color: #2d5b7c;
     }
   }
 }
