@@ -104,7 +104,7 @@ h4 {
 q {
   display: block;
   font-style: italic;
-  font-size: 1.25em;
+  font-size: 1.15em;
 
   margin: 2em 0;
   padding: 1em;
@@ -115,15 +115,15 @@ q {
   @include small {
     margin: 2em -0.5em;
 
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   @include medium {
-    font-size: 1.35em;
+    font-size: 1.25em;
   }
 
   @include large {
-    font-size: 1.6em;
+    font-size: 1.5em;
 
     margin: 2em -1em;
   }
