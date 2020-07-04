@@ -1,3 +1,18 @@
+<?php
+
+    $userName	 	    = $_POST['name'];
+    $userEmail	 	    = $_POST['email'];
+
+  $to                 = "masuwasani@yahoo.com";
+    $subject            = "Nieuwsbrief aanmelding";
+    $body               = "Het volgende emailadres wil zich aanmelden voor de nieuwsbrief:";
+
+    $body .= "\r\n Naam: " . $userName;
+    $body .= "\r\n Email: " . $userEmail;
+    
+	mail($to, $subject, $body);
+?>
+
 <!DOCTYPE html>
 <html lang="nl" prefix="og: http://ogp.me/ns#">
   <head>
@@ -11,14 +26,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
     <!-- SEO tags -->
-    <title>Depressie, een Opstap naar Geluk</title>
-    <meta name="description" content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage" />
+    <title>Contact</title>
+    <meta name="description" content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage." />
 
     <!-- OG tags -->
     <meta property="og:title" content="Meditatie, Familie Opstellingen en Begeleiding" />
     <meta
       property="og:description"
-      content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage"
+      content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.genietenvanmeditatie.nl" />
@@ -37,14 +52,14 @@
     />
 
     <!-- CSS tags -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="index.html">
+        <a class="navbar-brand row" href="../index.html">
           <i id="logo" class="fas fa-fire"></i>
           <span>Genieten van Meditatie</span>
         </a>
@@ -54,28 +69,28 @@
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="ben_jij_dit.html">Ben jij dit?</a>
+              <a class="nav-link" href="../ben_jij_dit.html">Ben jij dit?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hoe_werkt_het.html">Hoe werkt het?</a>
+              <a class="nav-link" href="../hoe_werkt_het.html">Hoe werkt het?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wat_ik_aanbied.html">Wat ik aanbied</a>
+              <a class="nav-link" href="../wat_ik_aanbied.html">Wat ik aanbied</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="geschenk.html">Geschenk</a>
+              <a class="nav-link" href="../geschenk.html">Geschenk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="over_mij.html">Over mij</a>
+              <a class="nav-link" href="../over_mij.html">Over mij</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="inspiratie.html">Inspiratie</a>
+              <a class="nav-link" href="../inspiratie.html">Inspiratie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="../contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link accent" href="agenda.html">Agenda</a>
+              <a class="nav-link accent" href="../agenda.html">Agenda</a>
             </li>
           </ul>
         </div>
@@ -89,8 +104,11 @@
 
     <div class="sectionbox">
       <section>
-        <h3>Boek</h3>
-        <p>...</p>
+        <h3 style="margin-bottom: 0; padding-bottom: 0;">Dank je voor je aanmelding!</h3>
+        <img src="../img/contact.png" />
+        <p>
+          Je zult vanaf nu mijn nieuwsbrief ontvangen.
+        </p>
       </section>
     </div>
 
@@ -98,22 +116,22 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-          <h2 class="text-center">Genieten van Meditatie</h2>
-          <p class="text-center">
-            &copy; 2019 Joy in Meditation | <span><a href="avg.html" target="_blank" style="text-decoration: none; color: #333;">AVG</a></span>
-          </p>
-          <div class="text-center osholink">
-            <a href="http://www.osho.com/copyrights" target="_blank"
-              >Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with permission of © Osho International
-              Foundation, www.osho.com/copyrights<br
-            /></a>
-            <a href="http://www.osho.com/trademarks" target="_blank"
-              >OSHO is a registered trademark of Osho International Foundation, used with permission, www.osho.com/trademarks</a
-            >
-          </div>
+      <div class="container">
+        <h2 class="text-center">Genieten van Meditatie</h2>
+        <p class="text-center">
+          &copy; 2019 Joy in Meditation | <span><a href="avg.html" target="_blank" style="text-decoration: none; color: #333;">AVG</a></span>
+        </p>
+        <div class="text-center osholink">
+          <a href="http://www.osho.com/copyrights" target="_blank"
+            >Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with permission of © Osho International
+            Foundation, www.osho.com/copyrights<br
+          /></a>
+          <a href="http://www.osho.com/trademarks" target="_blank"
+            >OSHO is a registered trademark of Osho International Foundation, used with permission, www.osho.com/trademarks</a
+          >
         </div>
-      </footer>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -122,6 +140,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

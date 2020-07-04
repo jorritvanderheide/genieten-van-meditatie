@@ -1,5 +1,20 @@
+<?php
+
+    $userName	          = $_POST['name'];
+    $userEmail	 	      = $_POST['email'];
+
+    $to                 = "masuwasani@yahoo.com";
+    $subject            = "Newsletter subscription";
+    $body               = "The following email would like to subscribe to the newsletter:";
+
+    $body .= "\r\n Naam: " . $userName;
+    $body .= "\r\n Email: " . $userEmail;
+    
+	mail($to, $subject, $body);
+?>
+
 <!DOCTYPE html>
-<html lang="nl" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <!-- Required <meta> tags -->
     <meta charset="utf-8" />
@@ -11,12 +26,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
     <!-- SEO tags -->
-    <title>The right attitude of the child towards the parents</title>
-    <meta name="description" content="" />
+    <title>Contact</title>
+    <meta name="description" content="Osho meditations, Family constellations, Guidance by depression and eating problems & Japanese face massage." />
 
     <!-- OG tags -->
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:title" content="Meditation, Family constellations and Guidance" />
+    <meta
+      property="og:description"
+      content="Osho meditations, Family constellations, Guidance by depression and eating problems & Japanese face massage."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.genietenvanmeditatie.nl" />
     <meta property="og:image" content="http://www.genietenvanmeditatie.nl/img/thumbnail.jpg" />
@@ -34,45 +52,45 @@
     />
 
     <!-- CSS tags -->
-    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="../index.html">
+        <a class="navbar-brand row" href="../en/index.html">
           <i id="logo" class="fas fa-fire"></i>
-          <span>Joy in Meditation</span>
+          <span>Genieten van Meditatie</span>
         </a>
         <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mobilenav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../ben_jij_dit.html">Is this you?</a>
+          <li class="nav-item">
+              <a class="nav-link" href="../en/is_this_you.html">Is this you?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../hoe_werkt_het.html">How it works</a>
+              <a class="nav-link" href="../en/how_it_works.html">How it works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../wat_ik_aanbied.html">What I offer</a>
+              <a class="nav-link" href="../en/what_i_offer.html">What I offer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../geschenk.html">Gift</a>
+              <a class="nav-link" href="../en./gift.html">Gift</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../over_mij.html">About me</a>
+              <a class="nav-link" href="../en/about_me.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../inspiratie.html">Inspiration</a>
+              <a class="nav-link" href="../en/inspiration.html">Inspiration</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contact.html">Contact</a>
+              <a class="nav-link active" href="../en/contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link accent" href="../agenda.html">Calendar</a>
+              <a class="nav-link accent" href="../en/calendar.html">Calendar</a>
             </li>
           </ul>
         </div>
@@ -86,31 +104,9 @@
 
     <div class="sectionbox">
       <section>
-        <h3>The right attitude of the child towards the parents</h3>
-        <p>
-          The solution of your problem is directly related with how much distance you can take from your mother; with how much distance you can take
-          from your parents.<br />
-          Not meant is physical distance. People who remain at a distance physically of their parents are often most entangled with them.<br />
-          To be able to take distance from your parents in the sense of living your own life, it is first necessary to allow yourself to be embraced
-          by them (this is also possible if they have died already).
-        </p>
-
-        <p>
-          When you started to take care of your parents as a child, it is not easy sometimes to get back the positition of the child again and to just
-          receive from your parents. You have to let go of the wrong position as parent-of-your-parent and you have to let go of your ego; taking care
-          of your parent had become part of your identity. If you let go of that, first there is a big hole. A hole, you have to hold out. From there
-          a new identity arises; an identity from which your life really can start flowing... ruit je leven pas echt kan gaan stromen...
-        </p>
-
-        <p>
-          I am grateful for this insight that comes from the Family Constellations. I am also grateful to
-          <a style="text-decoration: none; color: #333; font-size: 1em;" href="https://www.family-constellation.net/" target="_blank"
-            >Svagito Liebermeister</a
-          >
-          , from whom I have received my training and who has laid the foundations of my deepening in and facilitating of family constellations.<br />
-          You are welcome to experience the healing effect of family constellations in an individual session, a group session or a family
-          constellation weekend. More information you find on my website.
-        </p>
+        <h3 style="margin-bottom: 0; padding-bottom: 0;">Thank you for your subscription!</h3>
+        <img src="../img/contact.png" />
+        <p>You will now receive my newsletter.</p>
       </section>
     </div>
 
@@ -119,9 +115,9 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <h2 class="text-center">Joy in Meditation</h2>
+        <h2 class="text-center">Genieten van Meditatie</h2>
         <p class="text-center">
-          &copy; 2019 Joy in Meditation | <span><a href="../avg.html" target="_blank" style="text-decoration: none; color: #333;">AVG</a></span>
+          &copy; 2019 Joy in Meditation | <span><a href="avg.html" target="_blank" style="text-decoration: none; color: #333;">AVG</a></span>
         </p>
         <div class="text-center osholink">
           <a href="http://www.osho.com/copyrights" target="_blank"
@@ -142,6 +138,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="../../js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

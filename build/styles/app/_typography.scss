@@ -13,19 +13,11 @@ p {
   margin: 0 0 1em;
 
   font-family: $font;
-  font-size: 1.15em;
+  font-size: 1.35em;
   line-height: 140%;
 
   @include small {
-    font-size: 1.2em;
-  }
-
-  @include medium {
     font-size: 1.25em;
-  }
-
-  @include large {
-    font-size: 1.5em;
   }
 }
 
@@ -54,21 +46,21 @@ p {
 
 .fa-ul {
   li {
-    font-size: 1.15em;
+    font-size: 1.35em;
     line-height: 140%;
     list-style: none;
     padding-bottom: 1em;
 
     @include small {
-      font-size: 1.2em;
-    }
-
-    @include medium {
       font-size: 1.25em;
     }
 
+    @include medium {
+      font-size: 1.35em;
+    }
+
     @include large {
-      font-size: 1.5em;
+      font-size: 1.25em;
     }
   }
 }
@@ -84,11 +76,11 @@ ol {
     }
 
     @include medium {
-      font-size: 1.05em;
+      font-size: 1em;
     }
 
     @include large {
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
 }
@@ -99,18 +91,6 @@ h3 {
   font-weight: bold;
   font-size: 1.25em;
   padding: 0.625em 0;
-
-  @include small {
-    font-size: 1.3em;
-  }
-
-  @include medium {
-    font-size: 1.35em;
-  }
-
-  @include large {
-    font-size: 1.6em;
-  }
 }
 
 h4 {
@@ -119,18 +99,6 @@ h4 {
   font-size: 1.15em;
   padding: 0.55em 0;
   color: $darktext;
-
-  @include small {
-    font-size: 1.2m;
-  }
-
-  @include medium {
-    font-size: 1.25em;
-  }
-
-  @include large {
-    font-size: 1.5em;
-  }
 }
 
 q {
@@ -167,20 +135,8 @@ q {
 
 em {
   display: block;
-  font-size: 1.15em;
+  font-size: 1.25em;
   margin: 0 0 0.25em;
-
-  @include small {
-    font-size: 1.2em;
-  }
-
-  @include medium {
-    font-size: 1.25em;
-  }
-
-  @include large {
-    font-size: 1.5em;
-  }
 }
 
 .em-author {
@@ -232,16 +188,12 @@ hr {
   margin: 5em 0;
 }
 
-.final-box {
+.final-box, box {
   section {
     margin-top: 3em;
 
     @include medium {
       margin-top: 6.5em;
-    }
-
-    em {
-      color: #2d5b7c;
     }
   }
 }

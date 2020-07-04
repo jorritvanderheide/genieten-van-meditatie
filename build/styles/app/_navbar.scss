@@ -204,7 +204,7 @@
     }
   }
 
-  &.navbar-scrolled {
+  .navbar-scrolled {
     background-color: white !important;
     transition: background-color $fade-time ease !important;
     box-shadow: $box-shadow !important;

@@ -1,3 +1,20 @@
+<?php
+
+    $userEmail	 	      = $_POST['email'];
+    $userPhone		      = $_POST['phone'];
+    $userMessage 	    	= $_POST['message'];
+
+	  $to                 = "masuwasani@yahoo.com";
+	  $subject            = "Contact form";
+    $body               = "Bericht via het contactformulier van Joy in Meditation:";
+
+    $body .= "\r\n Email: " . $userEmail;
+    $body .= "\r\n Telefoonnummer: " . $userPhone;
+	  $body .= "\r\n Bericht: " . $userMessage;
+    
+	  mail($to, $subject, $body);
+?>
+
 <!DOCTYPE html>
 <html lang="nl" prefix="og: http://ogp.me/ns#">
   <head>
@@ -11,12 +28,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
     <!-- SEO tags -->
-    <title>Inspiration</title>
-    <meta name="description" content="" />
+    <title>Contact</title>
+    <meta name="description" content="Osho meditations, Family constellations, Guidance by depression and eating problems & Japanese face massage." />
 
     <!-- OG tags -->
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:title" content="Meditation, Family constellations and Guidance" />
+    <meta
+      property="og:description"
+      content="Osho meditations, Family constellations, Guidance by depression and eating problems & Japanese face massage."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.genietenvanmeditatie.nl" />
     <meta property="og:image" content="http://www.genietenvanmeditatie.nl/img/thumbnail.jpg" />
@@ -41,9 +61,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="index.html">
+        <a class="navbar-brand row" href="../en/index.html">
           <i id="logo" class="fas fa-fire"></i>
-          <span>Joy in Meditation</span>
+          <span>Genieten van Meditatie</span>
         </a>
         <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mobilenav">
           <span class="navbar-toggler-icon"></span>
@@ -51,28 +71,28 @@
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="ben_jij_dit.html">Is this you?</a>
+              <a class="nav-link" href="../en/is_this_you.html">Is this you?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hoe_werkt_het.html">How it works</a>
+              <a class="nav-link" href="../en/how_it_works.html">How it works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wat_ik_aanbied.html">What I offer</a>
+              <a class="nav-link" href="../en/what_i_offer.html">What I offer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="geschenk.html">Gift</a>
+              <a class="nav-link" href="../en./gift.html">Gift</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="over_mij.html">About me</a>
+              <a class="nav-link" href="../en/about_me.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#page-top">Inspiration</a>
+              <a class="nav-link" href="../en/inspiration.html">Inspiration</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="../en/contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link accent" href="agenda.html">Calendar</a>
+              <a class="nav-link accent" href="../en/calendar.html">Calendar</a>
             </li>
           </ul>
         </div>
@@ -86,55 +106,21 @@
 
     <div class="sectionbox">
       <section>
-        <h3>Inspiration</h3>
-        <!-- <p>
-          In mijn blogs over meditatie deel ik verschillende situaties waarin ik meditatie heb geiintegreerd in mijn dagelijks leven. Jij zult dit
-          weer op een heel andere manier doen; gelukkig zijn we allemaal uniek.
-        </p> -->
-
-        <p>These blogs present examples of themes in life into which family constellations can give you insights and initiate a healing movement.</p>
-
+        <h3 style="margin-bottom: 0; padding-bottom: 0;">Thank you for your message!</h3>
+        <img src="../img/contact.png" />
         <p>
-          Each day I post something on one of my Facebook pages below, about what inspires and touches me, what gives me a feeling of wonder and what has given me insights.
+          I have received your message and I will come back at you as soon as possible.<br>
+          I usual reply within 24 hours.
         </p>
-        <a href="https://www.facebook.com/JoyinMeditation" target="_blank"
-          ><button class="btn button no-margin-bot"><i class="fab fa-facebook"></i> JoyinMeditation</button></a
-        >
       </section>
     </div>
 
-    <div class="box color video-container">
-      <section>
-        <div class="flex-row">
-          <div class="half-col">
-            <div id="opstellingen" class="img-b"></div>
-          </div>
-          <div class="half-col">
-            <h4>Blogs Family Constellations</h4>
-            <p>
-              These blogs give you an impression of the working of family constellations at the level of the soul.
-            </p>
-            <a href="blog_begeleiding.html"><button class="btn button button-alt">Read more</button></a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="sectionbox">
-      <section>
-        <em>
-          "Joy is always a sharing; joy does not exist alone."
-        </em>
-        <span class="em-author"><em>Osho, The tantra experience #8</em></span>
-      </section>
-    </div>
-
-    <div class="box"></div>
+    <div class="box final-box"></div>
 
     <!-- Footer -->
     <footer>
       <div class="container">
-        <h2 class="text-center">Joy in Meditation</h2>
+        <h2 class="text-center">Genieten van Meditatie</h2>
         <p class="text-center">
           &copy; 2019 Joy in Meditation | <span><a href="avg.html" target="_blank" style="text-decoration: none; color: #333;">AVG</a></span>
         </p>

@@ -25,7 +25,7 @@ html {
     width: 100%;
   }
 
-  @include xl {
+  @include large {
     .flex-row {
       display: flex;
     }
@@ -58,7 +58,7 @@ html {
   height: 100%;
 }
 
-@include xl {
+@include large {
   .video-wrapper {
     height: 20em;
   }
@@ -96,7 +96,7 @@ html {
   }
 
   @include large {
-    font-size: 1.35em;
+    font-size: 1.15em;
   }
 
   &.button-alt {
@@ -189,12 +189,12 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  @include xl {
+  @include large {
     background-position: left center;
   }
 }
 #ashirda2 {
-  @include xl {
+  @include large {
     margin-left: -450px;
   }
 }
@@ -204,13 +204,13 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 250px;
-  @include xl {
+  @include large {
     background-position: left center;
   }
 }
 #ria2 {
-  @include xl {
-    margin-left: -350px;
+  @include large {
+    margin-left: -150px;
   }
 }
 #anon {
@@ -219,12 +219,12 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 250px;
-  @include xl {
+  @include large {
     background-position: left center;
   }
 }
 #anon2 {
-  @include xl {
+  @include large {
     margin-left: -200px;
   }
 }
@@ -235,12 +235,12 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 250px;
-  @include xl {
+  @include large {
     background-position: left center;
   }
 }
 #anon4 {
-  @include xl {
+  @include large {
     margin-left: -200px;
   }
 }
@@ -251,13 +251,13 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 250px;
-  @include xl {
+  @include large {
     background-position: left center;
     min-height: 250px;
   }
 }
 #modita2 {
-  @include xl {
+  @include large {
     margin-left: -175px;
   }
 }
@@ -268,13 +268,13 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 250px;
-  @include xl {
+  @include large {
     background-position: left center;
     height: 250px;
   }
 }
 #hettie2 {
-  @include xl {
+  @include large {
     margin-left: -150px;
   }
 }
@@ -285,15 +285,15 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 250px;
-  @include xl {
-    background-position: left center;
-    height: 250px;
-  }
+  // @include large {
+  //   background-position: left center;
+  //   height: 250px;
+  // }
 }
 #willy2 {
-  @include xl {
-    margin-left: -150px;
-  }
+  // @include large {
+  //   margin-left: -150px;
+  // }
 }
 
 #belgie {
@@ -302,13 +302,13 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   max-height: 350px;
-  @include xl {
+  @include large {
     background-position: left center;
     min-height: 150px;
   }
 }
 #belgie2 {
-  @include xl {
+  @include large {
     margin-left: -150px;
   }
 }
@@ -327,7 +327,7 @@ img {
   background-position: left center;
 }
 
-#willy {
+#willy3 {
   background-image: url("../img/willy.png");
   background-size: contain;
   background-repeat: no-repeat;
