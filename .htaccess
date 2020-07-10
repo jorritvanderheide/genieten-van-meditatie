@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase / 
+
+Redirect 301 /index.html http://www.genietenvanmeditatie.nl/en/index.html
