@@ -179,9 +179,6 @@ img {
 #consult3 {
   background-image: url("../img/consult3.png");
 }
-#podcasts {
-  background-image: url("../img/podcast/podcast.jpg");
-}
 #boek {
   background-image: url("../img/boek.png");
   background-size: contain;
@@ -391,6 +388,10 @@ img {
 }
 
 //Podcasts
+#podcasts {
+  background-image: url("../img/podcast/podcast.jpg");
+}
+
 #podcast1 {
   background-image: url("../img/podcast/podcast1.png");
   background-size: contain;
