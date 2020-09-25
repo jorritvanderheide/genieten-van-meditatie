@@ -399,6 +399,20 @@ img {
   background-position: left center;
 }
 
+#podcast2 {
+  background-image: url("../img/podcast/podcast2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast3 {
+  background-image: url("../img/podcast/podcast3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 // Agenda
 .linktext {
   color: $secondary;
