@@ -12,7 +12,9 @@
     $body .= "\r\n Telefoonnummer: " . $userPhone;
 	  $body .= "\r\n Bericht: " . $userMessage;
     
-	  mail($to, $subject, $body);
+	  if(isset($_POST['email2']) && $_POST['email2'] == ''){
+      mail($to, $subject, $body);
+    } 
 ?>
 
 <!DOCTYPE html>

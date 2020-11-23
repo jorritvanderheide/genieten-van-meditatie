@@ -1,18 +1,20 @@
 <?php
 
-    $userEmail	 	    = $_POST['email'];
-    $userPhone		    = $_POST['phone'];
-    $userMessage 		= $_POST['message'];
+  $userEmail	 	    = $_POST['email'];
+  $userPhone		    = $_POST['phone'];
+  $userMessage 		= $_POST['message'];
 
   $to                 = "masuwasani@yahoo.com";
 	$subject            = "Contact formulier";
-    $body               = "Bericht via het contactformulier van Genieten van Meditatie:";
+  $body               = "Bericht via het contactformulier van Genieten van Meditatie:";
 
-    $body .= "\r\n Email: " . $userEmail;
-    $body .= "\r\n Telefoonnummer: " . $userPhone;
+  $body .= "\r\n Email: " . $userEmail;
+  $body .= "\r\n Telefoonnummer: " . $userPhone;
 	$body .= "\r\n Bericht: " . $userMessage;
-    
-	mail($to, $subject, $body);
+  
+  if(isset($_POST['email2']) && $_POST['email2'] == ''){
+      mail($to, $subject, $body);
+  } 
 ?>
 
 <!DOCTYPE html>
