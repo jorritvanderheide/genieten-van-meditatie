@@ -122,11 +122,11 @@
   }
 
   @include medium {
-    padding: 45vh 2.5em 15vh;
+    padding: 40vh 2.5em 5vh;
   }
 
   @include large {
-    padding: 25vh 5em 25vh 5em;
+    padding: 25vh 5em 15vh 5em;
     margin: 0 2.5em;
 
     h1 {
@@ -141,7 +141,7 @@
   }
 
   @include xl {
-    padding: 30vh 5em 30vh 0;
+    padding: 30vh 5em 20vh 0;
     margin: 0 0 0 -2.5em;
 
     h1 {

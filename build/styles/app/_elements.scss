@@ -463,3 +463,65 @@ img {
 .antispam {
   display: none;
 }
+
+// Boek
+#bookimg {
+  margin: 0;
+}
+
+#booktext p {
+  padding: 0 1em 0 0;
+  font-size: 1em;
+  font-family: $font-text;
+  font-weight: bold;
+  color: $darktext;
+}
+
+@include small {
+  #booktext p {
+    font-size: 1.35em;
+  }
+}
+
+@include medium {
+  #bookimg {
+    width: 75%;
+    margin: 1em 0 1em 2em;
+  }
+  #booktext p {
+    margin: 1em 0 1em 0;
+    font-size: 1.5em;
+  }
+}
+
+@include large {
+  #bookimg {
+    width: 100%;
+    margin: 0;
+  }
+  #booktext p {
+    margin: 1em 0 1.5em 0;
+    font-size: 1.5em;
+  }
+}
+
+#img-boeknw {
+  background-image: url("../img/boek_nieuw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#uitnodiging {
+  background-image: url("../img/uitnodiging.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin: 0;
+  height: 100%;
+  margin-left: 5em;
+}
+
+.uitnodiging li {
+  font-size: 1.25em;
+}
