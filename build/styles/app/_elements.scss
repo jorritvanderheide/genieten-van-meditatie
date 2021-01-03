@@ -434,6 +434,23 @@ img {
   background-position: left center;
 }
 
+#podcast7 {
+  background-image: url("../img/podcast/podcast7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#archief {
+  font-size: 1em;
+  font-family: $font-accent;
+  color: #59A2FF;
+}
+
+#archief:hover {
+  text-decoration: none;
+}
+
 // Agenda
 .linktext {
   color: $secondary;
