@@ -99,9 +99,9 @@
         <div class="box color video-container">
             <section>
                 <div class="flex-row">
-                    <!-- <div class="half-col">
-                        <div id="" class="img-b"></div>
-                    </div> -->
+                    <div class="half-col" style="margin-right: 2.5em;">
+                        <div id="nieuwsbrief" class="img-b"></div>
+                    </div>
                     <div class="half-col geschenk">
                         <h4>Als je je inschrijft ontvang je:</h4>
                         <ul class="fa-ul">
@@ -120,16 +120,24 @@
 
         <div class="sectionbox sectionbox-notext">
             <section>
-                <p>Wil je voorbeelden zien? Kijk dan naar mijn <a id="archief" href="" target="_blank">archief van nieuwsbrieven</a>.<br>
-                  Je contactinformatie is vertrouwelijk en veilig.</p>
-                  <p>Dankjewel voor je belangstelling!</p>
-                <p style="font-family: 'Courgette', cursive;">Modita</p>
+                <p>
+                    Wil je voorbeelden zien? Kijk dan naar mijn <a id="archief" href="" target="_blank">archief van nieuwsbrieven</a>.<br />
+                    Je contactinformatie is vertrouwelijk en veilig.
+                </p>
+                <p>Dankjewel voor je belangstelling!</p>
+                <p style="font-family: 'Courgette', cursive">Modita</p>
                 <form action="php/subscribe.php" method="POST">
                     <div class="form-group">
                         <input name="name" type="name" class="form-control" placeholder="Naam" />
                     </div>
                     <div class="form-group">
                         <input name="email" type="email" class="form-control" placeholder="Email adres" />
+                    </div>
+                    <div class="form-group">
+                        <input name="email2" type="email" class="form-control antispam" placeholder="Repeat email" />
+                      </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Hoe heb je Modita gevonden?"></textarea>
                     </div>
                     <button type="submit" class="btn button button-alt no-margin-bot">Schrijf je in</button>
                 </form>
@@ -144,7 +152,8 @@
                     </div>
                     <div id="modita2" class="half-col">
                         <em>
-                            Mijn nieuwsbrief geeft je ook een idee over vanuit welke achtergrond ik met mensen werk. Mocht dit jou aanspreken, dan kijk ik ernaar uit om je te ontmoeten.
+                            Mijn nieuwsbrief geeft je ook een idee over vanuit welke achtergrond ik met mensen werk. Mocht dit jou aanspreken, dan kijk ik ernaar uit om je te
+                            ontmoeten.
                             <span class="em-author"><em>- Modita</em></span>
                         </em>
                     </div>
