@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
     <!-- SEO tags -->
-    <title>Honger naar Vervulling</title>
+    <title>Blog</title>
     <meta name="description" content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage" />
 
     <!-- OG tags -->
@@ -69,7 +69,7 @@
               <a class="nav-link" href="over_mij.html">Over mij</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="inspiratie.html">Inspiratie</a>
+              <a class="nav-link active" href="#page-top">Inspiratie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -87,66 +87,44 @@
       <div class="suboverlay"></div>
     </div>
 
-    <div class="sectionbox video-container" style="margin-bottom: -5em;">
+    <div class="sectionbox">
       <section>
-        <div class="flex-row">
-          <div class="half-col">
-            <h3>Uitnodiging boekpresentatie</h3>
-            <p>Welkom bij de presentatie van mijn boek<br>'Honger naar Vervulling'</p>
-            <p>De presentatie zal online plaatsvinden:</p>
-            <ul class="uitnodiging">
-              <li>Datum: 31 Januari 2021</li>
-              <li>Tijd: 19:00 - 20:00</li>
-            </ul>
-            <p>De presentatie is te volgen via Zoom:</p>
-            <em>Zoom ID: 858 5376 2474</em>
-            <em>Wachtwoord: 680858</em>
-          </div>
-          <div class="half-col">
-            <div id="uitnodiging" class="img-b"></div>
-          </div>
-        </div>
+        <h3>In mijn blogs ga ik dieper in op vier onderwerpen</h3>
+        <ul class="fa-ul" style="margin-top: 1.5em;">
+          <li><span class="fa-li"><i class="fas fa-fire"></i></span>depressie</li>
+          <li><span class="fa-li"><i class="fas fa-fire"></i></span>eetproblemen</li>
+          <li><span class="fa-li"><i class="fas fa-fire"></i></span>familieopstellingen</li>
+          <li><span class="fa-li"><i class="fas fa-fire"></i></span>meditatie</li>
+        </ul>
+        <p>Klik op de knop van het onderwerp je interesse naar uitgaat.</p>
       </section>
     </div>
 
     <div class="box color video-container">
       <section>
-        <div class="flex-row">
-          <div class="half-col">
-            <div id="img-boeknw" class="img-b"></div>
-          </div>
-          <div class="half-col" style="padding: 1em 0;">
-            <p>
-              Bij anorexia, boulimia en overgewicht draait het niet om calorieën en lichaamsgewicht, maar om de zoektocht naar een eigen identiteit.
-            </p>
-            <p>Het eetprobleem houdt gevoelens en behoeften verborgen, die erom vragen om gezien en uitgedrukt te worden.</p>
-            <p>De eetstoornis is een roep om zingeving; een honger naar vervulling.</p>
-            <p>
-              Het eetprobleem geeft bescherming. Pas als degene die aan de eetstoornis lijdt contact krijgt met wie hij of zij diep van binnen is en
-              voldoende zelfvertrouwen en eigenwaarde heeft opgebouwd, kan deze bescherming worden losgelaten.
-            </p>
-            <p>
-              Dit boek geeft inzicht in de psychische achtergronden van anorexia, boulimia en overgewicht en beschrijft wat helpt om de eetstoornis
-              los te laten. Het is bestemd voor mensen die worstelen met een eetprobleem en voor hun ouders, leraren en therapeuten.
-            </p>
-            <a href="https://www.boekscout.nl/shop2/boek.php?bid=11504" target="_blank"><button class="btn button button-alt">Bestel hier</button></a>
-          </div>
+        <div style="text-align: center; width: 100%">
+          <a href="blog.html" style="display: inline-block; margin-right: 1em"
+            ><button class="btn button button-alt" style="font-size: 0.9em" ;>Alle onderwerpen</button></a
+          >
+          <a href="blog.html?c=depressie" style="display: inline-block; margin-right: 1em"
+            ><button class="btn button button-alt" style="font-size: 0.9em" ;>Depressie</button></a
+          >
+          <a href="blog.html?c=eetproblemen" style="display: inline-block; margin-right: 1em"
+            ><button class="btn button button-alt" style="font-size: 0.9em" ;>Eetproblemen</button></a
+          >
+          <a href="blog.html?c=familieopstellingen" style="display: inline-block; margin-right: 1em"
+            ><button class="btn button button-alt" style="font-size: 0.9em" ;>Familieopstellingen</button></a
+          >
+          <a href="blog.html?c=meditatie" style="display: inline-block; margin-right: 1em"
+            ><button class="btn button button-alt" style="font-size: 0.9em" ;>Meditatie</button></a
+          >
         </div>
+
+        <div id="dib-posts"></div>
       </section>
     </div>
 
-    <div class="sectionbox">
-      <section>
-        <h3>Wil je meer weten over mijn boek?</h3>
-        <p>Bekijk dan mijn auteursblog.</p>
-        <a href="https://modita.auteursblog.nl" target="_blank"><button class="btn button">Lees meer</button></a>
-        <h3>Zoek je begeleiding bij jouw eetprobleem?</h3>
-        <p>Bekijk dan mijn online cursus.</p>
-        <a href="eetproblemen.html"><button class="btn button no-margin-bot">Lees meer</button></a>
-      </section>
-    </div>
-
-    <div class="box final-box"></div>
+    <div class="box"></div>
 
     <!-- Footer -->
     <footer>
@@ -172,6 +150,12 @@
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- DropinBlog -->
+    <script>
+      var dib_id = "O08LBGCT2NODHJI8UA75";
+    </script>
+    <script src="https://dropinblog.com/js/embed.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
