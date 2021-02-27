@@ -563,3 +563,16 @@ img {
 .uitnodiging li {
   font-size: 1.25em;
 }
+
+// DropInBlog
+.dib-homepage-title {
+  visibility: hidden;
+}
+
+.dib-post-title-link {
+  
+
+  &:hover {
+    text-decoration: none;
+  }
+}
