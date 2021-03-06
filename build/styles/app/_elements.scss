@@ -290,11 +290,6 @@ img {
   //   height: 250px;
   // }
 }
-#willy2 {
-  // @include large {
-  //   margin-left: -150px;
-  // }
-}
 
 #belgie {
   background-image: url("../img/belgie.png");
@@ -465,7 +460,7 @@ img {
 #archief {
   font-size: 1em;
   font-family: $font-accent;
-  color: #59A2FF;
+  color: #59a2ff;
 }
 
 #archief:hover {
@@ -569,10 +564,69 @@ img {
   visibility: hidden;
 }
 
-.dib-post-title-link {
-  
+.dib-post {
+  border: none !important;
+  border-radius: 1.5em !important;
 
+  img {
+    margin: 2.5em 0 0 0;
+  }
+}
+
+.dib-post-title {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.15em;
+  padding: 0.55em 0;
+  color: $quad !important;
+}
+
+.dib-post-title-link {
   &:hover {
     text-decoration: none;
   }
+}
+
+.dib-category-title {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-category-text {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-post-categories {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-post-back-link-bottom {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-post-content {
+  background-color: $white !important;
+  border-radius: 1.5em;
+  padding: 5em 2.5em 2.5em;
+  margin-top: -5em;
+}
+
+.dib-post-content p {
+  margin: 0 0 1em;
+
+  font-family: $font !important;
+  font-size: 1.35em;
+  line-height: 140%;
+
+  @include small {
+    font-size: 1.25em;
+  }
+}
+
+.dib-post-date {
+  position: absolute;
+  padding: 2.5em;
 }
