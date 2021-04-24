@@ -7,5 +7,7 @@
 			"path": "..\\jorritvanderheide_lt"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "genietenvanmeditatie_v2"
+	}
 }
