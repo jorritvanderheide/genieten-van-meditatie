@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="nl" prefix="og: http://ogp.me/ns#">
+<html lang="en">
+  <!-- prefix="og: http://ogp.me/ns#" -->
   <head>
     <!-- Required <meta> tags -->
     <meta charset="utf-8" />
@@ -18,14 +19,14 @@
     <meta name="description" content="" />
 
     <!-- OG tags -->
-    <meta property="og:title" content="" />
+    <!-- <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.genietenvanmeditatie.nl" />
     <meta
       property="og:image"
       content="http://www.genietenvanmeditatie.nl/img/thumbnail.jpg"
-    />
+    /> -->
 
     <!-- Font tags -->
     <link
@@ -105,7 +106,7 @@
 
     <div class="sectionbox">
       <section>
-        <h3>In my blogs, write about four different topics</h3>
+        <h3>In my blogs, write about five different topics</h3>
         <ul class="fa-ul" style="margin-top: 1.5em">
           <li>
             <span class="fa-li"><i class="fas fa-fire"></i></span>depression
@@ -119,6 +120,9 @@
           </li>
           <li>
             <span class="fa-li"><i class="fas fa-fire"></i></span>meditation
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-fire"></i></span>emotions
           </li>
         </ul>
         <p>Press the button of the topic you want to read more about.</p>
@@ -161,6 +165,13 @@
             style="display: inline-block; margin-right: 1em"
             ><button class="btn button button-alt" style="font-size: 0.9em" ;>
               Meditation
+            </button></a
+          >
+          <a
+            href="blog.html?c=emotions"
+            style="display: inline-block; margin-right: 1em"
+            ><button class="btn button button-alt" style="font-size: 0.9em" ;>
+              Emotions
             </button></a
           >
         </div>
@@ -207,10 +218,13 @@
     <!-- DropinBlog -->
     <script>
       var dib_id = "VVGH1TBXNSC11GKFA7MK";
+      var dib_base_url = 'http://genietenvanmeditatie.nl/en/blog.html';
+      var dib_categoreis = 'english';
     </script>
     <script src="https://dropinblog.com/js/embed.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>
+    <script src="../js/en_blog.js"></script>
   </body>
 </html>

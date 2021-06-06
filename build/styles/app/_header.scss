@@ -106,7 +106,7 @@
 #headerquote {
   color: $white;
   margin: 1.5em auto;
-  padding: 35vh 2.5em 7.5vh;
+  padding: 35vh 2.5em 7.5vh 0;
   font-size: 1em;
 
   h1 {
@@ -122,7 +122,7 @@
   }
 
   @include medium {
-    padding: 40vh 2.5em 5vh;
+    padding: 20vh 5em 5vh;
   }
 
   @include large {
@@ -141,7 +141,7 @@
   }
 
   @include xl {
-    padding: 30vh 5em 20vh 0;
+    padding: 20vh 5em 15vh 0;
     margin: 0 0 0 -2.5em;
 
     h1 {
