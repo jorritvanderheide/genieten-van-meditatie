@@ -80,26 +80,11 @@
   }
 }
 
-.eng {
-  padding: 1em 2em;
+.flag {
+  top: 0.5em;
 
-  &:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.35);
-  }
-
-  a {
-    color: $white;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    h1 {
-      font-size: 1.25em !important;
-
-      margin: 0;
-    }
+  img {
+    width: 30px;
   }
 }
 

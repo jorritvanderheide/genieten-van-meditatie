@@ -184,6 +184,11 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
 }
+#book {
+    background-image: url("../img/depression_book.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 #boek2 {
     background-image: url("../img/boek.png");
     background-size: contain;
@@ -711,7 +716,7 @@ img {
     }
 
     .indexpane {
-        width: 25em;
+        width: 20em;
         height: 7.5em;
         font-size: 1em;
 
@@ -728,5 +733,3 @@ img {
 #index2 {
     margin-bottom: 1em;
 }
-
-#index3 {}
