@@ -133,6 +133,38 @@ q {
   }
 }
 
+.pquote {
+  display: block;
+  font-style: italic;
+  font-size: 1.15em;
+
+  margin: 2em 0;
+  padding: 1em;
+
+  border-top: solid $black 2px;
+  border-bottom: solid $black 2px;
+
+  @include small {
+    margin: 2em -0.5em;
+
+    font-size: 1.2em;
+  }
+
+  @include medium {
+    font-size: 1.25em;
+  }
+
+  @include large {
+    font-size: 1.5em;
+
+    margin: 2em -1em;
+  }
+
+  @include xl {
+    margin: 2em -1em;
+  }
+}
+
 em {
   display: block;
   font-size: 1.25em;
