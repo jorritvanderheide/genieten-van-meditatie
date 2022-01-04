@@ -1,0 +1,781 @@
+// Elements
+
+// Color
+.color {
+  background-color: $primary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Video Container
+.video-container {
+  .flex-row {
+    display: block;
+  }
+
+  .half-col {
+    margin: 2em 0;
+    width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @include large {
+    .flex-row {
+      display: flex;
+    }
+
+    .half-col {
+      padding: 0 2em;
+    }
+
+    section {
+      margin-bottom: calc(2.5em - 20px);
+    }
+  }
+}
+
+// Video wrapper
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@include large {
+  .video-wrapper {
+    height: 20em;
+  }
+
+  .video-wrapper iframe,
+  .video-wrapper object,
+  .video-wrapper embed {
+    top: 2.5%;
+    width: 95%;
+    height: 95%;
+  }
+}
+
+// Buttons
+.button {
+  margin: 1em 0 2.5em;
+  padding: 0.5em 1em;
+
+  font-size: 1em;
+
+  background-color: $primary;
+
+  border-radius: 1.5em;
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  @include small {
+    font-size: 1.05em;
+  }
+
+  @include medium {
+    font-size: 1.1em;
+  }
+
+  @include large {
+    font-size: 1.15em;
+  }
+
+  &.button-alt {
+    background-color: $tertiary;
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+}
+
+// Lists
+.fa-li i {
+  color: $primary;
+}
+
+.geschenk .fa-li i {
+  color: $secondary;
+}
+
+// Images
+img {
+  margin: 2.25em 0 2.5em;
+
+  width: 100%;
+  height: auto;
+}
+
+// Images
+#verbinding {
+  background-image: url("../img/hoe_het_werkt.jpg");
+}
+#begeleiding {
+  background-image: url("../img/begeleiding.jpg");
+}
+#meditatie {
+  background-image: url("../img/meditatie.jpg");
+}
+#ontspanning {
+  background-image: url("../img/ontspanning.jpg");
+}
+#geschenk {
+  background-image: url("../img/geschenk.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#benjijdit {
+  background-image: url("../img/ben_jij_dit.png");
+}
+#consult {
+  background-image: url("../img/consult.jfif");
+}
+#opstellingen {
+  background-image: url("../img/opstellingen.jpg");
+}
+#eetprobleem {
+  background-image: url("../img/eetprobleem.jfif");
+}
+#depressie {
+  background-image: url("../img/depressie.jfif");
+}
+#zelfhypnose {
+  background-image: url("../img/zelfhypnose.jfif");
+}
+#community {
+  background-image: url("../img/community.jpg");
+}
+#dynamisch {
+  background-image: url("../img/dynamisch.jpg");
+}
+#cursus {
+  background-image: url("../img/cursus.jpg");
+}
+#rose {
+  background-image: url("../img/rose.jfif");
+}
+#gezichtsmassage {
+  background-image: url("../img/gezichtsmassage.jfif");
+}
+#consult2 {
+  background-image: url("../img/consult2.png");
+}
+#consult3 {
+  background-image: url("../img/consult3.png");
+}
+#boek {
+  background-image: url("../img/boek.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#book {
+  background-image: url("../img/depression_book.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#boek2 {
+  background-image: url("../img/boek.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin: 0 0 0 5em;
+  height: 100%;
+}
+#ashirda {
+  background-image: url("../img/ashirda.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include large {
+    background-position: left center;
+  }
+}
+#ashirda2 {
+  @include large {
+    margin-left: -450px;
+  }
+}
+#ria {
+  background-image: url("../img/ria.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include large {
+    background-position: left center;
+  }
+}
+#ria2 {
+  @include large {
+    margin-left: -150px;
+  }
+}
+#anon {
+  background-image: url("../img/anon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include large {
+    background-position: left center;
+  }
+}
+#anon2 {
+  @include large {
+    margin-left: -200px;
+  }
+}
+
+#anon3 {
+  background-image: url("../img/anon2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include large {
+    background-position: left center;
+  }
+}
+#anon4 {
+  @include large {
+    margin-left: -200px;
+  }
+}
+
+#modita {
+  background-image: url("../img/modita_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include large {
+    background-position: left center;
+    min-height: 250px;
+  }
+}
+#modita2 {
+  @include large {
+    margin-left: -175px;
+  }
+}
+
+#hettie {
+  background-image: url("../img/hettie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  @include large {
+    background-position: left center;
+    height: 250px;
+  }
+}
+#hettie2 {
+  @include large {
+    margin-left: -150px;
+  }
+}
+
+#willy {
+  background-image: url("../img/willy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 250px;
+  // @include large {
+  // background-position: left center;
+  // height: 250px;
+  // }
+}
+
+#belgie {
+  background-image: url("../img/belgie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-height: 350px;
+  @include large {
+    background-position: left center;
+    min-height: 150px;
+  }
+}
+#belgie2 {
+  @include large {
+    margin-left: -150px;
+  }
+}
+
+#mart {
+  background-image: url("../img/mart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#annet {
+  background-image: url("../img/annet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#willy3 {
+  background-image: url("../img/willy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#nieuwsbrief {
+  background-image: url("../img/nieuwsbrief.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#boekwinkel {
+  background-image: url("../img/boekshop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+// Blogs
+.blog-col {
+  margin: 0 !important;
+  padding: 0 2.5em 0 0 !important;
+
+  .img-b {
+    margin: 0;
+    height: 100%;
+  }
+}
+
+#blog6 {
+  background-image: url("../img/blog/blog6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#blog5 {
+  background-image: url("../img/blog/blog5.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#blog4 {
+  background-image: url("../img/blog/blog4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#blog3 {
+  background-image: url("../img/blog/blog3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#blog2 {
+  background-image: url("../img/blog/blog2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#blog1 {
+  background-image: url("../img/blog/blog1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+// Podcasts
+#podcasts {
+  background-image: url("../img/podcast/podcast.jpg");
+}
+
+#podcast1 {
+  background-image: url("../img/podcast/podcast1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast2 {
+  background-image: url("../img/podcast/podcast2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#podcast2x {
+  background-image: url("../img/podcast/podcast2x.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast3 {
+  background-image: url("../img/podcast/podcast3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast4 {
+  background-image: url("../img/podcast/podcast4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast5 {
+  background-image: url("../img/podcast/podcast5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast6 {
+  background-image: url("../img/podcast/podcast6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast7 {
+  background-image: url("../img/podcast/podcast7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast8 {
+  background-image: url("../img/podcast/podcast8.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#podcast9 {
+  background-image: url("../img/podcast/podcast9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#archief {
+  font-size: 1em;
+  font-family: $font-accent;
+  color: #59a2ff;
+}
+
+#archief:hover {
+  text-decoration: none;
+}
+
+#blogs_img {
+  background-image: url("../img/blogs_img.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+// Agenda
+.linktext {
+  color: $secondary;
+}
+
+.modal-header {
+  padding: 2em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.no-border {
+  border: none;
+}
+
+// Links
+.osholink {
+  a {
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+.antispam {
+  display: none;
+}
+
+// Boek
+#bookimg {
+  margin: 0;
+}
+
+#booktext p {
+  padding: 0 1em 0 0;
+  font-size: 1em;
+  font-family: $font-text;
+  font-weight: bold;
+  color: $darktext;
+}
+
+@include small {
+  #booktext p {
+    font-size: 1.35em;
+  }
+}
+
+@include medium {
+  #bookimg {
+    width: 75%;
+    margin: 1em 0 1em 2em;
+  }
+  #booktext p {
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+}
+
+@include large {
+  #bookimg {
+    width: 100%;
+    margin: 0;
+  }
+  #booktext p {
+    margin: 1em 0 1.5em;
+    font-size: 1.5em;
+  }
+}
+
+#img-boeknw {
+  background-image: url("../img/boek_nieuw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#uitnodiging {
+  background-image: url("../img/uitnodiging.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin: 0 0 0 5em;
+  height: 100%;
+}
+
+.uitnodiging li {
+  font-size: 1.25em;
+}
+
+// DropInBlog
+.dib-homepage-title {
+  visibility: hidden;
+}
+
+.dib-post {
+  border: none !important;
+  border-radius: 1.5em !important;
+
+  img {
+    margin: 2.5em 0 0;
+  }
+}
+
+.dib-post-title {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.15em;
+  padding: 0.55em 0;
+  color: $quad !important;
+}
+
+.dib-post-title-link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.dib-category-title {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-category-text {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-post-categories {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-post-back-link-bottom {
+  visibility: hidden;
+  display: none;
+}
+
+.dib-post-content {
+  background-color: $white !important;
+  border-radius: 1.5em;
+  padding: 5em 2.5em 2.5em;
+  margin-top: -5em;
+}
+
+.dib-post-content p {
+  margin: 0 0 1em;
+
+  font-family: $font !important;
+  font-size: 1.35em;
+  line-height: 140%;
+
+  @include small {
+    font-size: 1.25em;
+  }
+}
+
+.dib-post-date {
+  display: none;
+  visibility: hidden;
+}
+
+.headerrow {
+  margin-left: 5em;
+}
+
+.indexpane {
+  width: 25em;
+  height: 7.5em;
+  background-color: $primary;
+  padding: 2em;
+  color: $secondary;
+  border-radius: 1em;
+  font-size: 0.75em;
+
+  .button {
+    font-size: 0.9em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0.75em 0;
+    color: $secondary;
+    font-family: $font-accent;
+    font-size: 1.25em;
+  }
+
+  .button {
+    float: right;
+    margin-top: -0.5em;
+  }
+}
+
+@include small {
+  .headerrow {
+    margin-left: 10vw;
+  }
+
+  .indexpane {
+    width: 30em;
+  }
+}
+
+@include medium {
+  .headerrow {
+    margin-left: 0;
+  }
+
+  .indexpane {
+    width: 25em;
+  }
+}
+
+@include xl {
+  .headerrow {
+    margin-left: -2.5em;
+  }
+
+  .indexpane {
+    width: 20em;
+    height: 7.5em;
+    font-size: 1em;
+
+    .button {
+      font-size: 1em;
+    }
+  }
+}
+
+#index1 {
+  margin-bottom: 1em;
+}
+
+#index2 {
+  margin-bottom: 1em;
+}
+
+.howitworks {
+  position: relative;
+  font-family: "Courgette", sans-serif;
+  color: white;
+  font-size: 2rem;
+  margin: -2.5em 0 0.75em 1em;
+}
+
+@include small {
+  .howitworks {
+    font-size: 2.5rem;
+    margin: -2.5em 0 0.75em 1em;
+  }
+}
+
+@include medium {
+  .howitworks {
+    font-size: 3.25rem;
+    margin: -2.15em 0 0.75em 1em;
+  }
+}
+
+@include large {
+  .howitworks {
+    font-size: 4.25rem;
+    margin: -2.15em 0 0.75em 1em;
+  }
+}
+
+@include xl {
+  .howitworks {
+    font-size: 5rem;
+    margin: -2.15em 0 0.75em 1em;
+  }
+}
