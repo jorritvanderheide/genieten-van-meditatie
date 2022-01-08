@@ -120,7 +120,7 @@
     right: 2.5em;
     top: 2.5em;
   }
-  
+
   .container2 {
     margin: auto;
 
@@ -143,7 +143,7 @@
 
     span {
       font-size: 1em;
-      color:  $primary;
+      color: $primary;
     }
   }
 
@@ -201,10 +201,14 @@
       }
 
       &.accent {
-        color: $primary !important;
+        margin-left: 0.5em;
+        padding-left: 0.5em !important;
+        color: $secondary !important;
+        background-color: $primary !important;
+        border-radius: 0.25em;
 
         &:hover {
-          color: $white !important;
+          background-color: $gray !important;
         }
       }
     }
@@ -238,23 +242,19 @@
 
       &:hover {
         color: $extra !important;
-      
       }
 
       &.active {
         color: $extra !important;
-        
+
         &:hover {
           color: $black !important;
         }
       }
 
       &.accent {
-        color: $extra !important;
-
-        &:hover {
-          color: $black !important;
-        }
+        color: $quad !important;
+        background-color: $tertiary !important;
       }
     }
   }
@@ -282,7 +282,7 @@
     #logo {
       font-size: 1.25em;
     }
-  
+
     span {
       font-size: 1.25em;
     }

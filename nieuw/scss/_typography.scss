@@ -2,23 +2,13 @@
 
 * {
   font-family: $font;
-  font-size: 0.9rem;
-
-  @include small {
-    font-size: 1rem;
-  }
 }
 
 p {
   margin: 0 0 1em;
 
   font-family: $font;
-  font-size: 1.35em;
   line-height: 140%;
-
-  @include small {
-    font-size: 1.25em;
-  }
 }
 
 .link {
@@ -67,7 +57,7 @@ p {
 
 ol {
   li {
-    font-size: 1.00em;
+    font-size: 1em;
     line-height: 140%;
     padding-bottom: 0.5em;
 
@@ -220,7 +210,8 @@ hr {
   margin: 5em 0;
 }
 
-.final-box, box {
+.final-box,
+box {
   section {
     margin-top: 3em;
 

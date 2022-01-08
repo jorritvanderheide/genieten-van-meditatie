@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  height: 100vh;
+}
+
 // Video Container
 .video-container {
   .flex-row {
@@ -670,34 +674,8 @@ img {
   margin-left: 5em;
 }
 
-.indexpane {
-  width: 25em;
-  height: 7.5em;
-  background-color: $primary;
-  padding: 2em;
-  color: $secondary;
-  border-radius: 1em;
-  font-size: 0.75em;
-
-  .button {
-    font-size: 0.9em;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  p {
-    margin: 0.75em 0;
-    color: $secondary;
-    font-family: $font-accent;
-    font-size: 1.25em;
-  }
-
-  .button {
-    float: right;
-    margin-top: -0.5em;
-  }
+a:hover {
+  text-decoration: none !important;
 }
 
 @include small {
