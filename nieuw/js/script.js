@@ -93,3 +93,7 @@ function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
     }
   });
 })(jQuery);
+
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
