@@ -1,7 +1,28 @@
 //Typography
 
-* {
+body {
   font-family: $font;
+  font-size: 1.1rem;
+  font-kerning: normal;
+  font-smooth: always;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: $black;
+  font-variant-numeric: oldstyle-nums;
+}
+
+h1 {
+  font-family: $font-text;
+  text-align: center;
+  color: $black;
+  font-weight: bold;
+  font-size: 0.85em;
+  margin: 1.5em 0 1.5em;
+
+  &:first-of-type {
+    margin: 0 0 2em;
+  }
 }
 
 p {
@@ -9,6 +30,10 @@ p {
 
   font-family: $font;
   line-height: 140%;
+}
+
+button {
+  font-family: $font-text;
 }
 
 .link {
@@ -211,7 +236,7 @@ hr {
 }
 
 .final-box,
-box {
+.box {
   section {
     margin-top: 3em;
 
@@ -242,7 +267,7 @@ box {
 
   input,
   textarea {
-    font-family: $font;
+    font-family: $font-text;
     font-size: 1em;
     line-height: 140%;
 
@@ -250,12 +275,8 @@ box {
       font-size: 1.05em;
     }
 
-    @include medium {
-      font-size: 1.1em;
-    }
-
     @include large {
-      font-size: 1.35em;
+      font-size: 1.1em;
     }
   }
 }

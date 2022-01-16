@@ -6,9 +6,9 @@
 
   margin-top: 5vh !important;
 
-  max-height: 95vh;
+  max-height: 80vh;
 
-  background-image: url("../img/header_lente.jpg");
+  background-image: url("../img/header_lente_s.webp");
   background-size: cover;
   background-position: 75% top;
   background-repeat: no-repeat;
@@ -16,6 +16,22 @@
   @include small {
     margin: 0;
   }
+
+  @include medium {
+    background-image: url("../img/header_lente_m.webp");
+  }
+
+  @include large {
+    background-image: url("../img/header_lente_l.webp");
+  }
+
+  @include xl {
+    background-image: url("../img/header_lente_xl.webp");
+  }
+}
+
+.altrow {
+  height: 30vh;
 }
 
 .subheader {
@@ -40,31 +56,35 @@
   visibility: hidden;
 }
 
-// .quotebox {
-//   padding: 1em 1em 0.75em;
-//   margin: 0 auto;
+.quotebox {
+  padding: 1.5em !important;
+  margin: 0 auto;
+  color: $white;
+  max-width: 30ch;
+  border-style: solid;
+  border-width: 0.25rem;
+  background-color: $heavyoverlay;
 
-//   max-width: 40ch;
+  h1 {
+    margin: 0 !important;
+    color: $white;
+    font-size: 1.25em;
+  }
 
-//   border-style: solid;
-//   border-width: 0.25rem;
+  @include small {
+    max-width: 40ch;
+  }
 
-//   background-color: $heavyoverlay;
+  @include medium {
+    max-width: 67.5ch !important;
+  }
 
-//   @include small {
-//     max-width: 50ch;
-//   }
-
-//   @include medium {
-//     max-width: 67.5ch;
-//   }
-
-//   @include large {
-//     border-width: 0.35rem;
-//     padding: 2rem 0rem 2rem 2rem;
-//     background-color: $heavyoverlay;
-//   }
-// }
+  @include large {
+    border-width: 0.35em;
+    padding: 2em 0em 2em 2em;
+    background-color: $heavyoverlay;
+  }
+}
 
 .flag {
   top: 0.5em;

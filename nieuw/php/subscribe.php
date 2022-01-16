@@ -1,3 +1,18 @@
+<?php
+
+    $userName	 	    = $_POST['name'];
+    $userEmail	 	    = $_POST['email'];
+
+    $to                 = "masuwasani@yahoo.com";
+    $subject            = "Nieuwsbrief aanmelding";
+    $body               = "Het volgende emailadres wil zich aanmelden voor de nieuwsbrief:";
+
+    $body .= "\r\n Naam: " . $userName;
+    $body .= "\r\n Email: " . $userEmail;
+    
+	mail($to, $subject, $body);
+?>
+
 <!DOCTYPE html>
 <html lang="nl" prefix="og: https://ogp.me/ns#">
   <head>
@@ -10,7 +25,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
     <!-- SEO tags -->
-    <title>Genieten van Meditatie</title>
+    <title>Genieten van Meditatie | Contact</title>
     <meta name="description" content="Osho meditaties, familie opstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
 
     <!-- OG tags -->
@@ -18,11 +33,11 @@
     <meta property="og:description" content="Osho meditaties, familie opstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.genietenvanmeditatie.nl" />
-    <meta property="og:image" content="https://www.genietenvanmeditatie.nl/img/thumbnail.webp" />
+    <meta property="og:image" content="http://www.genietenvanmeditatie.nl/img/thumbnail.webp" />
 
     <!-- Favicon -->
-    <link href="img/favicon-16x16.webp" rel="icon" type="image/webp" sizes="16x16" />
-    <link href="img/favicon-32x32.webp" rel="icon" type="image/webp" sizes="32x32" />
+    <link href="../img/favicon-16x16.webp" rel="icon" type="image/webp" sizes="16x16" />
+    <link href="../img/favicon-32x32.webp" rel="icon" type="image/webp" sizes="32x32" />
 
     <!-- Font tags -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,14 +49,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
 
     <!-- CSS tags -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="index.html">
+        <a class="navbar-brand row" href="../index.html">
           <i id="logo" class="fas fa-fire"></i>
           <span>Genieten van Meditatie</span>
         </a>
@@ -51,16 +66,16 @@
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="wat_ik_aanbied.html">Wat ik aanbied</a>
+              <a class="nav-link" href="../wat_ik_aanbied.html">Wat ik aanbied</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="over_mij.html">Over mij</a>
+              <a class="nav-link" href="../over_mij.html">Over mij</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="agenda.html">Agenda</a>
+              <a class="nav-link" href="../agenda.html">Agenda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link accent" href="contact.html">Contact</a>
+              <a class="nav-link accent" href="../contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -71,50 +86,21 @@
     <div id="page-top" class="header">
       <div class="overlay">
         <div class="container">
-          <div class="row headerrow">
-            <div id="headerquote" class="col-12 col-xl-6">
-              <div class="quotebox">
-                <h1>“Je leven zal meer gaan stromen als je de verbinding met jezelf verdiept<span style="margin: 0.15em !important">”</span></h1>
-              </div>
-            </div>
-          </div>
+          <div class="row headerrow altrow"></div>
         </div>
       </div>
     </div>
 
-    <!-- Main -->
-    <main>
-      <div class="sectionbox">
-        <section>
-          <h1>Welkom bij Genieten van Meditatie</h1>
-          <p>Hét opleidingsinstituut met yogalessen, trainingen en opleidingen voor iedereen die zich wil verdiepen in de wereld van yoga, meditatie en bewustwording.</p>
-          <div class="flex">
-            <div class="flex-item">
-              <a href="">
-                <img src="img/familie_opstellingen.webp" alt="" />
-                <span><span>Familie opstellingen</span></span>
-              </a>
-            </div>
-            <div class="flex-item">
-              <a href="">
-                <img src="img/meditatie.webp" alt="" />
-                <span><span>Meditatie</span></span>
-              </a>
-            </div>
-            <div class="flex-item">
-              <a href="">
-                <img src="img/coaching.webp" alt="" />
-                <span><span>Coaching</span></span>
-              </a>
-            </div>
-          </div>
-          <p>Mijn aanbod is voor iedereen wat wils, van meditatie tot dansavonden en van gezichtsmassages to coaching sessies. Meer weten? Lees hier meer over mijn aanbod.</p>
-          <div class="butcont">
-            <a class="newbtn" href="wat_ik_aanbied.html"><button class="btn button no-margin">Wat ik aanbied</button></a>
-          </div>
-        </section>
-      </div>
-    </main>
+    <div class="sectionbox">
+      <section>
+        <h1>Subscribe</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -128,13 +114,6 @@
               <a href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q" target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i></a>
               <a href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <form action="php/subscribe.php" method="POST" class="form row">
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="Vul hier je email in om je in te schrijven voor de nieuwsbrief!" />
-              </div>
-              <div class="form-group" style="display: none"><input email2" type="email" class="form-control antispam" placeholder="Repeat email" /></div>
-              <button type="submit" class="btn button no-margin">Schrijf je in</button>
-            </form>
             <div class="row">
               <hr />
               <div class="osholink">
@@ -147,7 +126,7 @@
               </div>
             </div>
             <p class="text-center" style="margin-top: 1em; font-size: 0.65em">
-              &copy; 2022 Joy in Meditation | <span><a href="avg.html" style="color: #222">Privacybeleid</a></span>
+              &copy; 2022 Joy in Meditation | <span><a href="../avg.html" style="color: #222">Privacybeleid</a></span>
             </p>
           </section>
         </div>
@@ -161,9 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
     <!-- Plausible -->
     <script defer data-domain="genietenvanmeditatie.nl" src="https://plausible.io/js/plausible.js"></script>
-  </body>
-</html>

@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  height: 100vh;
-}
-
 // Video Container
 .video-container {
   .flex-row {
@@ -82,6 +78,7 @@ main {
   padding: 0.5em 1em;
 
   font-size: 1em;
+  font-weight: 600;
 
   background-color: $primary;
 
@@ -678,6 +675,10 @@ a:hover {
   text-decoration: none !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 @include small {
   .headerrow {
     margin-left: 10vw;
@@ -755,5 +756,27 @@ a:hover {
   .howitworks {
     font-size: 5rem;
     margin: -2.15em 0 0.75em 1em;
+  }
+}
+
+.butcont {
+  margin: 5vh 0 2.5vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  .newbtn {
+    .button {
+      color: $secondary;
+      font-size: 0.75em;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  @include large {
+    margin: 5vh 0 -2.5vh;
   }
 }

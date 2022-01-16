@@ -1,5 +1,4 @@
 //Navbar
-
 #navbar {
   position: fixed;
   top: 0;
@@ -205,10 +204,11 @@
         padding-left: 0.5em !important;
         color: $secondary !important;
         background-color: $primary !important;
-        border-radius: 0.25em;
+        border-radius: 1em;
 
         &:hover {
           background-color: $gray !important;
+          color: #555 !important;
         }
       }
     }
@@ -250,11 +250,6 @@
         &:hover {
           color: $black !important;
         }
-      }
-
-      &.accent {
-        color: $quad !important;
-        background-color: $tertiary !important;
       }
     }
   }

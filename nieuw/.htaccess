@@ -1,0 +1,37 @@
+RewriteEngine on
+RewriteBase / 
+
+Redirect 301 /index.html http://www.genietenvanmeditatie.nl/en/index.html
+
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Gzip settings
+<IfModule mod_deflate.c>
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+
+  <IfModule filter_module>
+    FilterDeclare   COMPRESS
+    FilterProvider  COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/html'"
+    FilterProvider  COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/css'"
+    FilterProvider  COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/javascript'"
+    FilterChain     COMPRESS
+    FilterProtocol  COMPRESS DEFLATE change=yes;byteranges=no
+  </IfModule>
+</IfModule>
+
+# Cache settings
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresDefault "access plus 7 days"
+</IfModule>
