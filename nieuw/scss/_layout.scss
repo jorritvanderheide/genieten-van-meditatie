@@ -36,7 +36,7 @@ nav {
   }
 }
 
-.sectionbox {
+.section-wrapper {
   max-width: 100vw;
   background-color: transparent;
 
@@ -72,26 +72,6 @@ nav {
 
     @include xl {
       padding: 5em 5em 4.5em;
-    }
-  }
-}
-
-.sectionbox-notext {
-  section {
-    margin: -2.5em auto;
-    padding: 2em;
-
-    @include medium {
-      margin: -3.5em auto;
-      padding: 3em;
-    }
-
-    @include large {
-      padding: 4em;
-    }
-
-    @include xl {
-      padding: 5em;
     }
   }
 }
@@ -222,4 +202,72 @@ nav {
   @include large {
     margin: 5vh -10vw;
   }
+}
+
+.aanbod_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2.5em 0;
+
+  &:first-of-type {
+    margin: 5em 0 0;
+  }
+
+  .heading1 {
+    display: inline;
+  }
+
+  .heading2 {
+    display: none;
+  }
+
+  h2 {
+    margin: 1em 0 1.25em 0 !important;
+  }
+
+  img {
+    border-radius: 0.5em;
+    margin: 0;
+    width: 100%;
+  }
+
+  p {
+    margin: 1em 0 0;
+  }
+
+  @include medium {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .heading2 {
+      display: inline;
+    }
+
+    .heading1 {
+      display: none;
+    }
+
+    img {
+      width: calc(50% - 1em);
+    }
+
+    h2 {
+      text-align: left;
+      margin: 0 0 1em;
+    }
+
+    div {
+      width: calc(50% - 1em);
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.left {
+  flex-direction: row-reverse;
 }

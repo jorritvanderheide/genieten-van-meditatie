@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <div class="sectionbox">
+    <div class="section-wrapper">
       <section>
         <h1>Subscribe</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
@@ -105,7 +105,7 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="sectionbox">
+        <div class="section-wrapper">
           <section>
             <h2 class="text-center">Genieten van Meditatie</h2>
             <div class="row justify-content-center social-buttons">

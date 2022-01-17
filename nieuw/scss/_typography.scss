@@ -25,6 +25,19 @@ h1 {
   }
 }
 
+h2 {
+  font-family: $font-text;
+  text-align: center;
+  color: $black;
+  font-weight: bold;
+  font-size: 0.85em;
+  margin: 1.5em 0 1.5em;
+
+  &:first-of-type {
+    margin: 0 0 2em;
+  }
+}
+
 p {
   margin: 0 0 1em;
 
