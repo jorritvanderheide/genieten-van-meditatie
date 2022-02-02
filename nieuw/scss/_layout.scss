@@ -168,6 +168,22 @@ nav {
       text-decoration: none;
     }
 
+    .tile-title {
+      padding: 1em;
+      display: flex;
+    }
+
+    .tile-content {
+      display: none;
+
+      span {
+        padding: 1em;
+        font-size: 0.75em;
+        font-family: $font;
+        font-weight: normal;
+      }
+    }
+
     span {
       display: flex;
       position: absolute;
@@ -187,8 +203,18 @@ nav {
     }
 
     &:hover {
+      cursor: pointer;
+
       img {
-        filter: brightness(0.85);
+        filter: brightness(0.25);
+      }
+
+      .tile-title {
+        display: none;
+      }
+
+      .tile-content {
+        display: flex;
       }
     }
   }
@@ -211,8 +237,18 @@ nav {
   align-items: center;
   margin: 2.5em 0;
 
+  button {
+    margin: 1em 0 0 !important;
+    font-size: 0.65em;
+
+    a {
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
+
   &:first-of-type {
-    margin: 5em 0 0;
+    margin: 2.5em 0 0;
   }
 
   .heading1 {
@@ -234,7 +270,7 @@ nav {
   }
 
   p {
-    margin: 1em 0 0;
+    margin: 1.5em 0 0;
   }
 
   @include medium {
@@ -255,7 +291,6 @@ nav {
 
     h2 {
       text-align: left;
-      margin: 0 0 1em;
     }
 
     div {

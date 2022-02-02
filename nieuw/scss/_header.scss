@@ -112,6 +112,11 @@
   margin: 1.5em auto;
   padding: 35vh 0 7.5vh 0;
 
+  .yt-wrapper {
+    iframe {
+    }
+  }
+
   @include small {
     padding: 32.5vh 1.5em 7.5vh;
   }

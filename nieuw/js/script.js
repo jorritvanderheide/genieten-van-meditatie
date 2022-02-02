@@ -62,12 +62,7 @@ function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
 
   //Collapse navbar on scroll
   var navbarCollapse = function () {
-    if (
-      $(".mainNav").offset().top >
-      $(".header").outerHeight() -
-        // $(".mainNav").outerHeight() -
-        ($(window).width() / 40 + $(window).scrollTop() / 3.5)
-    ) {
+    if ($(".mainNav").offset().top > $(".header").outerHeight() - ($(window).width() / 40 + $(window).scrollTop() / 3.5)) {
       $(".mainNav").addClass("navbar-scrolled");
     } else {
       $(".mainNav").removeClass("navbar-scrolled");
