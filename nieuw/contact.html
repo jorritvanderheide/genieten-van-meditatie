@@ -11,11 +11,17 @@
 
     <!-- SEO tags -->
     <title>Genieten van Meditatie | Contact</title>
-    <meta name="description" content="Osho meditaties, familie opstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
+    <meta
+      name="description"
+      content="Osho meditaties, familie opstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage"
+    />
 
     <!-- OG tags -->
     <meta property="og:title" content="Meditatie, Familie Opstellingen en Coaching" />
-    <meta property="og:description" content="Osho meditaties, familie opstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
+    <meta
+      property="og:description"
+      content="Osho meditaties, familie opstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.genietenvanmeditatie.nl" />
     <meta property="og:image" content="https://www.genietenvanmeditatie.nl/img/thumbnail.webp" />
@@ -27,11 +33,18 @@
     <!-- Font tags -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
 
     <!-- CSS tags -->
     <link href="css/style.css" rel="stylesheet" />
@@ -71,7 +84,9 @@
     <div id="page-top" class="header">
       <div class="overlay">
         <div class="container">
-          <div class="row headerrow altrow"></div>
+          <div class="row headerrow altrow">
+            <h1>Contact</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -80,10 +95,34 @@
     <main>
       <div class="section-wrapper">
         <section>
-          <h1>Contact</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
-          <h1>Gratis consult</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eum odio debitis molestiae doloremque ut officia enim corrupti, nobis at. Ullam distinctio harum corporis. Quasi atque quod optio illo amet.</p>
+          <!-- <h1>Contact</h1> -->
+          <p>
+            Wil je een vrijblijvend kennismakingsgesprek boeken, heb je een vraag over mijn aanbod of wil je meer weten
+            over mij en wat ik doe? Neem dan contact met me op via het onderstaande formulier.
+          </p>
+          <p>Ook voor het aanmelden van een activiteit kun je het formulier gebruiken.</p>
+
+          <form id="contact-form" action="php/contact.php" method="POST">
+            <div class="form-group">
+              <input name="email" type="email" class="form-control" placeholder="Email adres" />
+            </div>
+            <div class="form-group">
+              <input name="email2" type="email" class="form-control antispam" placeholder="Repeat email" />
+            </div>
+            <div class="form-group">
+              <input name="phone" type="tel" class="form-control" placeholder="Telefoonnummer" />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                class="form-control"
+                placeholder="Stel hier je vraag of meld je aan voor een activiteit"
+              ></textarea>
+            </div>
+            <div class="button-group">
+              <button type="submit" class="btn button button-alt no-margin-bot">Verstuur</button>
+            </div>
+          </form>
         </section>
       </div>
     </main>
@@ -95,26 +134,47 @@
           <section>
             <h2 class="text-center">Genieten van Meditatie</h2>
             <div class="row justify-content-center social-buttons">
-              <a href="https://www.facebook.com/JoyInMeditation" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i></a>
-              <a href="https://www.instagram.com/modita_van_zummeren" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q" target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i></a>
-              <a href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/JoyInMeditation" target="_blank" rel="noreferrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/modita_van_zummeren" target="_blank" rel="noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q" target="_blank" rel="noreferrer"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699" target="_blank" rel="noreferrer"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
             <form action="php/subscribe.php" method="POST" class="form row">
               <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="Vul hier je email in om je in te schrijven voor de nieuwsbrief!" />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Vul hier je email in om je in te schrijven voor de nieuwsbrief!"
+                />
               </div>
-              <div class="form-group" style="display: none"><input email2" type="email" class="form-control antispam" placeholder="Herhaal email" /></div>
+              <div class="form-group" style="display: none">
+                <input email2" type="email" class="form-control antispam" placeholder="Herhaal email" />
+              </div>
               <button type="submit" class="btn button no-margin">Schrijf je in</button>
             </form>
             <div class="row">
               <hr />
               <div class="osholink">
                 <a href="https://www.osho.com/copyrights" target="_blank">
-                  <p>Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with permission of © Osho International Foundation, www.osho.com/copyrights<br /></p>
+                  <p>
+                    Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with
+                    permission of © Osho International Foundation, www.osho.com/copyrights<br />
+                  </p>
                 </a>
                 <a href="https://www.osho.com/trademarks" target="_blank">
-                  <p>OSHO is a registered trademark of Osho International Foundation, used with permission, www.osho.com/trademarks</p>
+                  <p>
+                    OSHO is a registered trademark of Osho International Foundation, used with permission,
+                    www.osho.com/trademarks
+                  </p>
                 </a>
               </div>
             </div>

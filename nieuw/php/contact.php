@@ -1,16 +1,20 @@
 <?php
 
-    $userName	 	    = $_POST['name'];
-    $userEmail	 	    = $_POST['email'];
+  $userEmail	 	    = $_POST['email'];
+  $userPhone		    = $_POST['phone'];
+  $userMessage 		= $_POST['message'];
 
-    $to                 = "masuwasani@yahoo.com";
-    $subject            = "Nieuwsbrief aanmelding";
-    $body               = "Het volgende emailadres wil zich aanmelden voor de nieuwsbrief:";
+  $to                 = "masuwasani@yahoo.com";
+	$subject            = "Contact formulier";
+  $body               = "Bericht via het contactformulier van Genieten van Meditatie:";
 
-    $body .= "\r\n Naam: " . $userName;
-    $body .= "\r\n Email: " . $userEmail;
-    
-	mail($to, $subject, $body);
+  $body .= "\r\n Email: " . $userEmail;
+  $body .= "\r\n Telefoonnummer: " . $userPhone;
+	$body .= "\r\n Bericht: " . $userMessage;
+  
+  if(isset($_POST['email2']) && $_POST['email2'] == ''){
+      mail($to, $subject, $body);
+  } 
 ?>
 
 <!DOCTYPE html>
@@ -93,8 +97,8 @@
 
     <div class="section-wrapper">
       <section>
-        <h1>Subscribe</h1>
-        <p>Dank je voor je aanmelding, je ontvangt vanaf nu elke week mijn nieuwsbrief in je mailbox!</p>
+        <h1>Contact</h1>
+        <p>Dank je voor je bericht! Ik neem zo snel mogelijk contact met je op!</p>
       </section>
     </div>
 

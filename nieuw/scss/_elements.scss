@@ -792,3 +792,23 @@ a {
   margin-top: -200px !important;
   visibility: hidden;
 }
+
+#contact-form {
+  font-size: 0.75em;
+  margin-bottom: 10vh;
+
+  input,
+  textarea {
+    border-radius: 1em;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Calendar
+#calendar {
+  font-size: 0.75em;
+}
