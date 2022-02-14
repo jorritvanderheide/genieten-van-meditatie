@@ -64,7 +64,7 @@
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="wat_ik_aanbied.html">Wat ik aanbied</a>
+              <a class="nav-link" href="aanbod.html">Wat ik aanbied</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="over_mij.html">Over mij</a>
@@ -93,15 +93,19 @@
 
     <!-- Main -->
     <main>
-      <div class="section-wrapper">
+      <div class="section-wrapper" id="form">
         <section>
           <!-- <h1>Contact</h1> -->
           <p>
             Wil je een vrijblijvend kennismakingsgesprek boeken, heb je een vraag over mijn aanbod of wil je meer weten
-            over mij en wat ik doe? Neem dan contact met me op via het onderstaande formulier.
+            over mij en wat ik doe? Of wil je je aanmelden voor een activiteit?
           </p>
-          <p>Ook voor het aanmelden van een activiteit kun je het formulier gebruiken.</p>
+          <p>Neem dan contact met me op via het onderstaande formulier.</p>
+        </section>
+      </div>
 
+      <div class="section-wrapper background">
+        <section>
           <form id="contact-form" action="php/contact.php" method="POST">
             <div class="form-group">
               <input name="email" type="email" class="form-control" placeholder="Email adres" />
@@ -123,6 +127,35 @@
               <button type="submit" class="btn button button-alt no-margin-bot">Verstuur</button>
             </div>
           </form>
+        </section>
+      </div>
+
+      <div class="section-wrapper">
+        <section>
+          <p>
+            Je bent van harte welkom, zowel online via Zoom als bij mij thuis in Eindhoven (waarbij we 1,5 meter afstand
+            houden in verband met corona).
+          </p>
+          <p>De activiteiten vinden - tenzij anders vermeld - plaats bij mij thuis.</p>
+        </section>
+      </div>
+
+      <div class="section-wrapper background">
+        <section>
+          <div class="review">
+            <div class="review-img">
+              <img src="img/reviews/ashirda.png" alt="" />
+            </div>
+            <div class="review-text">
+              <p>Lieve Modita,</p>
+              <p>
+                Je hebt prachtige producten 'tools', in de aanbieding voor mensen om zichzelf en elkaar te genezen. Hoe
+                'praktiserend' als arts kun je zijn voor de mens en zijn welzijn! Maar wel eentje met beide menselijke
+                voeten in de klei...
+              </p>
+              <p class="review-right">- Ashirda Oosterlee</p>
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -153,7 +186,7 @@
                   name="email"
                   type="email"
                   class="form-control"
-                  placeholder="Vul hier je email in om je in te schrijven voor de nieuwsbrief!"
+                  placeholder="Vul hier je email in om mijn nieuwsbrief te ontvangen!"
                 />
               </div>
               <div class="form-group" style="display: none">

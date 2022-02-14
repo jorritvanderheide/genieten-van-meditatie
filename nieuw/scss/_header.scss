@@ -8,7 +8,7 @@
 
   max-height: 80vh;
 
-  background-image: url("../img/header_lente_s.webp");
+  background-image: url("../img/index/header-index-s.webp");
   background-size: cover;
   background-position: 75% top;
   background-repeat: no-repeat;
@@ -18,20 +18,21 @@
   }
 
   @include medium {
-    background-image: url("../img/header_lente_m.webp");
+    background-image: url("../img/index/header-index-m.webp");
   }
 
   @include large {
-    background-image: url("../img/header_lente_l.webp");
+    background-image: url("../img/index/header-index-l.webp");
   }
 
   @include xl {
-    background-image: url("../img/header_lente_xl.webp");
+    background-image: url("../img/index/header-index-xl.webp");
   }
 }
 
 .altrow {
-  height: 60vh;
+  height: 30vh;
+  padding-top: 5vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -39,6 +40,14 @@
   h1 {
     color: $white;
     font-size: 1.5em;
+  }
+
+  @include small {
+    height: 40vh;
+  }
+
+  @include medium {
+    height: 50vh;
   }
 }
 
@@ -114,53 +123,54 @@
 
   .yt-wrapper {
     iframe {
+      width: 100%;
+      height: 47.5vw;
     }
   }
 
   @include small {
     padding: 32.5vh 1.5em 7.5vh;
+
+    .yt-wrapper {
+      iframe {
+        height: 30vh;
+      }
+    }
   }
 
   @include medium {
     padding: 15vh 55% 15vh 1.75em;
+
+    .yt-wrapper {
+      iframe {
+        height: 25vh;
+      }
+    }
   }
 
   @include large {
     margin: 0;
     padding: 25vh 5em 20vh 5em;
+
+    .yt-wrapper {
+      iframe {
+        height: 25vh;
+      }
+    }
+
+    .quotebox {
+      // height: 30vh;
+      font-size: 2.25vh;
+    }
   }
 
   @include xl {
     padding: 25vh 5em 25vh 2.5em;
-  }
 
-  .indexpane {
-    width: 100%;
-    height: 6em;
-    background-color: $primary;
-    padding: 2em;
-    color: $secondary;
-    border-radius: 1em;
-    font-size: 0.75em;
-
-    .button {
-      font-size: 0.9em;
-    }
-
-    p {
-      margin: 0.15em 0;
-      color: $secondary;
-      font-family: $font-accent;
-      font-size: 1.25em;
-    }
-
-    .button {
-      float: right;
-      margin-top: -0.5em;
-    }
-
-    &:hover {
-      background-color: $gray;
+    .yt-wrapper {
+      iframe {
+        height: 21vh;
+      }
     }
   }
 }

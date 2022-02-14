@@ -766,6 +766,8 @@ a {
   width: 100%;
 
   .newbtn {
+    width: fit-content;
+
     .button {
       color: $secondary;
       font-size: 0.75em;
@@ -781,8 +783,17 @@ a {
   }
 }
 
+.nomob {
+  display: none;
+
+  @include medium {
+    display: block;
+  }
+}
+
 #hero_aanbod {
-  background-image: url("../img/hero-aanbod.webp");
+  background-image: url("../img/aanbod/header-aanbod.png");
+  position: center center !important;
 }
 
 #meditatie::before {
@@ -808,7 +819,142 @@ a {
   }
 }
 
+.background {
+  background-color: $tertiary;
+  margin: 10vh 0;
+
+  section {
+    background-color: $tertiary;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    #contact-form {
+      margin: 0;
+    }
+
+    .button {
+      background-color: $quad;
+
+      a {
+        color: $black;
+      }
+
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+}
+
+//Podcast
+#podcast-iframe {
+  margin: 0.9em 0 1.35em;
+  border: $quad solid 0.15em !important;
+  border-radius: 0.25em;
+}
+
 // Calendar
 #calendar {
-  font-size: 0.75em;
+  margin-top: 1em;
+
+  #footer1 {
+    display: none;
+  }
+}
+
+// Reviews
+.review {
+  margin: 0 0 -5vh;
+  display: block;
+  align-content: center;
+
+  .review-img {
+    margin: 0 auto 2.5vh;
+    width: 80%;
+
+    img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .review-text {
+    font-size: 0, 9em;
+    font-style: italic;
+    color: #777;
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .review-right {
+    text-align: right;
+  }
+
+  @include small {
+    .review-img {
+      margin: 0 auto 5vh;
+      width: 50%;
+    }
+  }
+
+  @include medium {
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: -5vh;
+
+    .review-img {
+      width: 25%;
+      margin-right: 1em;
+      margin-bottom: 0;
+    }
+
+    .review-text {
+      margin-left: 1em;
+      width: 75%;
+    }
+  }
+}
+
+// Boeken
+.split {
+  display: block;
+  margin: 0;
+
+  div {
+    width: 100%;
+    margin: 0;
+
+    img {
+      margin: 2.5vh 0;
+    }
+  }
+
+  @include medium {
+    display: flex;
+    align-content: center;
+    margin: 0 0 5vh;
+
+    div {
+      width: 50%;
+      margin: 0;
+
+      img {
+        margin: 0;
+      }
+
+      &:first-of-type {
+        margin-right: 1em;
+      }
+
+      &:last-of-type {
+        margin-left: 1em;
+      }
+    }
+
+    &::last-of-type {
+      margin: 0;
+    }
+  }
 }
