@@ -15,7 +15,7 @@ body {
 h1 {
   font-family: $font-text;
   text-align: center;
-  color: $black;
+  color: $secondary;
   font-weight: bold;
   font-size: 0.85em;
   margin: 1.5em 0 1.5em;
@@ -28,14 +28,10 @@ h1 {
 h2 {
   font-family: $font-text;
   text-align: center;
-  color: $black;
+  color: $secondary;
   font-weight: bold;
-  font-size: 0.85em;
-  margin: 1.5em 0 1.5em;
-
-  &:first-of-type {
-    margin: 0 0 2em;
-  }
+  font-size: 0.75em;
+  margin: 2.5em 0 1em;
 }
 
 p {
@@ -73,23 +69,12 @@ button {
 }
 
 .fa-ul {
+  margin-left: 1.5em !important;
+
   li {
-    font-size: 1.35em;
-    line-height: 140%;
+    font-size: 1em;
     list-style: none;
-    padding-bottom: 1em;
-
-    @include small {
-      font-size: 1.25em;
-    }
-
-    @include medium {
-      font-size: 1.35em;
-    }
-
-    @include large {
-      font-size: 1.25em;
-    }
+    padding-bottom: 0.5em;
   }
 }
 
@@ -195,7 +180,7 @@ q {
 
 em {
   display: block;
-  font-size: 1.25em;
+  font-size: 1em;
   margin: 0 0 0.25em;
 }
 
