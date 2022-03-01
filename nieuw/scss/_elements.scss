@@ -796,6 +796,11 @@ a {
   position: center center !important;
 }
 
+#hero_agenda {
+  background-image: url("../img/agenda/header-agenda.png");
+  position: center center !important;
+}
+
 #meditatie::before {
   content: "";
   display: block;
@@ -932,7 +937,7 @@ a {
   @include medium {
     display: flex;
     align-content: center;
-    margin: 0 0 5vh;
+    margin: 5vh 0 5vh;
 
     div {
       width: 50%;
@@ -1036,5 +1041,14 @@ a {
     @include large {
       height: 40ch;
     }
+  }
+}
+
+.butcont-left {
+  margin-bottom: 5vh !important;
+
+  @include medium {
+    display: block;
+    margin-left: 0 !important;
   }
 }

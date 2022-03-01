@@ -34,6 +34,14 @@ h2 {
   margin: 2.5em 0 1em;
 }
 
+h3 {
+  font-family: $font-text;
+  color: $secondary;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 0 0 1em;
+}
+
 p {
   margin: 0 0 1em;
 
@@ -96,22 +104,6 @@ ol {
       font-size: 1em;
     }
   }
-}
-
-h3 {
-  font-family: $font-text;
-  color: $secondary;
-  font-weight: bold;
-  font-size: 1.25em;
-  padding: 0.625em 0;
-}
-
-h4 {
-  font-family: $font-text;
-  font-weight: bold;
-  font-size: 1.15em;
-  padding: 0.55em 0;
-  color: $darktext;
 }
 
 q {
