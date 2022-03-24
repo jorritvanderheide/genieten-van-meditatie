@@ -82,7 +82,7 @@
 
     <!-- Header -->
     <div id="hero_aanbod" class="header">
-      <div class="overlay">
+      <div id="page-top" class="overlay">
         <div class="container">
           <div class="row headerrow altrow">
             <h1>Zelfhypnose</h1>
@@ -131,7 +131,7 @@
           <p>De eerste sessie duurt 1,5 uur op een samen te kiezen datum en tijd.</p>
           <p>De kosten bedragen €65,00, inclusief een audioopname om het proces zelf thuis af te maken.</p>
           <div class="butcont left">
-            <a class="newbtn" href="../contact.htmlinde"><button class="btn button no-margin">Meld je aan</button></a>
+            <a class="newbtn" href="../contact.html"><button class="btn button no-margin">Meld je aan</button></a>
           </div>
         </section>
       </div>
@@ -169,7 +169,13 @@
               <div class="form-group" style="display: none">
                 <input email2" type="email" class="form-control antispam" placeholder="Repeat email" />
               </div>
-              <button type="submit" class="btn button no-margin">Schrijf je in</button>
+              <button
+                class="g-recaptcha btn button no-margin"
+                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                data-callback="onSubmit"
+              >
+                Schrijf je in
+              </button>
             </form>
             <div class="row">
               <hr />
@@ -201,6 +207,9 @@
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>

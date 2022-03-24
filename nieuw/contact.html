@@ -124,7 +124,13 @@
               ></textarea>
             </div>
             <div class="button-group">
-              <button type="submit" class="btn button button-alt no-margin-bot">Verstuur</button>
+              <button
+                class="g-recaptcha btn button no-margin"
+                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                data-callback="onSubmitContact"
+              >
+                Verstuur
+              </button>
             </div>
           </form>
         </section>
@@ -132,9 +138,7 @@
 
       <div class="section-wrapper">
         <section>
-          <p>
-            Je bent van harte welkom, zowel online via Zoom als bij mij thuis in Eindhoven.
-          </p>
+          <p>Je bent van harte welkom, zowel online via Zoom als bij mij thuis in Eindhoven.</p>
           <p>De activiteiten vinden - tenzij anders vermeld - plaats bij mij thuis.</p>
         </section>
       </div>
@@ -179,7 +183,7 @@
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
-            <form action="php/subscribe.php" method="POST" class="form row">
+            <form id="newsletter" action="php/subscribe.php" method="POST" class="form row">
               <div class="form-group">
                 <input
                   name="email"
@@ -191,7 +195,13 @@
               <div class="form-group" style="display: none">
                 <input email2" type="email" class="form-control antispam" placeholder="Herhaal email" />
               </div>
-              <button type="submit" class="btn button no-margin">Schrijf je in</button>
+              <button
+                class="g-recaptcha btn button no-margin"
+                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                data-callback="onSubmit"
+              >
+                Schrijf je in
+              </button>
             </form>
             <div class="row">
               <hr />
@@ -223,6 +233,9 @@
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>

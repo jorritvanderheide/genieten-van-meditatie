@@ -82,7 +82,7 @@
 
     <!-- Header -->
     <div id="hero_aanbod" class="header">
-      <div class="overlay">
+      <div id="page-top" class="overlay">
         <div class="container">
           <div class="row headerrow altrow">
             <h1>Wat ik aanbied</h1>
@@ -254,7 +254,13 @@
               <div class="form-group" style="display: none">
                 <input email2" type="email" class="form-control antispam" placeholder="Herhaal email" />
               </div>
-              <button type="submit" class="btn button no-margin">Schrijf je in</button>
+              <button
+              class="g-recaptcha btn button no-margin"
+              data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+              data-callback="onSubmit"
+            >
+              Schrijf je in
+            </button>
             </form>
             <div class="row">
               <hr />
@@ -286,6 +292,9 @@
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>

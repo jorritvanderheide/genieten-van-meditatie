@@ -82,7 +82,7 @@
 
     <!-- Header -->
     <div id="hero_aanbod" class="header">
-      <div class="overlay">
+      <div id="page-top" class="overlay">
         <div class="container">
           <div class="row headerrow altrow">
             <h1>Joy in Meditation community</h1>
@@ -138,7 +138,7 @@
         <section>
           <p>
             Het platform is een besloten groep op Facebook en de ontmoetingen vinden plaats via Zoom. De kosten voor
-            lidmaatschap bedragen 16 euro per maand.
+            lidmaatschap bedragen €16,- per maand.
           </p>
           <p>Je bent van harte welkom!</p>
           <div class="butcont">
@@ -186,7 +186,13 @@
               <div class="form-group" style="display: none">
                 <input email2" type="email" class="form-control antispam" placeholder="Repeat email" />
               </div>
-              <button type="submit" class="btn button no-margin">Schrijf je in</button>
+              <button
+                class="g-recaptcha btn button no-margin"
+                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                data-callback="onSubmit"
+              >
+                Schrijf je in
+              </button>
             </form>
             <div class="row">
               <hr />
@@ -218,6 +224,9 @@
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>

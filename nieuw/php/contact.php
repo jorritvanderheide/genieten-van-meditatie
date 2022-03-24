@@ -97,7 +97,7 @@
 
     <div class="section-wrapper">
       <section>
-        <h1>Contact</h1>
+        <h1>Je bericht is verstuurd!</h1>
         <p>Dank je voor je bericht! Ik neem zo snel mogelijk contact met je op!</p>
       </section>
     </div>

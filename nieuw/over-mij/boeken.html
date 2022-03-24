@@ -109,7 +109,7 @@
             <div>
               <img src="../img/over-mij/honger-boek.png" />
             </div>
-            <div>
+            <div class="fit">
               <p>
                 Bij anorexia, boulimia en overgewicht draait het niet om calorieën en lichaamsgewicht, maar om de
                 zoektocht naar een eigen identiteit.
@@ -120,8 +120,12 @@
               </p>
               <p>Het boek is geïllustreerd door mijn eigen ervaringen met anorexia en boulimia.</p>
               <div class="butcont butcont-left">
-                <a class="newbtn" href="../contact.html"
-                  ><button class="btn button no-margin">Neem contact op</button></a
+                <a
+                  class="newbtn"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://www.bol.com/nl/nl/p/honger-naar-vervulling/9300000024818414"
+                  ><button class="btn button no-margin">Lees meer</button></a
                 >
               </div>
             </div>
@@ -130,7 +134,7 @@
             <div>
               <img src="../img/over-mij/depressie-boek.png" />
             </div>
-            <div>
+            <div class="fit">
               <p>
                 Dit boek bevat handreikingen om je depressie zonder antidepressiva en met bewustzijn te overwinnen -
                 door een 'ja' naar het leven te ontwikkelen, de juiste voeding tot je te nemen, het vergelijken met
@@ -139,8 +143,12 @@
               </p>
               <p>Het boek bevat ook mijn depressie autobiografie.</p>
               <div class="butcont butcont-left">
-                <a class="newbtn" href="../contact.html"
-                  ><button class="btn button no-margin">Neem contact op</button></a
+                <a
+                  class="newbtn"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://www.bol.com/nl/nl/p/depressie-een-opstap-naar-geluk/9200000095915858"
+                  ><button class="btn button no-margin">Lees meer</button></a
                 >
               </div>
             </div>
@@ -150,7 +158,12 @@
 
       <div class="section-wrapper">
         <section>
-          <p>Tekst + bestel boeken knop https://www.bol.com/nl/nl/c/modita-van-zummeren/17353998/</p>
+          <p>Ben je geinteresseerd in mijn boeken, dan kun je deze vinden op Bol.com</p>
+          <div class="butcont butcont-left">
+            <a class="newbtn" href="https://www.bol.com/nl/nl/c/modita-van-zummeren/17353998/"
+              ><button class="btn button no-margin">Bekijk mijn boeken</button></a
+            >
+          </div>
         </section>
       </div>
     </main>
@@ -187,7 +200,13 @@
               <div class="form-group" style="display: none">
                 <input email2" type="email" class="form-control antispam" placeholder="Repeat email" />
               </div>
-              <button type="submit" class="btn button no-margin">Schrijf je in</button>
+              <button
+                class="g-recaptcha btn button no-margin"
+                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                data-callback="onSubmit"
+              >
+                Schrijf je in
+              </button>
             </form>
             <div class="row">
               <hr />
@@ -219,6 +238,9 @@
 
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>

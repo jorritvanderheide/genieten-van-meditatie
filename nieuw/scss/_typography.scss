@@ -2,7 +2,6 @@
 
 body {
   font-family: $font;
-  font-size: 1.1rem;
   font-kerning: normal;
   font-smooth: always;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -10,6 +9,23 @@ body {
   text-rendering: optimizeLegibility;
   color: $black;
   font-variant-numeric: oldstyle-nums;
+  font-size: clamp(1.1rem, 1.1rem + 0vw, 1.1rem);
+
+  @media (min-width: 425px) {
+    font-size: clamp(1.1rem, 0.975730994152047rem + 0.46783625730994094vw, 1.2rem);
+  }
+
+  @media (min-width: 768px) {
+    font-size: clamp(1.2rem, 0.8988235294117644rem + 0.6274509803921574vw, 1.3rem);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: clamp(1.3rem, 1.1855865921787712rem + 0.17877094972067015vw, 1.4rem);
+  }
+
+  @media (min-width: 1920px) {
+    font-size: clamp(1.4rem, 0.34999999999999964rem + 0.8750000000000002vw, 1.75rem);
+  }
 }
 
 h1 {

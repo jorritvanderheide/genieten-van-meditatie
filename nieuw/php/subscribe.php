@@ -93,7 +93,7 @@
 
     <div class="section-wrapper">
       <section>
-        <h1>Subscribe</h1>
+        <h1>Je bent aangemeld voor de nieuwsbrief!</h1>
         <p>Dank je voor je aanmelding, je ontvangt vanaf nu elke week mijn nieuwsbrief in je mailbox!</p>
       </section>
     </div>
