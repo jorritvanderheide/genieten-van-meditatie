@@ -18,3 +18,12 @@ navbarCollapse();
 window.onscroll = function () {
   navbarCollapse();
 };
+
+// reCAPTCHA
+function onSubmit(token) {
+  document.getElementById("newsletter").submit();
+}
+
+function onSubmitContact(token) {
+  document.getElementById("contact-form").submit();
+}
