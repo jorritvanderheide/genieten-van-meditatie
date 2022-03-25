@@ -792,13 +792,37 @@ a {
 }
 
 #hero_aanbod {
-  background-image: url("../img/aanbod/header-aanbod.png");
+  background-image: url("../img/aanbod/header-aanbod-s.webp");
   position: center center !important;
+
+  @include medium {
+    background-image: url("../img/aanbod/header-aanbod-m.webp");
+  }
+
+  @include large {
+    background-image: url("../img/aanbod/header-aanbod-l.webp");
+  }
+
+  @include xl {
+    background-image: url("../img/aanbod/header-aanbod-xl.webp");
+  }
 }
 
 #hero_agenda {
-  background-image: url("../img/agenda/header-agenda.png");
+  background-image: url("../img/agenda/header-agenda-s.webp");
   position: center center !important;
+
+  @include medium {
+    background-image: url("../img/agenda/header-agenda-m.webp");
+  }
+
+  @include large {
+    background-image: url("../img/agenda/header-agenda-l.webp");
+  }
+
+  @include xl {
+    background-image: url("../img/agenda/header-agenda-xl.webp");
+  }
 }
 
 #meditatie::before {
@@ -971,11 +995,12 @@ a {
 //trio
 .trio {
   display: flex;
+  flex-direction: column;
   gap: 2em;
   font-size: 0.75em;
 
   div {
-    width: calc(33% - calc(2em / 3));
+    width: 100%;
     padding: 2em;
     background-color: $tertiary;
     border-radius: 2em;
@@ -1002,6 +1027,14 @@ a {
           background-color: $gray !important;
         }
       }
+    }
+  }
+
+  @include small {
+    flex-direction: row;
+
+    div {
+      width: calc(33% - calc(2em / 3));
     }
   }
 }
