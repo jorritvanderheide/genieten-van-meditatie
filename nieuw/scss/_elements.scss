@@ -1059,7 +1059,6 @@ a {
   }
 }
 
-// .g-recaptcha {
-//   margin-left: 0 !important;
-//   margin-right: 0 !important;
-// }
+.grecaptcha-badge {
+  z-index: 1000 !important;
+}

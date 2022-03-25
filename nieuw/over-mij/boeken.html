@@ -58,7 +58,7 @@
           <i id="logo" class="fas fa-fire"></i>
           <span>Genieten van Meditatie</span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mobilenav">
+        <button class="navbar-toggler navbar-toggler-right" onclick="displayMenu()">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mobilenav">
@@ -188,25 +188,25 @@
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
-            <form action="../php/subscribe.php" method="POST" class="form row">
+            <form id="newsletter" action="php/subscribe.php" method="POST" class="form row">
               <div class="form-group">
                 <input
+                  id="newsletter-email"
                   name="email"
                   type="email"
                   class="form-control"
                   placeholder="Vul hier je email in om mijn nieuwsbrief te ontvangen!"
                 />
               </div>
-              <div class="form-group" style="display: none">
-                <input email2" type="email" class="form-control antispam" placeholder="Repeat email" />
+              <div class="button-group">
+                <button
+                  class="g-recaptcha btn button no-margin"
+                  data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                  data-callback="onSubmit"
+                >
+                  Schrijf je in
+                </button>
               </div>
-              <button
-                class="g-recaptcha btn button no-margin"
-                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
-                data-callback="onSubmit"
-              >
-                Schrijf je in
-              </button>
             </form>
             <div class="row">
               <hr />
@@ -232,12 +232,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js"></script>

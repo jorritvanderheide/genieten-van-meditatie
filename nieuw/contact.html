@@ -58,7 +58,7 @@
           <i id="logo" class="fas fa-fire"></i>
           <span>Genieten van Meditatie</span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mobilenav">
+        <button class="navbar-toggler navbar-toggler-right" onclick="displayMenu()">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mobilenav">
@@ -108,16 +108,23 @@
         <section>
           <form id="contact-form" action="php/contact.php" method="POST">
             <div class="form-group">
-              <input name="email" type="email" class="form-control" placeholder="Email adres" />
+              <input id="contact-form-email" name="email" type="email" class="form-control" placeholder="Email adres" />
             </div>
             <div class="form-group">
               <input name="email2" type="email" class="form-control antispam" placeholder="Repeat email" />
             </div>
             <div class="form-group">
-              <input name="phone" type="tel" class="form-control" placeholder="Telefoonnummer" />
+              <input
+                id="contact-form-phone"
+                name="phone"
+                type="tel"
+                class="form-control"
+                placeholder="Telefoonnummer"
+              />
             </div>
             <div class="form-group">
               <textarea
+                id="contact-form-message"
                 name="message"
                 class="form-control"
                 placeholder="Stel hier je vraag of meld je aan voor een activiteit"
@@ -186,22 +193,22 @@
             <form id="newsletter" action="php/subscribe.php" method="POST" class="form row">
               <div class="form-group">
                 <input
+                  id="newsletter-email"
                   name="email"
                   type="email"
                   class="form-control"
                   placeholder="Vul hier je email in om mijn nieuwsbrief te ontvangen!"
                 />
               </div>
-              <div class="form-group" style="display: none">
-                <input email2" type="email" class="form-control antispam" placeholder="Herhaal email" />
+              <div class="button-group">
+                <button
+                  class="g-recaptcha btn button no-margin"
+                  data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
+                  data-callback="onSubmit"
+                >
+                  Schrijf je in
+                </button>
               </div>
-              <button
-                class="g-recaptcha btn button no-margin"
-                data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
-                data-callback="onSubmit"
-              >
-                Schrijf je in
-              </button>
             </form>
             <div class="row">
               <hr />
@@ -221,18 +228,12 @@
               </div>
             </div>
             <p class="text-center" style="margin-top: 1em; font-size: 0.65em">
-              &copy; 2022 Joy in Meditation | <span><a href="avg.html" style="color: #222">AVG</a></span>
+              &copy; 2022 Joy in Meditation | <span><a href="avg.html" style="color: #222">Privacybeleid</a></span>
             </p>
           </section>
         </div>
       </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
