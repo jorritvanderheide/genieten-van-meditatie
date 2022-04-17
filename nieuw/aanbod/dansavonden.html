@@ -37,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
-  
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/d2ef007a7d.js" crossorigin="anonymous" defer></script>
 
@@ -50,47 +50,6 @@
 
     <!-- CSS tags -->
     <link href="../css/style.css" rel="stylesheet" />
-    
-     <!-- Cookie banner -->
-     <script type="text/javascript">
-      var _iub = _iub || [];
-      _iub.csConfiguration = {
-        ccpaAcknowledgeOnDisplay: true,
-        ccpaApplies: true,
-        consentOnContinuedBrowsing: false,
-        enableCcpa: true,
-        floatingPreferencesButtonDisplay: "anchored-center-left",
-        floatingPreferencesButtonIcon: false,
-        invalidateConsentWithoutLog: true,
-        lang: "nl",
-        perPurposeConsent: true,
-        siteId: 2584033,
-        whitelabel: false,
-        cookiePolicyId: 11358345,
-        cookiePolicyUrl: "https://genietenvanmeditatie.nl/cookies.html",
-        floatingPreferencesButtonCaption: true,
-        privacyPolicyUrl: "https://genietenvanmeditatie.nl/avg.html",
-        banner: {
-          acceptButtonCaptionColor: "#FFFFFF",
-          acceptButtonColor: "#0073CE",
-          acceptButtonDisplay: true,
-          backgroundColor: "#FFFFFF",
-          closeButtonRejects: true,
-          customizeButtonCaptionColor: "#4D4D4D",
-          customizeButtonColor: "#DADADA",
-          customizeButtonDisplay: true,
-          explicitWithdrawal: true,
-          listPurposes: true,
-          position: "bottom",
-          rejectButtonCaptionColor: "#FFFFFF",
-          rejectButtonColor: "#0073CE",
-          rejectButtonDisplay: true,
-          textColor: "#000000",
-        },
-      };
-    </script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
   </head>
 
   <body>
@@ -214,18 +173,15 @@
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
-            <form id="newsletter" action="php/subscribe.php" method="POST" class="form row">
+            <p style="margin-top: 2.5vh; margin-bottom: -1em; text-align: center">Wil je mijn nieuwsbrief ontvangen?</p>
+            <form id="newsletter" action="../php/subscribe.php" method="POST" class="form row">
               <div class="form-group">
-                <input
-                  id="newsletter-email"
-                  name="email"
-                  type="email"
-                  class="form-control"
-                  placeholder="Vul hier je email in om mijn nieuwsbrief te ontvangen!"
-                />
+                <input id="newsletter-name" name="name" type="name" class="form-control" placeholder="Naam" />
+                <input id="newsletter-email" name="email" type="email" class="form-control" placeholder="Email" />
               </div>
               <div class="button-group">
-                <button id="submit"
+                <button
+                  id="submit"
                   disabled
                   class="g-recaptcha btn button no-margin"
                   data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
@@ -234,7 +190,6 @@
                   Schrijf je in
                 </button>
               </div>
-              <p style="margin: 0.5em 0 0 1em">* Accepteer eerst de cookies</p>
             </form>
             <div class="row">
               <hr />
@@ -262,7 +217,7 @@
     </footer>
 
     <!-- reCAPTCHA -->
-    <script class="_iub_cs_activate" data-suppressedsrc="https://www.google.com/recaptcha/api.js"></script>
+    <script defer src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>
