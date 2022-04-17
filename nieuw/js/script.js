@@ -30,7 +30,7 @@ function displayMenu() {
 // reCAPTCHA
 function onSubmit(token) {
   if (document.getElementById("newsletter-email").value.length == 0) {
-    alert("Vul eerst uw email adres in");
+    alert("Vul ten minste uw email adres in");
     window.location.reload();
   } else {
     document.getElementById("newsletter").submit();

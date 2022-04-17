@@ -56,8 +56,6 @@ footer {
     .form-group {
       margin: 0 0 1em;
       width: 100%;
-      display: flex;
-      gap: 1em;
 
       input {
         border-radius: 1em;
@@ -72,16 +70,25 @@ footer {
 
     @include medium {
       display: flex;
+      justify-content: center;
+      gap: 1em;
 
       .form-group {
         margin: 0;
-        width: 75%;
+
+        &:first-of-type {
+          width: 25%;
+        }
+
+        &:nth-of-type(2) {
+          width: 45%;
+        }
       }
 
       button {
         font-size: 1em;
         max-width: 100%;
-        margin: -0.15em 0 0 2em !important;
+        margin: -0.15em 0 0 0 !important;
       }
     }
   }

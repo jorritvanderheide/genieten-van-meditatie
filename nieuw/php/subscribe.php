@@ -1,7 +1,6 @@
 <?php
-
-    $userName	 	    = $_POST['name'];
-    $userEmail	 	    = $_POST['email'];
+    $userName	 	        = $_POST['name'];
+    $userEmail	 	      = $_POST['email'];
 
     $to                 = "masuwasani@yahoo.com";
     $subject            = "Nieuwsbrief aanmelding";
@@ -128,12 +127,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>

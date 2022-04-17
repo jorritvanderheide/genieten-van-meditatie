@@ -1,8 +1,8 @@
 <?php
 
-  $userEmail	 	    = $_POST['email'];
-  $userPhone		    = $_POST['phone'];
-  $userMessage 		= $_POST['message'];
+  $userEmail	 	      = $_POST['email'];
+  $userPhone		      = $_POST['phone'];
+  $userMessage    		= $_POST['message'];
 
   $to                 = "masuwasani@yahoo.com";
 	$subject            = "Contact formulier";
@@ -12,9 +12,7 @@
   $body .= "\r\n Telefoonnummer: " . $userPhone;
 	$body .= "\r\n Bericht: " . $userMessage;
   
-  if(isset($_POST['email2']) && $_POST['email2'] == ''){
-      mail($to, $subject, $body);
-  } 
+  mail($to, $subject, $body);
 ?>
 
 <!DOCTYPE html>
@@ -132,12 +130,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../js/script.js"></script>

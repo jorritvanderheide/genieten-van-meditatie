@@ -166,13 +166,14 @@
             <p style="margin-top: 2.5vh; margin-bottom: -1em; text-align: center">Wil je mijn nieuwsbrief ontvangen?</p>
             <form id="newsletter" action="../php/subscribe.php" method="POST" class="form row">
               <div class="form-group">
-                <input id="newsletter-name" name="name" type="text" class="form-control" placeholder="Naam" />
+                <input id="newsletter-name" name="name" class="form-control" placeholder="Naam" />
+              </div>
+              <div class="form-group">
                 <input id="newsletter-email" name="email" type="email" class="form-control" placeholder="Email" />
               </div>
               <div class="button-group">
                 <button
-                  id="submit"
-                  disabled
+                  id="submit-newsletter"
                   class="g-recaptcha btn button no-margin"
                   data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
                   data-callback="onSubmit"
