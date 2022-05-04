@@ -1,7 +1,9 @@
 RewriteEngine on
-RewriteBase / 
+RewriteBase /
 
-Redirect 301 /index.html http://www.genietenvanmeditatie.nl/en/index.html
+# Redirect familieopstellingen
+Redirect 301 /familie_opstellingen.html http://www.genietenvanmeditatie.nl/aanbod/familie-opstellingen.html
+Redirect 301 /en/family_constellations.html http://www.genietenvanmeditatie.nl/en/offer/family-constellations.html
 
 # Deny access to .htaccess
 <Files .htaccess>
