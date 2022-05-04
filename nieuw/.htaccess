@@ -2,8 +2,8 @@ RewriteEngine on
 RewriteBase /
 
 # Redirect familieopstellingen
-Redirect 301 /familie_opstellingen.html http://www.genietenvanmeditatie.nl/aanbod/familie-opstellingen.html
-Redirect 301 /en/family_constellations.html http://www.genietenvanmeditatie.nl/en/offer/family-constellations.html
+Redirect 301 /familie_opstellingen.html https://www.genietenvanmeditatie.nl/aanbod/familie-opstellingen.html
+Redirect 301 /en/family_constellations.html https://www.genietenvanmeditatie.nl/en/offer/family-constellations.html
 
 # Deny access to .htaccess
 <Files .htaccess>
@@ -21,12 +21,12 @@ Deny from all
   </IfModule>
 
   <IfModule filter_module>
-    FilterDeclare   COMPRESS
-    FilterProvider  COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/html'"
-    FilterProvider  COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/css'"
-    FilterProvider  COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/javascript'"
-    FilterChain     COMPRESS
-    FilterProtocol  COMPRESS DEFLATE change=yes;byteranges=no
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  Header append Vary User-Agent
   </IfModule>
 </IfModule>
 
