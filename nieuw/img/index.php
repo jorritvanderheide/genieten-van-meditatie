@@ -1,0 +1,1 @@
+<?php transip_wh_reserved_page();

@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase / 
+
+Redirect 301 /index.html http://www.voorbijdepressiemetmeditatie.nl/en/index.html
