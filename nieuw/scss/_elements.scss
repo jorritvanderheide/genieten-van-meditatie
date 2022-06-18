@@ -999,11 +999,21 @@ a {
   gap: 2em;
   font-size: 0.75em;
 
-  div {
+  .trio1 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 2em;
     background-color: $tertiary;
     border-radius: 2em;
+
+    div {
+      width: 100%;
+    }
+
+    .flexGrow {
+      flex-grow: 1;
+    }
 
     b {
       display: block;
@@ -1016,7 +1026,7 @@ a {
 
     .butcont {
       width: 100%;
-      margin-top: -1em;
+      margin: 1em 0;
       background-color: transparent;
 
       button {
