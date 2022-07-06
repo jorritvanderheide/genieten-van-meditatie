@@ -109,7 +109,7 @@
             <div class="row justify-content-center social-buttons">
               <a href="https://www.facebook.com/JoyInMeditation" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i></a>
               <a href="https://www.instagram.com/modita_van_zummeren" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q" target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.youtube.com/channel/UCkQNz8ZXa-Z-BhJh2KzafhQ" target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i></a>
               <a href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="row">
