@@ -58,7 +58,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="index.html">
+        <a class="navbar-brand row" href="../index.html">
           <i id="logo" class="fas fa-fire"></i>
           <span>Joy in Meditation</span>
         </a>
@@ -68,16 +68,16 @@
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="offer.html">What I offer</a>
+              <a class="nav-link" href="../offer.html">What I offer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about-me.html">About me</a>
+              <a class="nav-link" href="../about-me.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="calendar.html">Calendar</a>
+              <a class="nav-link" href="../calendar.html">Calendar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link accent" href="contact.html">Contact</a>
+              <a class="nav-link accent" href="../contact.html">Contact</a>
             </li>
           </ul>
         </div>
