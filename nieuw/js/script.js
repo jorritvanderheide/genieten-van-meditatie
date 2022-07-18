@@ -38,14 +38,18 @@ function onSubmit(token) {
 }
 
 function onSubmitContact(token) {
-  if (
-    document.getElementById("contact-form-email").value.length == 0 ||
-    document.getElementById("contact-form-phone").value.length == 0 ||
-    document.getElementById("contact-form-message").value.length == 0
-  ) {
-    alert("Vul eerst alle velden in");
-    window.location.reload();
+  if (document.getElementById("contact-form-email2").value.length != 0) {
+    if (
+      document.getElementById("contact-form-email").value.length == 0 ||
+      document.getElementById("contact-form-phone").value.length == 0 ||
+      document.getElementById("contact-form-message").value.length == 0
+    ) {
+      alert("Vul eerst alle velden in");
+      window.location.reload();
+    } else {
+      document.getElementById("contact-form").submit();
+    }
   } else {
-    document.getElementById("contact-form").submit();
+    return false;
   }
 }
