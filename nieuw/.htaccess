@@ -3,7 +3,9 @@ RewriteBase /
 
 # Redirect familieopstellingen
 Redirect 301 /familie_opstellingen.html https://www.genietenvanmeditatie.nl/aanbod/familie-opstellingen.html
-# Redirect 301 /en/family_constellations.html https://www.genietenvanmeditatie.nl/en/offer/family-constellations.html
+Redirect 301 /familie-opstellingen.html https://www.genietenvanmeditatie.nl/aanbod/familie-opstellingen.html
+Redirect 301 /en/family_constellations.html https://www.genietenvanmeditatie.nl/en/offer/family-constellations.html
+Redirect 301 /en/family-constellations.html https://www.genietenvanmeditatie.nl/en/offer/family-constellations.html
 
 # Deny access to .htaccess
 <Files .htaccess>
