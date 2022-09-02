@@ -5,7 +5,7 @@
   $userMessage    		= $_POST['message'];
   $recaptcha_response = $_POST['tokenContact'];
 
-  $to                 = "jorritvanderheide@protonmail.com";
+  $to                 = "masuwasani@yahoo.com";
 	$subject            = "Contact formulier";
   $body               = "Bericht via het contactformulier van Genieten van Meditatie:";
 

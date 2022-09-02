@@ -4,7 +4,7 @@
   $userEmail	 	      = $_POST['email'];
   $recaptcha_response = $_POST['token'];
 
-  $to                 = 'jorritvanderheide@protonmail.com';
+  $to                 = 'masuwasani@yahoo.com';
   $subject            = 'Nieuwsbrief aanmelding';
   $body               = 'Het volgende emailadres wil zich aanmelden voor de nieuwsbrief:';
 

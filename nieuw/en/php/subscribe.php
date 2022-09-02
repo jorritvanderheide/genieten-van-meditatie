@@ -4,7 +4,7 @@
   $userEmail	 	      = $_POST['email'];
   $recaptcha_response = $_POST['token'];
 
-  $to                 = 'jorritvanderheide@protonmail.com';
+  $to                 = 'masuwasani@yahoo.com';
   $subject            = 'Newsletter subscription';
   $body               = 'The following email address wants to subscribe to the newsletter:';
 
