@@ -31,11 +31,3 @@ Deny from all
   Header append Vary User-Agent
   </IfModule>
 </IfModule>
-
-# Cache settings
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType text/css "access plus 1 month"
-ExpiresByType application/javascript "access plus 1 month"
-ExpiresDefault "access plus 7 days"
-</IfModule>
