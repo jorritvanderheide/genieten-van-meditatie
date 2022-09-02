@@ -3,16 +3,36 @@
   $userEmail	 	      = $_POST['email'];
   $userPhone		      = $_POST['phone'];
   $userMessage    		= $_POST['message'];
+  $recaptcha_response = $_POST['tokenContact'];
 
-  $to                 = "masuwasani@yahoo.com";
-	$subject            = "Contact formulier";
-  $body               = "Bericht via het contactformulier van Joy in Meditation:";
+  $to                 = "jorritvanderheide@protonmail.com";
+	$subject            = "Contact form";
+  $body               = "Message  via the contact form of Joy in Meditation:";
 
-  $body .= "\r\n Email: " . $userEmail;
-  $body .= "\r\n Telefoonnummer: " . $userPhone;
-	$body .= "\r\n Bericht: " . $userMessage;
-  
-  mail($to, $subject, $body);
+  $body .= "\r\nEmail: " . $userEmail;
+  $body .= "\r\nPhone number: " . $userPhone;
+	$body .= "\r\nMessage: " . $userMessage;
+
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LfT-8ghAAAAAGZhcVPOeu1QnOXklvgacMfQnUIA';
+
+  $recaptcha_json = $recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response;
+
+  $verify = curl_init();
+  curl_setopt($verify, CURLOPT_URL, $recaptcha_json);
+  curl_setopt($verify, CURLOPT_POST, true);
+  curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+  curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+  $recaptcha = curl_exec($verify);
+  curl_close($verify);
+
+  $recaptcha_decoded = json_decode($recaptcha);
+
+  if ($recaptcha_decoded->success == 1 AND $recaptcha_decoded->score >= 0.5 AND $recaptcha_decoded->action == "validate_contact") {
+    mail($to, $subject, $body);
+  }
+
 ?>
 
 <!DOCTYPE html>

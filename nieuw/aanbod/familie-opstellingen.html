@@ -1,281 +1,252 @@
 <!DOCTYPE html>
 <html lang="nl" prefix="og: https://ogp.me/ns#">
-  <head>
-    <!-- Required <meta> tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Additional <meta> tags -->
-    <meta name="theme-color" content="#F2C063" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
+<head>
+  <!-- Required <meta> tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- SEO tags -->
-    <title>Familieopstellingen</title>
-    <meta
-      name="description"
-      content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage"
-    />
+  <!-- Additional <meta> tags -->
+  <meta name="theme-color" content="#F2C063" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
-    <!-- OG tags -->
-    <meta property="og:title" content="Genieten van Meditatie | Familieopstellingen" />
-    <meta
-      property="og:description"
-      content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.genietenvanmeditatie.nl" />
-    <meta property="og:image" content="https://www.genietenvanmeditatie.nl/img/thumbnail.webp" />
+  <!-- SEO tags -->
+  <title>Familieopstellingen</title>
+  <meta name="description"
+    content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
 
-    <!-- Favicon -->
-    <link href="../img/favicon-16x16.webp" rel="icon" type="image/webp" sizes="16x16" />
-    <link href="../img/favicon-32x32.webp" rel="icon" type="image/webp" sizes="32x32" />
+  <!-- OG tags -->
+  <meta property="og:title" content="Genieten van Meditatie | Familieopstellingen" />
+  <meta property="og:description"
+    content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.genietenvanmeditatie.nl" />
+  <meta property="og:image" content="https://www.genietenvanmeditatie.nl/img/thumbnail.webp" />
 
-    <!-- Font tags -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&family=Dancing+Script:wght@700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="../img/favicon-16x16.webp" rel="icon" type="image/webp" sizes="16x16" />
+  <link href="../img/favicon-32x32.webp" rel="icon" type="image/webp" sizes="32x32" />
 
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/d2ef007a7d.js" crossorigin="anonymous" defer></script>
+  <!-- Font tags -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      crossorigin="anonymous"
-    />
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/d2ef007a7d.js" crossorigin="anonymous" defer></script>
 
-    <!-- CSS tags -->
-    <link href="../css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    crossorigin="anonymous" />
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
-      <div class="container2 container">
-        <a class="navbar-brand row" href="../index.html">
-          <i id="logo" class="fas fa-fire"></i>
-          <span>Genieten van Meditatie</span>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" onclick="displayMenu()">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mobilenav">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="../aanbod.html">Wat ik aanbied</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../over-mij.html">Over mij</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../agenda.html">Agenda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link accent" href="../contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <!-- CSS tags -->
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LfT-8ghAAAAAEzsSVkwjtJ7VuoNPtLgosT20fMO"></script>
+  <script> grecaptcha.ready(function () {
+      grecaptcha.execute('6LfT-8ghAAAAAEzsSVkwjtJ7VuoNPtLgosT20fMO', { action: 'validate_captcha' })
+        .then(function (token) {
+          document.getElementById('token').value = token;
+        });
+    });</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
+    <div class="container2 container">
+      <a class="navbar-brand row" href="../index.html">
+        <i id="logo" class="fas fa-fire"></i>
+        <span>Genieten van Meditatie</span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" onclick="displayMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mobilenav">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../aanbod.html">Wat ik aanbied</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../over-mij.html">Over mij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../agenda.html">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link accent" href="../contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Header -->
-    <div id="hero_aanbod" class="header">
-      <div id="page-top" class="overlay">
-        <div class="container">
-          <div class="row headerrow altrow">
-            <h1>Familieopstellingen</h1>
-          </div>
+  <!-- Header -->
+  <div id="hero_aanbod" class="header">
+    <div id="page-top" class="overlay">
+      <div class="container">
+        <div class="row headerrow altrow">
+          <h1>Familieopstellingen</h1>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Main -->
-    <main>
+  <!-- Main -->
+  <main>
+    <div class="section-wrapper">
+      <section>
+        <p>
+          Met familieopstellingen zien we dat iets, waar iemand last van heeft (een ziekte, een relatie probleem,
+          depressie, eetstoornissen enzovoorts) vaak te wijten is van een verstrikking binnen het familiesysteem; dus
+          onderdeel van iets, dat veel groter is dan degene die onder bovengenoemde zaken lijdt.
+        </p>
+        <p>Een familieopstelling kan deze verstrikking zichtbaar maken en een helende beweging in gang zetten.</p>
+      </section>
+    </div>
+
+    <div class="section-wrapper background">
+      <section>
+        <div class="column-2">
+          <img src="../img/aanbod/osho.webp" alt="" />
+          <div>
+            <em>Als je graag meer wilt weten over de familieopstellingen raad ik je aan mijn blog te lezen. Deze gaan
+              meer de diepte in over dit onderwerp.</em>
+            <button class="btn button" style="font-size: 0.75em; margin-bottom: 0">
+              <a href="https://genietenvanmeditatie-v2-blog.vercel.app/familieopstellingen"
+                rel="noreferrer noopener">Lees ook de blogs</a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section-wrapper">
+      <section>
+        <p>
+          Ik bied individuele familieopstellingen, familieopstellingen dagen en online familieopstellingen avonden
+          aan:
+        </p>
+
+        <div class="trio">
+          <div class="trio1">
+            <img src="../img/aanbod/familie-opstellingen-online-individueel.webp" alt="Meditatie" loading="lazy"
+              style="margin: 0 0 1em; border-radius: 0.5em" />
+            <div class="flexGrow">
+              <b>Een individuele opstelling, live of online</b>
+              <p><em>Duur:</em> 1,5 uur</p>
+              <p><em>Plaats:</em> Kettingstraat 22, 5611 RD Eindhoven, of online via Zoom</p>
+              <p><em>Kosten:</em> €75,00</p>
+            </div>
+            <div class="butcont">
+              <a class="newbtn" href="../contact.html"><button class="btn button no-margin">Boek nu</button></a>
+            </div>
+          </div>
+          <div class="trio1">
+            <img src="../img/aanbod/familie-opstellingen-live.webp" alt="Meditatie" loading="lazy"
+              style="margin: 0 0 1em; border-radius: 0.5em" />
+            <div class="flexGrow">
+              <b>Familie opstellingen dagen live</b>
+              <p><em>Duur:</em> Eén dag, van 10:00 – 17:00 (lunchpauze van een uur)</p>
+              <p><em>Plaats:</em> Gezondheidscentrum Plus, Jan Smitzlaan 7-A, Eindhoven</p>
+              <p><em>Kosten:</em> €60,00</p>
+            </div>
+            <div class="butcont">
+              <a class="newbtn" href="#familie-opstellingen-agenda"><button class="btn button no-margin">Zie
+                  agenda</button></a>
+            </div>
+          </div>
+          <div class="trio1">
+            <img src="../img/aanbod/familie-opstellingen-online-groep.webp" alt="Meditatie" loading="lazy"
+              style="margin: 0 0 1em; border-radius: 0.5em" />
+            <div class="flexGrow">
+              <b>Familieopstellingen avonden, online</b>
+              <p><em>Duur:</em> 2,5 uur</p>
+              <p><em>Plaats:</em> Online via Zoom</p>
+              <p><em>Kosten:</em> €21,99</p>
+            </div>
+            <div class="butcont">
+              <a class="newbtn" href="#familie-opstellingen-agenda"><button class="btn button no-margin">Zie
+                  agenda</button></a>
+            </div>
+          </div>
+        </div>
+
+        <h1 style="padding-top: 5em" id="familie-opstellingen-agenda">
+          Bekijk hieronder de familieopstellingen agenda:
+        </h1>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FAmsterdam&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showTitle=0&showNav=0&mode=AGENDA&src=NnFyYTc0dGszMXAyYXF1bWk5Y29kbmVkdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4"
+          style="border-width: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
       <div class="section-wrapper">
         <section>
-          <p>
-            Met familieopstellingen zien we dat iets, waar iemand last van heeft (een ziekte, een relatie probleem,
-            depressie, eetstoornissen enzovoorts) vaak te wijten is van een verstrikking binnen het familiesysteem; dus
-            onderdeel van iets, dat veel groter is dan degene die onder bovengenoemde zaken lijdt.
-          </p>
-          <p>Een familieopstelling kan deze verstrikking zichtbaar maken en een helende beweging in gang zetten.</p>
-        </section>
-      </div>
-
-      <div class="section-wrapper background">
-        <section>
-          <div class="column-2">
-            <img src="../img/aanbod/osho.webp" alt="" />
-            <div>
-              <em
-                >Als je graag meer wilt weten over de familieopstellingen raad ik je aan mijn blog te lezen. Deze gaan
-                meer de diepte in over dit onderwerp.</em
-              >
-              <button class="btn button" style="font-size: 0.75em; margin-bottom: 0">
-                <a href="https://genietenvanmeditatie-v2-blog.vercel.app/familieopstellingen" rel="noreferrer noopener"
-                  >Lees ook de blogs</a
-                >
+          <h2 class="text-center">Genieten van Meditatie</h2>
+          <div class="row justify-content-center social-buttons">
+            <a href="https://www.facebook.com/JoyInMeditation" target="_blank" rel="noreferrer"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/modita_van_zummeren" target="_blank" rel="noreferrer"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q" target="_blank" rel="noreferrer"><i
+                class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699" target="_blank" rel="noreferrer"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p style="margin-top: 2.5vh; margin-bottom: -1em; text-align: center">Wil je mijn nieuwsbrief ontvangen?</p>
+          <form id="newsletter" action="../php/subscribe.php" method="POST" class="form row">
+            <input type="hidden" name="token" id="token">
+            <input type="hidden" name="action" value="validate_captcha">
+            <div class="form-group">
+              <input id="newsletter-name" name="name" class="form-control" placeholder="Naam" />
+            </div>
+            <div class="form-group">
+              <input id="newsletter-email" name="email" type="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="button-group">
+              <button id="submit-newsletter" class="btn button no-margin" type="submit">
+                Schrijf je in
               </button>
             </div>
+          </form>
+          <div class="row">
+            <hr />
+            <div class="osholink">
+              <a href="https://www.osho.com/copyrights" target="_blank">
+                <p>
+                  Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with
+                  permission of © Osho International Foundation, www.osho.com/copyrights<br />
+                </p>
+              </a>
+              <a href="https://www.osho.com/trademarks" target="_blank">
+                <p>
+                  OSHO is a registered trademark of Osho International Foundation, used with permission,
+                  www.osho.com/trademarks
+                </p>
+              </a>
+            </div>
           </div>
-        </section>
-      </div>
-
-      <div class="section-wrapper">
-        <section>
-          <p>
-            Ik bied individuele familieopstellingen, familieopstellingen dagen en online familieopstellingen avonden
-            aan:
+          <p class="text-center" style="margin-top: 1em; font-size: 0.65em">
+            &copy; 2022 Joy in Meditation | <span><a href="../avg.html" style="color: #222">Privacybeleid</a></span>
           </p>
-
-          <div class="trio">
-            <div class="trio1">
-              <img
-                src="../img/aanbod/familie-opstellingen-online-individueel.webp"
-                alt="Meditatie"
-                loading="lazy"
-                style="margin: 0 0 1em; border-radius: 0.5em"
-              />
-              <div class="flexGrow">
-                <b>Een individuele opstelling, live of online</b>
-                <p><em>Duur:</em> 1,5 uur</p>
-                <p><em>Plaats:</em> Kettingstraat 22, 5611 RD Eindhoven, of online via Zoom</p>
-                <p><em>Kosten:</em> €75,00</p>
-              </div>
-              <div class="butcont">
-                <a class="newbtn" href="../contact.html"><button class="btn button no-margin">Boek nu</button></a>
-              </div>
-            </div>
-            <div class="trio1">
-              <img
-                src="../img/aanbod/familie-opstellingen-live.webp"
-                alt="Meditatie"
-                loading="lazy"
-                style="margin: 0 0 1em; border-radius: 0.5em"
-              />
-              <div class="flexGrow">
-                <b>Familie opstellingen dagen live</b>
-                <p><em>Duur:</em> Eén dag, van 10:00 – 17:00 (lunchpauze van een uur)</p>
-                <p><em>Plaats:</em> Gezondheidscentrum Plus, Jan Smitzlaan 7-A, Eindhoven</p>
-                <p><em>Kosten:</em> €60,00</p>
-              </div>
-              <div class="butcont">
-                <a class="newbtn" href="#familie-opstellingen-agenda"
-                  ><button class="btn button no-margin">Zie agenda</button></a
-                >
-              </div>
-            </div>
-            <div class="trio1">
-              <img
-                src="../img/aanbod/familie-opstellingen-online-groep.webp"
-                alt="Meditatie"
-                loading="lazy"
-                style="margin: 0 0 1em; border-radius: 0.5em"
-              />
-              <div class="flexGrow">
-                <b>Familieopstellingen avonden, online</b>
-                <p><em>Duur:</em> 2,5 uur</p>
-                <p><em>Plaats:</em> Online via Zoom</p>
-                <p><em>Kosten:</em> €21,99</p>
-              </div>
-              <div class="butcont">
-                <a class="newbtn" href="#familie-opstellingen-agenda"
-                  ><button class="btn button no-margin">Zie agenda</button></a
-                >
-              </div>
-            </div>
-          </div>
-
-          <h1 style="padding-top: 5em" id="familie-opstellingen-agenda">
-            Bekijk hieronder de familieopstellingen agenda:
-          </h1>
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FAmsterdam&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showTitle=0&showNav=0&mode=AGENDA&src=NnFyYTc0dGszMXAyYXF1bWk5Y29kbmVkdm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4"
-            style="border-width: 0;"
-            width="800"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
         </section>
       </div>
-    </main>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="section-wrapper">
-          <section>
-            <h2 class="text-center">Genieten van Meditatie</h2>
-            <div class="row justify-content-center social-buttons">
-              <a href="https://www.facebook.com/JoyInMeditation" target="_blank" rel="noreferrer"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="https://www.instagram.com/modita_van_zummeren" target="_blank" rel="noreferrer"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q" target="_blank" rel="noreferrer"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699" target="_blank" rel="noreferrer"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-            <p style="margin-top: 2.5vh; margin-bottom: -1em; text-align: center">Wil je mijn nieuwsbrief ontvangen?</p>
-            <form id="newsletter" action="../php/subscribe.php" method="POST" class="form row">
-              <div class="form-group">
-                <input id="newsletter-name" name="name" class="form-control" placeholder="Naam" />
-              </div>
-              <div class="form-group">
-                <input id="newsletter-email" name="email" type="email" class="form-control" placeholder="Email" />
-              </div>
-              <div class="button-group">
-                <button
-                  id="submit-newsletter"
-                  class="g-recaptcha btn button no-margin"
-                  data-sitekey="6LcWwwkfAAAAAMqkOgRYf1rDkfNyAWeoweLq3Rq_"
-                  data-callback="onSubmit"
-                >
-                  Schrijf je in
-                </button>
-              </div>
-            </form>
-            <div class="row">
-              <hr />
-              <div class="osholink">
-                <a href="https://www.osho.com/copyrights" target="_blank">
-                  <p>
-                    Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with
-                    permission of © Osho International Foundation, www.osho.com/copyrights<br />
-                  </p>
-                </a>
-                <a href="https://www.osho.com/trademarks" target="_blank">
-                  <p>
-                    OSHO is a registered trademark of Osho International Foundation, used with permission,
-                    www.osho.com/trademarks
-                  </p>
-                </a>
-              </div>
-            </div>
-            <p class="text-center" style="margin-top: 1em; font-size: 0.65em">
-              &copy; 2022 Joy in Meditation | <span><a href="../avg.html" style="color: #222">Privacybeleid</a></span>
-            </p>
-          </section>
-        </div>
-      </div>
-    </footer>
+  <!-- Custom JavaScript -->
+  <script src="../js/script.js"></script>
 
-    <!-- reCAPTCHA -->
-    <script defer src="https://www.google.com/recaptcha/api.js"></script>
+  <!-- Plausible -->
+  <script defer data-domain="genietenvanmeditatie.nl" src="https://plausible.io/js/plausible.js"></script>
+</body>
 
-    <!-- Custom JavaScript -->
-    <script src="../js/script.js"></script>
-
-    <!-- Plausible -->
-    <script defer data-domain="genietenvanmeditatie.nl" src="https://plausible.io/js/plausible.js"></script>
-  </body>
 </html>

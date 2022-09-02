@@ -38,18 +38,15 @@ function onSubmit(token) {
 }
 
 function onSubmitContact(token) {
-  if (document.getElementById("contact-form-email2").value.length != 0) {
-    if (
-      document.getElementById("contact-form-email").value.length == 0 ||
-      document.getElementById("contact-form-phone").value.length == 0 ||
-      document.getElementById("contact-form-message").value.length == 0
-    ) {
-      alert("First, fill all the fields in the form");
-      window.location.reload();
-    } else {
-      document.getElementById("contact-form").submit();
-    }
+  if (
+    document.getElementById("contact-form-email").value.length == 0 ||
+    document.getElementById("contact-form-phone").value.length == 0 ||
+    document.getElementById("contact-form-message").value.length == 0
+  ) {
+    alert("First, fill all the fields in the form");
+    window.location.reload();
   } else {
-    return false;
+    document.getElementById("contact-form").submit();
   }
 }
+

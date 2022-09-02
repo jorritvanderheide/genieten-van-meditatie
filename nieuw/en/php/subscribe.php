@@ -1,15 +1,36 @@
 <?php
-    $userName	 	        = $_POST['name'];
-    $userEmail	 	      = $_POST['email'];
 
-    $to                 = "masuwasani@yahoo.com";
-    $subject            = "Nieuwsbrief aanmelding";
-    $body               = "Het volgende emailadres wil zich aanmelden voor de nieuwsbrief:";
+  $userName	 	        = $_POST['name'];
+  $userEmail	 	      = $_POST['email'];
+  $recaptcha_response = $_POST['token'];
 
-    $body .= "\r\n Naam: " . $userName;
-    $body .= "\r\n Email: " . $userEmail;
-    
-	mail($to, $subject, $body);
+  $to                 = 'jorritvanderheide@protonmail.com';
+  $subject            = 'Newsletter subscription';
+  $body               = 'The following email address wants to subscribe to the newsletter:';
+
+  $body .= "\r\nNaam: " . $userName;
+  $body .= "\r\nEmail: " . $userEmail;
+
+  $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+  $recaptcha_secret = '6LfT-8ghAAAAAGZhcVPOeu1QnOXklvgacMfQnUIA';
+
+  $recaptcha_json = $recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response;
+
+  $verify = curl_init();
+  curl_setopt($verify, CURLOPT_URL, $recaptcha_json);
+  curl_setopt($verify, CURLOPT_POST, true);
+  curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+  curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+  $recaptcha = curl_exec($verify);
+  curl_close($verify);
+
+  $recaptcha_decoded = json_decode($recaptcha);
+
+  if ($recaptcha_decoded->success == 1 AND $recaptcha_decoded->score >= 0.5 AND $recaptcha_decoded->action == "validate_captcha") {
+    mail($to, $subject, $body);
+  }
+
 ?>
 
 <!DOCTYPE html>

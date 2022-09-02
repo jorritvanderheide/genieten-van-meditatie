@@ -26,30 +26,3 @@ function displayMenu() {
     document.getElementById("mobilenav").classList.add("collapse");
   }
 }
-
-// reCAPTCHA
-function onSubmit(token) {
-  if (document.getElementById("newsletter-email").value.length == 0) {
-    alert("Vul ten minste uw email adres in");
-    window.location.reload();
-  } else {
-    document.getElementById("newsletter").submit();
-  }
-}
-
-function onSubmitContact(token) {
-  if (document.getElementById("contact-form-email2").value.length != 0) {
-    if (
-      document.getElementById("contact-form-email").value.length == 0 ||
-      document.getElementById("contact-form-phone").value.length == 0 ||
-      document.getElementById("contact-form-message").value.length == 0
-    ) {
-      alert("Vul eerst alle velden in");
-      window.location.reload();
-    } else {
-      document.getElementById("contact-form").submit();
-    }
-  } else {
-    return false;
-  }
-}
