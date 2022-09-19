@@ -8,6 +8,8 @@
   $to                 = "masuwasani@yahoo.com";
 	$subject            = "Contact form";
   $body               = "Message  via the contact form of Joy in Meditation:";
+  $message            = 'Thanks for you message!';
+  $messageContent     = "I successfully received your message. I will get back to you as soon as possible.\r\n\r\nWarm greetings,\r\n\r\nModita van Zummeren";
 
   $body .= "\r\nEmail: " . $userEmail;
   $body .= "\r\nPhone number: " . $userPhone;
@@ -31,6 +33,7 @@
 
   if ($recaptcha_decoded->success == 1 AND $recaptcha_decoded->score >= 0.5 AND $recaptcha_decoded->action == "validate_contact") {
     mail($to, $subject, $body);
+    mail($subject, $message, $messageContent);
   }
 
 ?>
@@ -115,8 +118,10 @@
 
     <div class="section-wrapper">
       <section>
-        <h1>Your message was send successfully!</h1>
+        <h1>Your message was send!</h1>
         <p>Thanks for reaching out! I will contact you as soon as possible!</p>
+        <p>If this message was send successfully, you will find a confirmation in your email in the next few hours.<br>
+          If you receive no such confirmation, please contact me at info@genietenvanmeditatie.nl.</p>
       </section>
     </div>
 

@@ -7,6 +7,8 @@
   $to                 = 'masuwasani@yahoo.com';
   $subject            = 'Newsletter subscription';
   $body               = 'The following email address wants to subscribe to the newsletter:';
+  $message            = 'Thanks for you subscription!';
+  $messageContent     = "You are successfully subscribed to the Joy in Meditation Newsletter.\r\n\r\nWarm greetings,\r\n\r\nModita van Zummeren";
 
   $body .= "\r\nNaam: " . $userName;
   $body .= "\r\nEmail: " . $userEmail;
@@ -29,6 +31,7 @@
 
   if ($recaptcha_decoded->success == 1 AND $recaptcha_decoded->score >= 0.5 AND $recaptcha_decoded->action == "validate_captcha") {
     mail($to, $subject, $body);
+    mail($subject, $message, $messageContent);
   }
 
 ?>
@@ -115,6 +118,8 @@
       <section>
         <h1>You are now subscribed to the the newsletter!</h1>
         <p>Thanks for your subscription, from now on, you will receive my newsletter in your mailbox every week!</p>
+        <p>If I received your subscription successfully, you will find a confirmation in your email in the next few hours.<br>
+          If you receive no such confirmation, please contact me at info@genietenvanmeditatie.nl.</p>
       </section>
     </div>
 

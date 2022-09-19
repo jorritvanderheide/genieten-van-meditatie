@@ -7,6 +7,8 @@
   $to                 = 'masuwasani@yahoo.com';
   $subject            = 'Nieuwsbrief aanmelding';
   $body               = 'Het volgende emailadres wil zich aanmelden voor de nieuwsbrief:';
+  $message            = 'Bedankt voor je aanmelding!';
+  $messageContent     = "Je bent nu succesvol ingeschreven voor de Genieten van Meditatie nieuwsbrief.\r\n\r\nWarme groet,\r\n\r\nModita van Zummeren";
 
   $body .= "\r\nNaam: " . $userName;
   $body .= "\r\nEmail: " . $userEmail;
@@ -29,6 +31,7 @@
 
   if ($recaptcha_decoded->success == 1 AND $recaptcha_decoded->score >= 0.5 AND $recaptcha_decoded->action == "validate_captcha") {
     mail($to, $subject, $body);
+    mail($subject, $message, $messageContent);
   }
 
 ?>
@@ -118,6 +121,8 @@
       <section>
         <h1>Je bent aangemeld voor de nieuwsbrief!</h1>
         <p>Dank je voor je aanmelding, je ontvangt vanaf nu elke week mijn nieuwsbrief in je mailbox!</p>
+        <p>Als ik je aanmelding succesvol ontvangen heb krijg je binnen een paar uur een bevestiging.<br>
+          Heb je geen bevestiging ontvangen? Neem dan contact met me op via info@genietenvanmeditatie.nl</p>
       </section>
     </div>
 

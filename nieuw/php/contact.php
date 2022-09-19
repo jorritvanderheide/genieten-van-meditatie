@@ -8,6 +8,8 @@
   $to                 = "masuwasani@yahoo.com";
 	$subject            = "Contact formulier";
   $body               = "Bericht via het contactformulier van Genieten van Meditatie:";
+  $message            = 'Bedankt voor je bericht!';
+  $messageContent     = "Ik heb je bericht successvol ontvangen en zal je zo snel mogelijk terugmailen.\r\n\r\nWarme groet,\r\n\r\nModita van Zummeren";
 
   $body .= "\r\nEmail: " . $userEmail;
   $body .= "\r\nTelefoonnummer: " . $userPhone;
@@ -31,6 +33,7 @@
 
   if ($recaptcha_decoded->success == 1 AND $recaptcha_decoded->score >= 0.5 AND $recaptcha_decoded->action == "validate_contact") {
     mail($to, $subject, $body);
+    mail($subject, $message, $messageContent);
   }
 
 ?>
@@ -117,6 +120,8 @@
       <section>
         <h1>Je bericht is verstuurd!</h1>
         <p>Dank je voor je bericht! Ik neem zo snel mogelijk contact met je op!</p>
+        <p>Als dit bericht successvol verstuurd is krijg je een bevestiging binnen een paar uur.<br>
+          Heb je geen bevestiging ontvangen? Neem dan contact met me op via info@genietenvanmeditatie.nl</p>
       </section>
     </div>
 
