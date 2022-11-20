@@ -1105,3 +1105,46 @@ a {
 .grecaptcha-badge {
   z-index: 1000 !important;
 }
+
+.nav-item {
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+
+    .space {
+      display: block;
+      margin-top: -1.5em;
+      margin-bottom: 0.25em;
+      height: 1em;
+      background-color: transparent;
+    }
+
+    a {
+      padding: 0.25em 0.5em;
+      text-decoration: none;
+      color: $dark-gray;
+      font-size: 0.9em;
+
+      &:hover {
+        background-color: $tertiary;
+        border-radius: 1em;
+        color: $secondary;
+      }
+    }
+  }
+
+  &:hover {
+    .dropdown {
+      display: flex;
+      flex-direction: column;
+      margin-left: -0.5em;
+      margin-top: 0.5em;
+      padding: 1em;
+      width: inherit;
+      border-radius: 1em;
+      padding-bottom: 0.75em;
+      filter: drop-shadow(0 0 5px rgba(50, 50, 50, 0.25));
+    }
+  }
+}
