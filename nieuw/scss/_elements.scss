@@ -1148,3 +1148,29 @@ a {
     }
   }
 }
+
+.flex-outer {
+  flex-direction: column;
+  margin: 0;
+  display: flex;
+  gap: 5%;
+
+  .flex-item {
+    width: 100%;
+  }
+
+  @include small {
+    flex-direction: row;
+    margin-left: -10vw;
+    margin-right: -10vw;
+
+    .flex-item {
+      width: 16%;
+    }
+  }
+}
+
+.fab {
+  width: 20px;
+  height: 20px;
+}
