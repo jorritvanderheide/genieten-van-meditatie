@@ -12,13 +12,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
 
     <!-- SEO tags -->
-    <title>Contact</title>
+    <title>Familieopstellingen</title>
     <meta
       name="description"
       content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
 
     <!-- OG tags -->
-    <meta property="og:title" content="Genieten van Meditatie | Contact" />
+    <meta
+      property="og:title"
+      content="Genieten van Meditatie | Familieopstellingen" />
     <meta
       property="og:description"
       content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
@@ -30,12 +32,12 @@
 
     <!-- Favicon -->
     <link
-      href="img/favicon-16x16.webp"
+      href="../img/favicon-16x16.webp"
       rel="icon"
       type="image/webp"
       sizes="16x16" />
     <link
-      href="img/favicon-32x32.webp"
+      href="../img/favicon-32x32.webp"
       rel="icon"
       type="image/webp"
       sizes="32x32" />
@@ -44,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet" />
 
     <!-- Fontawesome -->
@@ -60,7 +62,7 @@
       crossorigin="anonymous" />
 
     <!-- CSS tags -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -87,14 +89,6 @@
           .then(function (token) {
             document.getElementById("token").value = token;
           });
-
-        grecaptcha
-          .execute("6LfT-8ghAAAAAEzsSVkwjtJ7VuoNPtLgosT20fMO", {
-            action: "validate_contact",
-          })
-          .then(function (token) {
-            document.getElementById("tokenContact").value = token;
-          });
       });
     </script>
   </head>
@@ -105,7 +99,7 @@
       class="navbar navbar-expand-xl navbar-light fixed-top mainNav"
       id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="index.html">
+        <a class="navbar-brand row" href="../index.html">
           <i id="logo" class="fas fa-fire"></i>
           <span>Genieten van Meditatie</span>
         </a>
@@ -117,28 +111,34 @@
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="aanbod.html">Wat ik aanbied</a>
+              <a class="nav-link active" href="../aanbod.html"
+                >Wat ik aanbied</a
+              >
               <div class="dropdown">
                 <div class="space"></div>
-                <a href="aanbod/familie-opstellingen.html"
+                <a href="../aanbod/familie-opstellingen.html"
                   >Familieopstellingen</a
                 >
-                <a href="aanbod/omgaan-met-stress.html">Omgaan met Stress</a>
-                <!-- <a href="aanbod/osho-meditaties.html">OSHO Meditatie dagen</a> -->
-                <!-- <a href="aanbod/osho-mystic-rose.html"
+                <a href="../aanbod/omgaan-met-stress.html">Omgaan met Stress</a>
+                <!-- <a href="../aanbod/osho-meditaties.html"
+                  >OSHO Meditatie dagen</a
+                > -->
+                <!-- <a href="../aanbod/osho-mystic-rose.html"
                   >OSHO<sup>®</sup> Mystic Rose</a
                 > -->
-                <a href="aanbod/gezichts-massage.html"
+                <a href="../aanbod/gezichts-massage.html"
                   >Japanse Gezichtsmassage</a
                 >
-                <a href="aanbod/praten-met-lichaam-en-mind.html">Zelfhypnose</a>
-                <a href="aanbod/coaching.html">Coaching</a
-                ><!-- <a href="aanbod/online-cursussen.html">Online cursussen</a> -->
-                <a href="aanbod/nieuwsbrief.html">Nieuwsbrief</a>
+                <a href="../aanbod/praten-met-lichaam-en-mind.html"
+                  >Zelfhypnose</a
+                >
+                <a href="../aanbod/coaching.html">Coaching</a
+                ><!-- <a href="../aanbod/online-cursussen.html">Online cursussen</a> -->
+                <a href="../aanbod/nieuwsbrief.html">Nieuwsbrief</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="over-mij.html">Over mij</a>
+              <a class="nav-link" href="../over-mij.html">Over mij</a>
               <div class="dropdown">
                 <div class="space"></div>
                 <a
@@ -148,9 +148,9 @@
                   noopener
                   >Youtube</a
                 >
-                <a href="over-mij/podcast.html">Podcast</a>
+                <a href="../over-mij/podcast.html">Podcast</a>
 
-                <a href="over-mij/boeken.html">Boeken</a>
+                <a href="../over-mij/boeken.html">Boeken</a>
                 <a
                   href="https://www.facebook.com/JoyInMeditation"
                   target="_blank"
@@ -164,10 +164,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="agenda.html">Agenda</a>
+              <a class="nav-link" href="../agenda.html">Agenda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link accent" href="contact.html">Contact</a>
+              <a class="nav-link accent" href="../contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -175,11 +175,11 @@
     </nav>
 
     <!-- Header -->
-    <div id="page-top" class="header">
-      <div class="overlay">
+    <div id="hero_aanbod" class="header">
+      <div id="page-top" class="overlay">
         <div class="container">
           <div class="row headerrow altrow">
-            <h1>Contact</h1>
+            <h1>Mijn nieuwsbrief</h1>
           </div>
         </div>
       </div>
@@ -187,128 +187,73 @@
 
     <!-- Main -->
     <main>
-      <div class="section-wrapper" id="form">
+      <div class="section-wrapper">
         <section>
-          <!-- <h1>Contact</h1> -->
           <p>
-            Wil je een vrijblijvend kennismakingsgesprek boeken, heb je een
-            vraag over mijn aanbod of wil je meer weten over mij of over wat ik
-            doe? Of wil je je aanmelden voor een activiteit?
+            In mijn tweewekelijkse nieuwsbrief deel ik teksten van Osho over
+            meditatie in het dagelijks leven, inzichten uit familieopstellingen,
+            mijn aanbod aan workshops van de komende twee weken en mijn nieuwste
+            podcast afleveringen en Youtube filmpjes.
           </p>
-          <!-- <p>Neem dan contact met me op via het onderstaande formulier.</p> -->
         </section>
       </div>
 
       <div class="section-wrapper background">
         <section>
-          <!-- <form id="contact-form" method="POST" action="php/contact.php">
-          <input type="hidden" name="tokenContact" id="tokenContact">
-          <input type="hidden" name="action" value="validate_contact">
-          <div class="form-group">
-            <input id="contact-form-email" name="email" type="email" class="form-control" placeholder="Email adres" />
+          <div class="column-2">
+            <img src="../img/aanbod/nieuwsbrief.webp" alt="" />
+            <div>
+              <em
+                >Als je mijn nieuwsbrief wilt ontvangen, stuur me dan een
+                mailtje.
+              </em>
+              <button
+                class="btn button"
+                style="font-size: 0.75em; margin-bottom: 0">
+                <a
+                  href="https://genietenvanmeditatie.nl/contact.html"
+                  rel="noreferrer noopener"
+                  >Neem contact op</a
+                >
+              </button>
+            </div>
           </div>
-          <div class="form-group">
-            <input id="contact-form-email2" name="email2" type="email" class="form-control antispam"
-              placeholder="Repeat email" />
-          </div>
-          <div class="form-group">
-            <input id="contact-form-phone" name="phone" type="tel" class="form-control" placeholder="Telefoonnummer" />
-          </div>
-          <div class="form-group">
-            <textarea id="contact-form-message" name="message" class="form-control"
-              placeholder="Wat is je vraag, of voor welke activiteit wil je je aanmelden?"></textarea>
-          </div>
-          <div class="button-group">
-            <button id="submit-contact" class="btn button no-margin" type='submit'>
-              Verstuur
-            </button>
-          </div>
-        </form> -->
-          <p>
-            Neem dan contact met me op via mijn emailadres:
-            <a href="mailto:info@genietenvanmeditatie.nl"
-              >info@genietenvanmeditatie.nl</a
-            >
-          </p>
-          <p>
-            Of via mijn telefoonnummer:
-            <a href="callto:+31638153942">06 3815 3942</a>
-          </p>
-          <p>
-            Je kunt ook contact met me opnemen voor het aanvragen van lezingen
-            over eetstoornissen, familieopstellingen of depressie.
-          </p>
-          <p>
-            Alléén afspraken die meer dan 48 uur van tevoren worden afgezegd,
-            worden niet in rekening gebracht. Indien u uw geplande afspraak te
-            laat afbelt, of zonder bericht niet nakomt, ben ik helaas
-            genoodzaakt de geplande afspraak bij u in rekening te brengen.
-          </p>
         </section>
       </div>
 
       <div class="section-wrapper">
         <section>
-          <p>
-            Je bent van harte welkom, zowel online via Zoom als bij mij thuis in
-            Eindhoven.
-          </p>
-          <p>
-            De activiteiten vinden - tenzij anders vermeld - plaats bij mij
-            thuis.<br />Ik woon op Kettingstraat 22, 5611 RD Eindhoven.
-          </p>
-          <div class="split">
-            <div>
-              <img
-                src="img/contact/kettingstraat.webp"
-                alt=""
-                style="height: fit-content"
-                loading="lazy" />
-            </div>
-            <div>
-              <img
-                src="img/contact/kettingstraat_map.webp"
-                alt=""
-                style="height: fit-content"
-                loading="lazy" />
-            </div>
-          </div>
+          <p>Ik wens je veel lees-, kijk- en luisterplezier!</p>
         </section>
       </div>
 
+      <!-- Review
       <div class="section-wrapper background">
         <section>
           <div class="review">
             <div class="review-img">
-              <img src="img/reviews/willy.webp" alt="" />
+              <img src="../img/reviews/carolien.webp" alt="" />
             </div>
             <div class="review-text">
+              <p>Wat was het een fijne, indrukkwekkende dag!</p>
               <p>
-                De coaching van Modita ervaar ik steeds als helder, duidelijk,
-                invoelend en respectvol. Daardoor voel ik me vrij om me
-                kwetsbaar op te stellen zonder erbij na te hoeven denken. Haar
-                begeleiding heeft me zo veel goeds gebracht, meer dan ik ooit
-                had kunnen bedenken.
+                Je merkt echt dat Modita alles wat ze doet vanuit het hart en
+                intuïtie doet. Dit maakt dat het zo mooi aansluit bij de energie
+                op dat moment. Na elke opstelling checkt ze hoe iedereen zich
+                voelt en of iemand iets nodig heeft om weer in het moment te
+                komen.
               </p>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  margin-top: 1em;
-                ">
-                <p class="review-left">- Willy</p>
-                <a class="newbtn" href="over-mij/reviews.html"
-                  ><button
-                    class="btn button no-margin"
-                    style="font-size: 0.75em; opacity: 0.8">
-                    Meer recensies
-                  </button></a
-                >
-              </div>
+
+              <p>
+                Het dansen tussendoor en de meditatie als afsluiter waren erg
+                fijn en bevrijdend. Ik raad het iedereen aan om het zelf te
+                ervaren.
+              </p>
+              <p class="review-right">- Carolien</p>
             </div>
           </div>
         </section>
-      </div>
+      </div> -->
     </main>
 
     <!-- Footer -->
@@ -353,7 +298,7 @@
             </p>
             <form
               id="newsletter"
-              action="php/subscribe.php"
+              action="../php/subscribe.php"
               method="POST"
               class="form row">
               <input type="hidden" name="token" id="token" />
@@ -403,7 +348,9 @@
             <p class="text-center" style="margin-top: 1em; font-size: 0.65em">
               &copy; 2022 Joy in Meditation |
               <span
-                ><a href="avg.html" style="color: #222">Privacybeleid</a></span
+                ><a href="../avg.html" style="color: #222"
+                  >Privacybeleid</a
+                ></span
               >
             </p>
           </section>
@@ -412,7 +359,7 @@
     </footer>
 
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
     <!-- Plausible -->
     <script
