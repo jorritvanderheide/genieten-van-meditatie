@@ -1,8 +1,70 @@
 <!DOCTYPE html>
-<html lang="nl" prefix="og: http://ogp.me/ns#">
+<html lang="nl" prefix="og: https://ogp.me/ns#">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5J68WKQTGT"></script>
+    <!-- Required <meta> tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Additional <meta> tags -->
+    <meta name="theme-color" content="#F2C063" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
+
+    <!-- SEO tags -->
+    <title>Genieten van Meditatie</title>
+    <meta
+      name="description"
+      content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
+
+    <!-- OG tags -->
+    <meta property="og:title" content="Genieten van Meditatie" />
+    <meta
+      property="og:description"
+      content="Osho meditaties, familieopstellingen, coaching bij depressie en eetproblemen & Japanse gezichtsmassage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.genietenvanmeditatie.nl" />
+    <meta
+      property="og:image"
+      content="https://www.genietenvanmeditatie.nl/img/thumbnail.webp" />
+
+    <!-- Favicon -->
+    <link
+      href="img/favicon-16x16.webp"
+      rel="icon"
+      type="image/webp"
+      sizes="16x16" />
+    <link
+      href="img/favicon-32x32.webp"
+      rel="icon"
+      type="image/webp"
+      sizes="32x32" />
+
+    <!-- Font tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Average&family=Courgette&family=Epilogue:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d2ef007a7d.js"
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous" />
+
+    <!-- CSS tags -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11001178467"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -10,98 +72,100 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-5J68WKQTGT");
+      gtag("config", "AW-11001178467");
     </script>
-    <!-- Google Tag Manager -->
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfT-8ghAAAAAEzsSVkwjtJ7VuoNPtLgosT20fMO"></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TQHFPP5");
+      grecaptcha.ready(function () {
+        grecaptcha
+          .execute("6LfT-8ghAAAAAEzsSVkwjtJ7VuoNPtLgosT20fMO", {
+            action: "validate_captcha",
+          })
+          .then(function (token) {
+            document.getElementById("token").value = token;
+          });
+      });
     </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Required <meta> tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Additional <meta> tags -->
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="theme-color" content="#F2C063" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#F2C063" />
-
-    <!-- SEO tags -->
-    <title>Genieten van Meditatie</title>
-    <meta name="description" content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage" />
-
-    <!-- OG tags -->
-    <meta property="og:title" content="Meditatie, Familie Opstellingen en Begeleiding" />
-    <meta property="og:description" content="Osho meditaties, Familie Opstellingen, Begeleiding bij depressie en eetproblemen & Japanse gezichtsmassage" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.genietenvanmeditatie.nl" />
-    <meta property="og:image" content="http://www.genietenvanmeditatie.nl/img/thumbnail.jpg" />
-
-    <!-- Font tags -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Average|Cookie|Raleway:700|Courgette|Source+Serif+Pro&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
-    <!-- CSS tags -->
-    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQHFPP5" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top mainNav" id="navbar">
+    <nav
+      class="navbar navbar-expand-xl navbar-light fixed-top mainNav"
+      id="navbar">
       <div class="container2 container">
-        <a class="navbar-brand row" href="#page-top">
+        <a class="navbar-brand row" href="index.html">
           <i id="logo" class="fas fa-fire"></i>
           <span>Genieten van Meditatie</span>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mobilenav">
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          onclick="displayMenu()">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mobilenav">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="ben_jij_dit.html">Ben jij dit?</a>
+              <a class="nav-link" id="link-aanbod" href="aanbod.html"
+                >Wat ik aanbied</a
+              >
+              <div class="dropdown">
+                <div class="space"></div>
+                <a href="aanbod/familie-opstellingen.html"
+                  >Familieopstellingen</a
+                >
+                <!-- <a href="aanbod/omgaan-met-stress.html">Omgaan met Stress</a> -->
+                <!-- <a href="aanbod/osho-mystic-rose.html"
+                  >OSHO<sup>®</sup> Mystic Rose</a
+                > -->
+                <a href="aanbod/gezichts-massage.html"
+                  >Japanse Gezichtsmassage</a
+                >
+                <a href="aanbod/praten-met-lichaam-en-mind.html">Zelfhypnose</a>
+                <a href="aanbod/coaching.html">Coaching</a
+                ><!-- <a href="aanbod/online-cursussen.html">Online cursussen</a> -->
+                <a href="aanbod/nieuwsbrief.html">Nieuwsbrief</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="hoe_werkt_het.html">Hoe werkt het?</a>
+              <a class="nav-link" href="over-mij.html">Over mij</a>
+              <div class="dropdown">
+                <div class="space"></div>
+                <a
+                  href="https://www.youtube.com/@moditavanzummeren"
+                  target="_blank"
+                  noreferrer
+                  noopener
+                  >Youtube</a
+                >
+                <a href="over-mij/podcast.html">Podcast</a>
+
+                <a href="over-mij/boeken.html">Boeken</a>
+                <a
+                  href="https://www.facebook.com/JoyInMeditation"
+                  target="_blank"
+                  noreferrer
+                  noopener
+                  >Facebook</a
+                >
+                <a href="https://genietenvanmeditatie-v2-blog.vercel.app"
+                  >Blog</a
+                >
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wat_ik_aanbied.html">Wat ik aanbied</a>
+              <a class="nav-link" href="agenda.html">Agenda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nieuwsbrief.html">Nieuwsbrief</a>
+              <a class="nav-link accent" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="over_mij.html">Over mij</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="inspiratie.html">Inspiratie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link accent" href="agenda.html">Agenda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link flag" href="/en/index.html"><img src="img/eng.png" /></a>
-            </li>
+            <a
+              href="en/index.html"
+              style="position: absolute; right: 2em; top: -0.5em; width: 2em"
+              ><img src="img/en.webp" alt=""
+            /></a>
           </ul>
         </div>
       </div>
@@ -113,191 +177,217 @@
         <div class="container">
           <div class="row headerrow">
             <div id="headerquote" class="col-12 col-xl-6">
-              <a href="familie_opstellingen.html">
-                <div id="index1" class="indexpane">
-                  <p><i class="fas fa-fire"></i> Familie opstellingen<span></span></p>
-                </div>
-              </a>
-              <a href="online_community.html">
-                <div id="index2" class="indexpane">
-                  <p><i class="fas fa-fire"></i> Online community<span></span></p>
-                </div>
-              </a>
-              <a href="nieuw_boek.html">
-                <div id="index3" class="indexpane">
-                  <p><i class="fas fa-fire"></i> Mijn boeken<span></span></p>
-                </div>
-              </a>
+              <div class="quotebox">
+                <h1>
+                  “Je leven zal meer gaan stromen als je de verbinding met
+                  jezelf verdiept<span style="margin: 0.15em !important"
+                    >”</span
+                  >
+                </h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div style="width: 100%; height: 5em; margin: 0 0 1em 0; background-color: #7bc752; padding: 2em 0 5em; text-align: center; font-size: 1.5em; font-family: 'Courgette', cursive; color: #fdfc96; z-index: 1">
-      Mededelingen in verband met Corona
-      <a href="covid.html">
-        <button class="btn button button-alt no-margin" style="margin: -0.5em 0 0 2.5em !important">Lees meer</button>
-      </a>
-    </div>
+    <!-- Main -->
+    <main>
+      <div class="section-wrapper">
+        <section>
+          <h1>Welkom bij Genieten van Meditatie</h1>
+          <p>
+            Meditatiecentrum en plaats voor werken met familieopstellingen; voor
+            iedereen die wil groeien in bewustzijn en pijn wil omvormen in de
+            vreugde van het helemaal zichzelf zijn.
+          </p>
+          <div class="flex">
+            <div class="flex-item">
+              <a href="aanbod.html">
+                <img
+                  src="img/index/aanbod.webp"
+                  alt="Familieopstellingen"
+                  loading="lazy" />
+                <span><span>Aanbod</span></span>
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="agenda.html">
+                <img
+                  src="img/index/agenda.webp"
+                  alt="Meditatie"
+                  loading="lazy" />
+                <span><span>Agenda</span></span>
+              </a>
+            </div>
+            <div class="flex-item">
+              <a href="contact.html">
+                <img
+                  src="img/index/contact.webp"
+                  alt="Coaching"
+                  loading="lazy" />
+                <span><span>Contact</span></span>
+              </a>
+            </div>
+          </div>
+          <p>
+            Het aanbod is heel gevarieerd, van Osho meditaties tot
+            familieopstellingen, van zelfhypnose tot de Japans therapeutische
+            gezichtsmassage:
+          </p>
+          <div class="butcont">
+            <a class="newbtn" href="aanbod.html"
+              ><button class="btn button no-margin">Wat ik aanbied</button></a
+            >
+          </div>
+        </section>
+      </div>
 
-    <div class="sectionbox">
-      <section>
-        <h3 class="no-padding-top">Mis je het leven waarnaar je verlangt?</h3>
-        <p>
-          Wil je dat je ogen stralen?<br />
-          Verlang je naar rust in je hoofd?<br />
-          Zou je de verbinding met jezelf willen verbeteren?<br />
-          Wil je inzicht en heling in de relatie met je partner of met je ouders en kinderen?
-        </p>
-        <h3>Je kunt je leven (weer) voluit gaan leven</h3>
-        <p>
-          Ik deel graag met jou de weg naar het geluk dat ik vond, nadat mijn leven jarenlang geblokkeerd was geweest. Dat geluk is ook voor jou mogelijk, als je door de pijn durft te gaan naar jouw
-          <strong>zijn</strong>.
-        </p>
-      </section>
-    </div>
-
-    <div class="box color video-container">
-      <section>
-        <h4 class="no-padding-top">Beluister hier mijn podcast</h4>
-        <p>
-          Wil je met bewustzijn dieper kijken naar de wortels van blokkades die je tegenkomt (zoals bijvoorbeeld stress, slaapproblemen, depressies, eetproblemen, relatieproblemen, heftige emoties of chronische ziekten)? En wil je uitkomen bij
-          innerlijke stilte en levensvreugde? Luister dan naar de bovenstaande podcast.
-        </p>
-        <iframe
-          title="Van Pijn naar Zijn"
-          allowtransparency="true"
-          height="315"
-          width="100%"
-          style="border: none; min-width: min(100%, 430px); margin-top: 1.5em; margin-bottom: 1.25em"
-          scrolling="no"
-          data-name="pb-iframe-player"
-          src="https://www.podbean.com/player-v2/?i=4vnmm-ad8e86-pbblog-playlist&share=1&download=0&rtl=0&fonts=Verdana&skin=7&order=serial&limit=10&filter=all&ss=5c93d19bc8104d72a2a9db056be5a5f2&btn-skin=1&size=315"
-          allowfullscreen=""
-        ></iframe>
-        <p>Of luister naar mijn podcasts via je favoriete podcast dienst:</p>
-        <div class="row">
-          <div style="margin-right: 1em">
-            <a href="https://open.spotify.com/show/1OUFvg0FgkSsC6XfxrDUCC" target="_blank">
-              <button class="btn button button-alt"><i class="fab fa-spotify"></i> Spotify</button>
-            </a>
+      <!-- Review -->
+      <div class="section-wrapper background">
+        <section>
+          <div class="review">
+            <div class="review-img">
+              <img src="img/reviews/ashirda.webp" alt="" />
+            </div>
+            <div class="review-text">
+              <p>Lieve Modita,</p>
+              <p>
+                Je hebt prachtige producten, 'tools', in de aanbieding voor
+                mensen om zichzelf en elkaar te genezen. Hoe 'praktiserend' als
+                arts kun je zijn voor de mens en zijn welzijn! Maar wel eentje
+                met beide menselijke voeten in de klei...
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 1em;
+                ">
+                <p class="review-left">- Ashirda</p>
+                <a class="newbtn" href="over-mij/reviews.html"
+                  ><button
+                    class="btn button no-margin"
+                    style="font-size: 0.75em; opacity: 0.8">
+                    Meer recensies
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-          <div style="margin-right: 1em">
-            <a href="https://podcasts.apple.com/jo/podcast/van-pijn-naar-zijn/id1558424493" target="_blank">
-              <button class="btn button button-alt">
-                <i class="fab fa-apple"></i>
-                Apple Podcasts
-              </button>
-            </a>
-          </div>
-          <div style="margin-right: 1em">
-            <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3ZhbnBpam5uYWFyemlqbi9mZWVkLnhtbA" target="_blank">
-              <button class="btn button button-alt">
-                <i class="fab fa-google"></i>
-                Google Podcasts
-              </button>
-            </a>
-          </div>
-          <div style="margin-right: 1em">
-            <a href="https://www.stitcher.com/show/van-pijn-naar-zijn" target="_blank">
-              <button class="btn button button-alt">
-                <i class="fas fa-podcast"></i>
-                Stitcher
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="sectionbox no-padding-top">
-      <section>
-        <q class="no-margin-top no-margin-bot" style="border: 0">Gedurende de laatste twintig jaar heb ik heel veel mensen mogen begeleiden naar de bloei van hun leven</q>
-        <p>Ik help je om voorbij je probleem te gaan met twee effectieve tools: meditatie & familieopstellingen, en deel mijn levenservaringen en mijn expertise als arts, therapeute, meditatiebegeleidster & familieopsteller.</p>
-      </section>
-    </div>
-    <div class="box color video-container">
-      <section>
-        <div class="flex-row">
-          <div class="half-col video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/bUyHsoMpSpo"
-              srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/bUyHsoMpSpo?autoplay=1><img src=https://img.youtube.com/vi/bUyHsoMpSpo/hqdefault.jpg alt='Joy in Meditation video'><span>▶</span></a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="half-col">
-            <h4>De verbinding met jezelf is essentieel voor je levensgeluk</h4>
-            <p>Ik help je de verbinding met jezelf te herstellen en een vreugdevol en geïnspireerd leven te leiden.</p>
-            <p>Wanneer je wilt ervaren of mijn werkwijze met jou resoneert en of je een klik voelt met mij, ben je welkom voor een gratis consult.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="sectionbox sectionbox-notext">
-      <section>
-        <h3>Klinkt dit interessant voor jou?</h3>
-        <p>Schrijf je dan in voor mijn nieuwsbrief en ontvang mooie teksten over meditatie, inspiratie voor het omgaan met blokkades in je leven en mijn aanbod van familieopstellingen en meditaties.</p>
-        <a href="nieuwsbrief.html">
-          <button class="btn button">Schrijf je in voor mijn nieuwsbrief</button>
-        </a>
-        <h3>Of wil je eerst weten of deze website geschikt is voor jou?</h3>
-        <p>Lees dan meer over wie door mijn aanbod geholpen wordt.</p>
-        <a href="ben_jij_dit.html">
-          <button class="btn button no-margin-bot">Lees meer</button>
-        </a>
-      </section>
-    </div>
-    <div class="box video-container final-box">
-      <section>
-        <div class="flex-row">
-          <div class="half-col">
-            <div id="ashirda" class="img-b" style="min-height: 150px; margin: 0 auto"></div>
-          </div>
-          <div id="ashirda2" class="half-col">
-            <em> Lieve Modita, </em>
-            <em> Je hebt prachtige producten 'tools', in de aanbieding voor mensen om zichzelf en elkaar te genezen. Hoe 'praktiserend' als arts kun je zijn voor de mens en zijn welzijn! </em>
-            <em> Maar wel eentje met beide menselijke voeten in de klei... </em>
-          </div>
-        </div>
-        <span class="em-author">
-          <em>- Ashirda Oosterlee</em>
-        </span>
-      </section>
-    </div>
+        </section>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>
       <div class="container">
-        <h2 class="text-center">Genieten van Meditatie</h2>
-        <p class="text-center">
-          &copy; 2019 Joy in Meditation |
-          <span>
-            <a href="avg.html" target="_blank" style="text-decoration: none; color: #333">AVG</a>
-          </span>
-        </p>
-        <p class="text-center">Foto: Ingrid van Zummeren, ivz@3rdeye.nl</p>
-        <div class="text-center osholink">
-          <a href="http://www.osho.com/copyrights" target="_blank">Osho text excerpts, Osho images, artwork, videos, audios and other copyrighted content with permission of © Osho International Foundation, www.osho.com/copyrights<br /></a>
-          <a href="http://www.osho.com/trademarks" target="_blank">OSHO is a registered trademark of Osho International Foundation, used with permission, www.osho.com/trademarks</a>
+        <div class="section-wrapper">
+          <section>
+            <h2 class="text-center">Genieten van Meditatie</h2>
+            <div class="row justify-content-center social-buttons">
+              <a
+                href="https://www.facebook.com/JoyInMeditation"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/modita_van_zummeren"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCbWDayN5UurkX3V-xmEcH7Q"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/modita-van-zummeren-a5b51699"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <p
+              style="
+                margin-top: 2.5vh;
+                margin-bottom: -1em;
+                text-align: center;
+              ">
+              Wil je mijn nieuwsbrief ontvangen?
+            </p>
+            <form
+              id="newsletter"
+              action="php/subscribe.php"
+              method="POST"
+              class="form row">
+              <input type="hidden" name="token" id="token" />
+              <input type="hidden" name="action" value="validate_captcha" />
+              <div class="form-group">
+                <input
+                  id="newsletter-name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Naam"
+                  required />
+              </div>
+              <div class="form-group">
+                <input
+                  id="newsletter-email"
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required />
+              </div>
+              <div class="button-group">
+                <button
+                  id="submit-newsletter"
+                  class="btn button no-margin"
+                  type="submit">
+                  Schrijf je in
+                </button>
+              </div>
+            </form>
+            <div class="row">
+              <hr />
+              <div class="osholink">
+                <a href="https://www.osho.com/copyrights" target="_blank">
+                  <p>
+                    Osho text excerpts, Osho images, artwork, videos, audios and
+                    other copyrighted content with permission of © Osho
+                    International Foundation, www.osho.com/copyrights<br />
+                  </p>
+                </a>
+                <a href="https://www.osho.com/trademarks" target="_blank">
+                  <p>
+                    OSHO is a registered trademark of Osho International
+                    Foundation, used with permission, www.osho.com/trademarks
+                  </p>
+                </a>
+              </div>
+            </div>
+            <p class="text-center" style="margin-top: 1em; font-size: 0.65em">
+              &copy; 2022 Joy in Meditation |
+              <span
+                ><a href="avg.html" style="color: #222">Privacybeleid</a></span
+              >
+            </p>
+          </section>
         </div>
       </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
 
-    <script defer data-domain="genietenvanmeditatie.nl" src="https://plausible.io/js/plausible.js"></script>
+    <!-- Plausible -->
+    <script
+      defer
+      data-domain="genietenvanmeditatie.nl"
+      src="https://plausible.io/js/plausible.js"></script>
   </body>
 </html>
